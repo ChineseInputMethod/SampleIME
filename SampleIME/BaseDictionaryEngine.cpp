@@ -10,7 +10,7 @@
 #include "Globals.h"
 
 //+---------------------------------------------------------------------------
-// ctor
+// ctor´ÊµäÒýÇæ»ùÀà
 //----------------------------------------------------------------------------
 
 CBaseDictionaryEngine::CBaseDictionaryEngine(LCID locale, _In_ CFile *pDictionaryFile)

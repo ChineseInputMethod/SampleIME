@@ -14,7 +14,7 @@
 //+---------------------------------------------------------------------------
 //
 // CBaseWindow::ctor
-//
+//窗口基类
 //----------------------------------------------------------------------------
 
 CBaseWindow::CBaseWindow()
@@ -24,7 +24,7 @@ CBaseWindow::CBaseWindow()
     _pUIWnd = nullptr;
 
     _pTimerUIObj = nullptr;
-    _pUIObjCapture = nullptr;
+    _pUIObjCapture = nullptr;//捕获
 
     _enableVirtualWnd = TRUE;
     _visibleVirtualWnd = TRUE;

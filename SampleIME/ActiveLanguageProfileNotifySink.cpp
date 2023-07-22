@@ -10,7 +10,7 @@
 #include "SampleIME.h"
 #include "CompositionProcessorEngine.h"
 
-BOOL CSampleIME::VerifySampleIMECLSID(_In_ REFCLSID clsid)
+BOOL CSampleIME::VerifySampleIMECLSID(_In_ REFCLSID clsid)//校验
 {
     if (IsEqualCLSID(clsid, Global::SampleIMECLSID))
     {
@@ -20,9 +20,9 @@ BOOL CSampleIME::VerifySampleIMECLSID(_In_ REFCLSID clsid)
 }
 
 //+---------------------------------------------------------------------------
-//
+//语言配置激活消息接收器::激活
 // ITfActiveLanguageProfileNotifySink::OnActivated
-//
+//当更改激活语言配置文件时，框架调用接收器。
 // Sink called by the framework when changes activate language profile.
 //----------------------------------------------------------------------------
 
