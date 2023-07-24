@@ -11,11 +11,11 @@
 #include "CompositionProcessorEngine.h"
 
 //+---------------------------------------------------------------------------
-//
+//输入组合终止消息接收器
 // ITfCompositionSink::OnCompositionTerminated
-//
+//每当出现以下情况时，系统都会调用此方法
 // Callback for ITfCompositionSink.  The system calls this method whenever
-// someone other than this service ends a composition.
+// someone other than this service ends a composition.此服务之外的人结束合成。
 //----------------------------------------------------------------------------
 
 STDAPI CSampleIME::OnCompositionTerminated(TfEditCookie ecWrite, _In_ ITfComposition *pComposition)

@@ -13,7 +13,7 @@
 //+---------------------------------------------------------------------------
 //
 // ctor
-//
+//ºòÑ¡´°¿Ú
 //----------------------------------------------------------------------------
 
 CCandidateWindow::CCandidateWindow(_In_ CANDWNDCALLBACK pfnCallback, _In_ void *pv, _In_ CCandidateRange *pIndexRange, _In_ BOOL isStoreAppMode)
