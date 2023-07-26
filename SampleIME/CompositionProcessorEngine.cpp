@@ -19,7 +19,7 @@
 //////////////////////////////////////////////////////////////////////
 //
 // CSampleIME implementation.
-//
+//输入组合处理器
 //////////////////////////////////////////////////////////////////////
 
 //+---------------------------------------------------------------------------
@@ -981,7 +981,7 @@ BOOL CCompositionProcessorEngine::SetupDictionaryFile()
     // Not yet registered
     // Register CFileMapping
     WCHAR wszFileName[MAX_PATH] = {'\0'};
-    DWORD cchA = GetModuleFileName(Global::dllInstanceHandle, wszFileName, ARRAYSIZE(wszFileName));
+    DWORD cchA = GetModuleFileName(Global::dllInstanceHandle, wszFileName, ARRAYSIZE(wszFileName));//获取当前程序所在目录文件名
     size_t iDicFileNameLen = cchA + wcslen(TEXTSERVICE_DIC);
     WCHAR *pwszFileName = new (std::nothrow) WCHAR[iDicFileNameLen + 1];
     if (!pwszFileName)
@@ -997,7 +997,7 @@ BOOL CCompositionProcessorEngine::SetupDictionaryFile()
         if (wszChar == '\\' || wszChar == '/')
         {
             StringCchCopyN(pwszFileName, iDicFileNameLen + 1, wszFileName, cchA + 1);
-            StringCchCatN(pwszFileName, iDicFileNameLen + 1, TEXTSERVICE_DIC, wcslen(TEXTSERVICE_DIC));
+            StringCchCatN(pwszFileName, iDicFileNameLen + 1, TEXTSERVICE_DIC, wcslen(TEXTSERVICE_DIC));//目录+词典名
             break;
         }
     }

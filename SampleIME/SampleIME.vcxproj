@@ -27,7 +27,6 @@
     <None Include="image\PunctuationOff.ico" />
     <None Include="image\PunctuationOn.ico" />
     <None Include="image\SampleIme.ico" />
-    <None Include="SampleIME.def" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseDictionaryEngine.h" />

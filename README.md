@@ -7,18 +7,48 @@
 
 Source Files					|Document
 -|-
-[DllMain.cpp](doc/DllMain.md)	|DLL入口点，注册窗口类。
+[DllMain.cpp](doc/DllMain.md)	|DLL入口点，注册候选窗口类。
+[Globals.cpp](doc/Globals.md)	|全局设置，全局变量、类型、函数，对标点符号以及快捷键进行通用设置。
 [Server.cpp](doc/Server.md)		|
 
-## 3.2 
+## 3.2 TSF主体文件
+
+Source Files						|Document
+-|-
+[SampleIME.cpp](doc/SampleIME.md)	|TSF主体文件。
+
+## 3.3 
 
 Source Files																	|Document
 -|-
 [ActiveLanguageProfileNotifySink.cpp](doc/ActiveLanguageProfileNotifySink.md)	|语言配置激活消息接收器，当更改激活语言配置文件时，框架调用接收器。
 [BaseDictionaryEngine.cpp](doc/BaseDictionaryEngine.md)							|词典引擎基类。
+[DictionaryParser.cpp](doc/DictionaryParser.md)									|句法分析器。
+[DictionarySearch.cpp](doc/DictionarySearch.md)									|词典搜索。
 [BaseWindow.cpp](doc/BaseWindow.md)												|窗口基类，派生窗口。
 [ButtonWindow.cpp](doc/ButtonWindow.md)											|按钮窗口。
 [CandidateWindow.cpp](doc/CandidateWindow.md)									|候选窗口。
 [CandidateListUIPresenter.cpp](doc/CandidateListUIPresenter.md)					|候选列表控制器。
 [Compartment.cpp](doc/Compartment.md)											|缓冲池。
 [Composition.cpp](doc/Composition.md)											|输入组合终止消息接收器。
+[CompositionProcessorEngine.cpp](doc/CompositionProcessorEngine.md)				|输入组合处理器。
+[DisplayAttribute.cpp](doc/DisplayAttribute.md)									|显示属性。
+[DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)							|显示属性信息。
+[DisplayAttributeProvider.cpp](doc/DisplayAttributeProvider.md)					|显示属性提供者。
+[EditSession.cpp](doc/EditSession.md)											|编辑会话。
+[GetTextExtentEditSession.cpp](doc/GetTextExtentEditSession.md)					|文本布局。
+[EndComposition.cpp](doc/EndComposition.md)										|结束输入。
+[EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)					|显示属性信息对象枚举器。
+[EnumTfCandidates.cpp](doc/EnumTfCandidates.md)									|候选文字串对象枚举器。
+[File.cpp](doc/File.md)															|文件，读取词典文件。
+[FileMapping.cpp](doc/FileMapping.md)											|文件映射对象，将词典文件映射为内存数组。
+[FunctionProviderSink.cpp](doc/FunctionProviderSink.md)							|扩展功能提供者。
+
+
+
+
+
+
+
+
+

@@ -12,7 +12,7 @@
 //+---------------------------------------------------------------------------
 //
 // ctor
-//
+//´ÊµäËÑË÷
 //----------------------------------------------------------------------------
 
 CDictionarySearch::CDictionarySearch(LCID locale, _In_ CFile *pFile, _In_ CStringRange *pSearchKeyCode) : CDictionaryParser(locale)

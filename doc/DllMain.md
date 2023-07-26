@@ -35,11 +35,11 @@
 
 ## 3.1.1.1 主要函数
 
-DLL入口点函数只初始化了窗口类，只响应了进程开始和结束消息。
+DLL入口点函数只初始化了候选窗口类，只响应了进程开始和结束消息。
 
 ```C++
 BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID pvReserved)
 {
-    Global::RegisterWindowClass())
+    Globals.cpp#Global::RegisterWindowClass()
 }
 ```

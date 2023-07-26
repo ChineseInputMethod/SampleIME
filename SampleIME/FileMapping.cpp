@@ -54,7 +54,7 @@ BOOL CFileMapping::SetupReadBuffer()
     {
         //
         // Read file in file mapping
-        //
+        //文件映射对象
         _fileMappingHandle = CreateFileMapping(_fileHandle, NULL, PAGE_READONLY, 0, 0, NULL);
         if (_fileMappingHandle)
         {

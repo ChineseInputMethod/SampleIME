@@ -53,7 +53,7 @@ const TF_DISPLAYATTRIBUTE CDisplayAttributeInfoConverted::_s_DisplayAttribute =
 //+---------------------------------------------------------------------------
 //
 // ctor
-//
+//显示属性信息
 //----------------------------------------------------------------------------
 
 CDisplayAttributeInfo::CDisplayAttributeInfo()

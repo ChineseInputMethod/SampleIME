@@ -179,7 +179,7 @@ extern const WCHAR LangbarDoubleSingleByteDescription[] = L"Character width";
 extern const WCHAR LangbarPunctuationDescription[] = L"Punctuation";
 
 //---------------------------------------------------------------------
-// windows class / titile / atom
+// windows class / titile / atom×¢²áºòÑ¡´°¿ÚÀà
 //---------------------------------------------------------------------
 extern const WCHAR CandidateClassName[] = L"SampleIME.CandidateWindow";
 ATOM AtomCandidateWindow;

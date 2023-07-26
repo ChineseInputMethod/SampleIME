@@ -14,7 +14,7 @@
 //+---------------------------------------------------------------------------
 //
 // ITfDisplayAttributeProvider::EnumDisplayAttributeInfo
-//
+//显示属性提供者
 //----------------------------------------------------------------------------
 
 STDAPI CSampleIME::EnumDisplayAttributeInfo(__RPC__deref_out_opt IEnumTfDisplayAttributeInfo **ppEnum)

@@ -12,7 +12,7 @@
 //+---------------------------------------------------------------------------
 //
 // _ClearCompositionDisplayAttributes
-//
+//œ‘ æ Ù–‘
 //----------------------------------------------------------------------------
 
 void CSampleIME::_ClearCompositionDisplayAttributes(TfEditCookie ec, _In_ ITfContext *pContext)

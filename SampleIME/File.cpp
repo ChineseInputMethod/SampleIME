@@ -112,7 +112,7 @@ BOOL CFile::SetupReadBuffer()
     if (!IsTextUnicode(_pReadBuffer, dwNumberOfByteRead, NULL))
     {
         // This is ASCII file.
-        // Read file with Unicode conversion.
+        // Read file with Unicode conversion.utf-16 LE
         int wideLength = 0;
 
         wideLength = MultiByteToWideChar(_codePage, 0, (LPCSTR)_pReadBuffer, dwNumberOfByteRead, NULL, 0);

@@ -7,7 +7,7 @@
 
 #include "private.h"
 #include "EnumTfCandidates.h"
-
+//候选文字串对象枚举器
 HRESULT CEnumTfCandidates::CreateInstance(_Out_ CEnumTfCandidates **ppobj, _In_ const CSampleImeArray<ITfCandidateString*> &rgelm, UINT currentNum)
 {
     if (ppobj == nullptr)
