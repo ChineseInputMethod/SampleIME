@@ -594,7 +594,7 @@ HRESULT CSampleIME::_HandleCompositionDoubleSingleByte(TfEditCookie ec, _In_ ITf
 }
 
 //+---------------------------------------------------------------------------
-//
+//´¦Àí°´¼ü
 // _InvokeKeyHandler
 //
 // This text service is interested in handling keystrokes to demonstrate the

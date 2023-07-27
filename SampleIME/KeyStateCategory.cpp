@@ -6,7 +6,7 @@
 // Copyright (c) Microsoft Corporation. All rights reserved
 
 #include "KeyStateCategory.h"
-
+//按键处理分类
 CKeyStateCategoryFactory* CKeyStateCategoryFactory::_instance;
 
 CKeyStateCategoryFactory::CKeyStateCategoryFactory()

@@ -3,6 +3,12 @@
 本章输入法源自[Windows-classic-samples](https://github.com/microsoft/Windows-classic-samples/tree/main/Samples/IME)。
 使用Visual Studio 2019编译。测试环境为Windows 7和Windows 10的64位版。
 
+Files			|Description
+-|-
+track.xml		|断点文件，跟踪主要函数的调用关系。
+install.bat		|安装文件，安装debug64位版。
+uninstall.bat	|卸载文件。
+
 ## 3.1 框架类文件
 
 Source Files					|Document
@@ -13,9 +19,10 @@ Source Files					|Document
 
 ## 3.2 TSF主体文件
 
-Source Files						|Document
+Source Files							|Document
 -|-
-[SampleIME.cpp](doc/SampleIME.md)	|TSF主体文件。
+[SampleIME.cpp](doc/SampleIME.md)		|TSF主体文件。
+[KeyEventSink.cpp](doc/KeyEventSink.md)	|键盘事件接收器。
 
 ## 3.3 
 
@@ -43,10 +50,10 @@ Source Files																	|Document
 [File.cpp](doc/File.md)															|文件，读取词典文件。
 [FileMapping.cpp](doc/FileMapping.md)											|文件映射对象，将词典文件映射为内存数组。
 [FunctionProviderSink.cpp](doc/FunctionProviderSink.md)							|扩展功能提供者。
-
-
-
-
+[KeyHandler.cpp](doc/KeyHandler.md)												|处理按键。
+[KeyHandlerEditSession.cpp](doc/KeyHandlerEditSession.md)						|按键处理编辑会话。
+[KeyStateCategory.cpp](doc/KeyStateCategory.md)									|按键处理分类。
+[LanguageBar.cpp](doc/LanguageBar.md)											|语言栏按钮项信息。
 
 
 

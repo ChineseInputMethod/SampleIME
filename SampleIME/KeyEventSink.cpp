@@ -256,7 +256,7 @@ BOOL CSampleIME::_IsKeyboardDisabled()
 }
 
 //+---------------------------------------------------------------------------
-//
+//键盘事件接收器
 // ITfKeyEventSink::OnSetFocus
 //
 // Called by the system whenever this service gets the keystroke device focus.

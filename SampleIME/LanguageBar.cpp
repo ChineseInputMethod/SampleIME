@@ -89,7 +89,7 @@ VOID CCompositionProcessorEngine::SetLanguageBarStatus(DWORD status, BOOL isSet)
 //+---------------------------------------------------------------------------
 //
 // CLangBarItemButton::ctor
-//
+//语言栏按钮项信息
 //----------------------------------------------------------------------------
 
 CLangBarItemButton::CLangBarItemButton(REFGUID guidLangBar, LPCWSTR description, LPCWSTR tooltip, DWORD onIconIndex, DWORD offIconIndex, BOOL isSecureMode)
