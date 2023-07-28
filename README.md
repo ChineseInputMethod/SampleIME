@@ -15,7 +15,8 @@ Source Files					|Document
 -|-
 [DllMain.cpp](doc/DllMain.md)	|DLL入口点，注册候选窗口类。
 [Globals.cpp](doc/Globals.md)	|全局设置，全局变量、类型、函数，对标点符号以及快捷键进行通用设置。
-[Server.cpp](doc/Server.md)		|
+[Server.cpp](doc/Server.md)		|COM导出函数。
+[Register.cpp](doc/Register.md)	|注册输入法。
 
 ## 3.2 TSF主体文件
 
@@ -39,6 +40,7 @@ Source Files																	|Document
 [Compartment.cpp](doc/Compartment.md)											|缓冲池。
 [Composition.cpp](doc/Composition.md)											|输入组合终止消息接收器。
 [CompositionProcessorEngine.cpp](doc/CompositionProcessorEngine.md)				|输入组合处理器。
+[RegKey.cpp](doc/RegKey.md)														|注册表类。
 [DisplayAttribute.cpp](doc/DisplayAttribute.md)									|显示属性。
 [DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)							|显示属性信息。
 [DisplayAttributeProvider.cpp](doc/DisplayAttributeProvider.md)					|显示属性提供者。
