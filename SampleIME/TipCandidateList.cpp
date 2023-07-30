@@ -9,7 +9,7 @@
 #include "TipCandidateList.h"
 #include "EnumTfCandidates.h"
 #include "TipCandidateString.h"
-
+//候选列表对象
 HRESULT CTipCandidateList::CreateInstance(_Outptr_ ITfCandidateList **ppobj, size_t candStrReserveSize)
 {  
     if (ppobj == nullptr)

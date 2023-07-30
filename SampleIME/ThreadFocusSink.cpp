@@ -10,8 +10,8 @@
 #include "CandidateListUIPresenter.h"
 
 //+---------------------------------------------------------------------------
-//
-// ITfTextLayoutSink::OnSetThreadFocus
+//线程输入焦点消息接收器
+// ITfThreadFocusSink::OnSetThreadFocus
 //
 //----------------------------------------------------------------------------
 
@@ -38,7 +38,7 @@ STDAPI CSampleIME::OnSetThreadFocus()
 
 //+---------------------------------------------------------------------------
 //
-// ITfTextLayoutSink::OnKillThreadFocus
+// ITfThreadFocusSink::OnKillThreadFocus
 //
 //----------------------------------------------------------------------------
 

@@ -7,7 +7,7 @@
 
 #include "Private.h"
 #include "TfInputProcessorProfile.h"
-
+//文本服务语言配置操作
 CTfInputProcessorProfile::CTfInputProcessorProfile()
 {
     _pInputProcessorProfile = nullptr;

@@ -212,9 +212,9 @@ STDAPI_(ULONG) CSampleIME::Release()
 }
 
 //+---------------------------------------------------------------------------
-//
+//扩展文本输入处理器
 // ITfTextInputProcessorEx::ActivateEx
-//
+//dwFlags标示了激活模式
 //----------------------------------------------------------------------------
 
 STDAPI CSampleIME::ActivateEx(ITfThreadMgr *pThreadMgr, TfClientId tfClientId, DWORD dwFlags)
@@ -345,7 +345,7 @@ STDAPI CSampleIME::Deactivate()
 }
 
 //+---------------------------------------------------------------------------
-//
+//扩展功能提供者
 // ITfFunctionProvider::GetType
 //
 //----------------------------------------------------------------------------
@@ -399,7 +399,7 @@ HRESULT CSampleIME::GetFunction(__RPC__in REFGUID rguid, __RPC__in REFIID riid, 
 }
 
 //+---------------------------------------------------------------------------
-//
+//扩展功能对象
 // ITfFunction::GetDisplayName
 //
 //----------------------------------------------------------------------------
@@ -415,7 +415,7 @@ HRESULT CSampleIME::GetDisplayName(_Out_ BSTR *pbstrDisplayName)
 }
 
 //+---------------------------------------------------------------------------
-//
+//获取首选触摸键盘布局
 // ITfFnGetPreferredTouchKeyboardLayout::GetLayout
 // The tkblayout will be Optimized layout.
 //----------------------------------------------------------------------------

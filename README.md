@@ -1,4 +1,4 @@
-## 3.0 文件说明
+## 文件说明
 
 本章输入法源自[Windows-classic-samples](https://github.com/microsoft/Windows-classic-samples/tree/main/Samples/IME)。
 使用Visual Studio 2019编译。测试环境为Windows 7和Windows 10的64位版。
@@ -9,21 +9,25 @@ track.xml		|断点文件，跟踪主要函数的调用关系。
 install.bat		|安装文件，安装debug64位版。
 uninstall.bat	|卸载文件。
 
-## 3.1 框架类文件
+## 框架类文件
 
 Source Files					|Document
 -|-
 [DllMain.cpp](doc/DllMain.md)	|DLL入口点，注册候选窗口类。
 [Globals.cpp](doc/Globals.md)	|全局设置，全局变量、类型、函数，对标点符号以及快捷键进行通用设置。
-[Server.cpp](doc/Server.md)		|COM导出函数。
-[Register.cpp](doc/Register.md)	|注册输入法。
+[Server.cpp](doc/Server.md)		|COM导出函数，注册输入法以及创建输入法实例。
+[Register.cpp](doc/Register.md)	|注册输入法，注册TSF输入法的标准实现。
 
-## 3.2 TSF主体文件
+## TSF主体文件
 
-Source Files							|Document
+Source Files										|Document
 -|-
-[SampleIME.cpp](doc/SampleIME.md)		|TSF主体文件。
-[KeyEventSink.cpp](doc/KeyEventSink.md)	|键盘事件接收器。
+[SampleIME.cpp](doc/SampleIME.md)					|TSF主体文件，扩展了对无界面元素程序和触摸键盘支持。
+[KeyEventSink.cpp](doc/KeyEventSink.md)				|键盘事件接收器。
+[TextEditSink.cpp](doc/TextEditSink.md)				|编辑会话完成消息接收器。
+[TfTextLayoutSink.cpp](doc/TfTextLayoutSink.md)		|文本布局消息接收器。
+[ThreadFocusSink.cpp](doc/ThreadFocusSink.md)		|线程输入焦点消息接收器。
+[ThreadMgrEventSink.cpp](doc/ThreadMgrEventSink.md)	|线程管理器事件接收器。
 
 ## 3.3 
 
@@ -31,15 +35,19 @@ Source Files																	|Document
 -|-
 [ActiveLanguageProfileNotifySink.cpp](doc/ActiveLanguageProfileNotifySink.md)	|语言配置激活消息接收器，当更改激活语言配置文件时，框架调用接收器。
 [BaseDictionaryEngine.cpp](doc/BaseDictionaryEngine.md)							|词典引擎基类。
+[TableDictionaryEngine.cpp](doc/TableDictionaryEngine.md)						|切分表。
 [DictionaryParser.cpp](doc/DictionaryParser.md)									|句法分析器。
 [DictionarySearch.cpp](doc/DictionarySearch.md)									|词典搜索。
 [BaseWindow.cpp](doc/BaseWindow.md)												|窗口基类，派生窗口。
 [ButtonWindow.cpp](doc/ButtonWindow.md)											|按钮窗口。
 [CandidateWindow.cpp](doc/CandidateWindow.md)									|候选窗口。
+[ScrollBarWindow.cpp](doc/ScrollBarWindow.md)									|滚动条窗口。
+[ShadowWindow.cpp](doc/ShadowWindow.md)											|阴影窗口。
 [CandidateListUIPresenter.cpp](doc/CandidateListUIPresenter.md)					|候选列表控制器。
 [Compartment.cpp](doc/Compartment.md)											|缓冲池。
 [Composition.cpp](doc/Composition.md)											|输入组合终止消息接收器。
 [CompositionProcessorEngine.cpp](doc/CompositionProcessorEngine.md)				|输入组合处理器。
+[TfInputProcessorProfile.cpp](doc/TfInputProcessorProfile.md)					|文本服务语言配置操作。
 [RegKey.cpp](doc/RegKey.md)														|注册表类。
 [DisplayAttribute.cpp](doc/DisplayAttribute.md)									|显示属性。
 [DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)							|显示属性信息。
@@ -56,8 +64,8 @@ Source Files																	|Document
 [KeyHandlerEditSession.cpp](doc/KeyHandlerEditSession.md)						|按键处理编辑会话。
 [KeyStateCategory.cpp](doc/KeyStateCategory.md)									|按键处理分类。
 [LanguageBar.cpp](doc/LanguageBar.md)											|语言栏按钮项信息。
-
-
-
-
-
+[SampleIMEBaseStructure.cpp](doc/SampleIMEBaseStructure.md)						|数据结构。
+[SearchCandidateProvider.cpp](doc/SearchCandidateProvider.md)					|搜索候选提供者。
+[StartComposition.cpp](doc/StartComposition.md)									|开始输入。
+[TipCandidateList.cpp](doc/TipCandidateList.md)									|候选列表对象。
+[TipCandidateString.cpp](doc/TipCandidateString.md)								|候选文字串对象。

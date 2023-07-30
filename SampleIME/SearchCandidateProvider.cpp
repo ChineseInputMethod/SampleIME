@@ -58,7 +58,7 @@ HRESULT CSearchCandidateProvider::CreateInstance(REFIID riid, _Outptr_ void **pp
 }
 
 /*------------------------------------------------------------------------------
-
+搜索候选提供者
 constructor of CSearchCandidateProvider
 
 ------------------------------------------------------------------------------*/

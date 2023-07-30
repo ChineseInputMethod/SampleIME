@@ -95,7 +95,7 @@ Exit:
 //////////////////////////////////////////////////////////////////////
 
 //+---------------------------------------------------------------------------
-//
+//ø™ º ‰»Î
 // _StartComposition
 //
 // this starts the new (std::nothrow) composition at the selection of the current 

@@ -11,7 +11,7 @@
 #include "CandidateListUIPresenter.h"
 
 //+---------------------------------------------------------------------------
-//
+//线程管理器事件接收器
 // ITfThreadMgrEventSink::OnInitDocumentMgr
 //
 // Sink called by the framework just before the first context is pushed onto

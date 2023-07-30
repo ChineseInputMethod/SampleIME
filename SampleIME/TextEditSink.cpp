@@ -10,7 +10,7 @@
 #include "SampleIME.h"
 
 //+---------------------------------------------------------------------------
-//
+//编辑会话完成消息接收器
 // ITfTextEditSink::OnEndEdit
 //
 // Called by the system whenever anyone releases a write-access document lock.
