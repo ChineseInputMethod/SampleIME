@@ -13,27 +13,27 @@ static const WCHAR RegInfo_Key_InProSvr32[] = L"InProcServer32";
 static const WCHAR RegInfo_Key_ThreadModel[] = L"ThreadingModel";
 
 static const WCHAR TEXTSERVICE_DESC[] = L"Sample IME";
-
+//https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/ns-msctf-tf_inputprocessorprofile
 static const GUID SupportCategories[] = {
-    GUID_TFCAT_TIP_KEYBOARD,
-    GUID_TFCAT_DISPLAYATTRIBUTEPROVIDER,
-    GUID_TFCAT_TIPCAP_UIELEMENTENABLED, 
-    GUID_TFCAT_TIPCAP_SECUREMODE,
-    GUID_TFCAT_TIPCAP_COMLESS,
-    GUID_TFCAT_TIPCAP_INPUTMODECOMPARTMENT,
-    GUID_TFCAT_TIPCAP_IMMERSIVESUPPORT, 
-    GUID_TFCAT_TIPCAP_SYSTRAYSUPPORT,
+    GUID_TFCAT_TIP_KEYBOARD,//键盘类型项
+    GUID_TFCAT_DISPLAYATTRIBUTEPROVIDER,//提供显示属性信息对象
+    GUID_TFCAT_TIPCAP_UIELEMENTENABLED, //UI元素
+    GUID_TFCAT_TIPCAP_SECUREMODE,//TSF在安全模式下激活。仅激活支持安全模式的文本服务。
+    GUID_TFCAT_TIPCAP_COMLESS,//TSF不使用COM。TSF仅激活在GUID_TFCAT_TIPCAP_COMLESS中分类的文本服务。
+    GUID_TFCAT_TIPCAP_INPUTMODECOMPARTMENT,//输入模式缓冲池
+    GUID_TFCAT_TIPCAP_IMMERSIVESUPPORT, //此文本服务已经过测试，在 Windows 应用商店应用中正常运行。
+    GUID_TFCAT_TIPCAP_SYSTRAYSUPPORT,//此文本服务支持包含在系统托盘中。
 };
 //+---------------------------------------------------------------------------
-//
-//  RegisterProfiles
 //注册输入法
+//  RegisterProfiles
+//注册文本服务和配置文件
 //----------------------------------------------------------------------------
 
 BOOL RegisterProfiles()
 {
     HRESULT hr = S_FALSE;
-
+//https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nn-msctf-itfinputprocessorprofilemgr
     ITfInputProcessorProfileMgr *pITfInputProcessorProfileMgr = nullptr;
     hr = CoCreateInstance(CLSID_TF_InputProcessorProfiles, NULL, CLSCTX_INPROC_SERVER,
         IID_ITfInputProcessorProfileMgr, (void**)&pITfInputProcessorProfileMgr);
@@ -53,7 +53,7 @@ BOOL RegisterProfiles()
     if (hr != S_OK)
     {
         goto Exit;
-    }
+    }//https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nf-msctf-itfinputprocessorprofilemgr-registerprofile
     hr = pITfInputProcessorProfileMgr->RegisterProfile(Global::SampleIMECLSID,
         TEXTSERVICE_LANGID,
         Global::SampleIMEGuidProfile,
@@ -118,7 +118,7 @@ Exit:
 
 BOOL RegisterCategories()
 {
-    ITfCategoryMgr* pCategoryMgr = nullptr;
+    ITfCategoryMgr* pCategoryMgr = nullptr;//类别管理器
     HRESULT hr = S_OK;
 
     hr = CoCreateInstance(CLSID_TF_CategoryMgr, NULL, CLSCTX_INPROC_SERVER, IID_ITfCategoryMgr, (void**)&pCategoryMgr);
@@ -126,7 +126,7 @@ BOOL RegisterCategories()
     {
         return FALSE;
     }
-
+//https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nf-msctf-itfcategorymgr-registercategory
     for each(GUID guid in SupportCategories)
     {
         hr = pCategoryMgr->RegisterCategory(Global::SampleIMECLSID, guid, Global::SampleIMECLSID);
@@ -165,7 +165,7 @@ void UnregisterCategories()
 }
 
 //+---------------------------------------------------------------------------
-//
+//删除子健
 // RecurseDeleteKey
 //
 // RecurseDeleteKey is necessary because on NT RegDeleteKey doesn't work if the
@@ -202,7 +202,7 @@ LONG RecurseDeleteKey(_In_ HKEY hParentKey, _In_ LPCTSTR lpszKey)
 }
 
 //+---------------------------------------------------------------------------
-//
+//注册COM组件
 //  RegisterServer
 //
 //----------------------------------------------------------------------------
