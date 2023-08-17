@@ -9,7 +9,7 @@ track.xml		|断点文件，跟踪主要函数的调用关系。
 install.bat		|安装文件，安装debug64位版。
 uninstall.bat	|卸载文件。
 
-## 框架类文件
+## COM组件框架
 
 Source Files					|Document
 -|-
@@ -18,22 +18,28 @@ Source Files					|Document
 [Server.cpp](doc/Server.md)		|COM导出函数，注册输入法以及创建输入法实例。
 [Register.cpp](doc/Register.md)	|注册输入法，注册TSF输入法的标准实现。
 
-## TSF主体文件
-
-Source Files										|Document
--|-
-[SampleIME.cpp](doc/SampleIME.md)					|TSF主体文件，扩展了对无界面元素程序和触摸键盘支持。
-[KeyEventSink.cpp](doc/KeyEventSink.md)				|键盘事件接收器。
-[TextEditSink.cpp](doc/TextEditSink.md)				|编辑会话完成消息接收器。
-[TfTextLayoutSink.cpp](doc/TfTextLayoutSink.md)		|文本布局消息接收器。
-[ThreadFocusSink.cpp](doc/ThreadFocusSink.md)		|线程输入焦点消息接收器。
-[ThreadMgrEventSink.cpp](doc/ThreadMgrEventSink.md)	|线程管理器事件接收器。
-
-## 3.3 
+## TSF文本服务框架
 
 Source Files																	|Document
 -|-
+[SampleIME.cpp](doc/SampleIME.md)												|TSF文本服务框架，扩展了对无界面元素程序和触摸键盘支持。
+[ThreadMgrEventSink.cpp](doc/ThreadMgrEventSink.md)								|线程管理器事件接收器，主要处理焦点事件。
+[TextEditSink.cpp](doc/TextEditSink.md)											|编辑会话完成消息接收器。
+[KeyEventSink.cpp](doc/KeyEventSink.md)											|键盘事件接收器。
 [ActiveLanguageProfileNotifySink.cpp](doc/ActiveLanguageProfileNotifySink.md)	|语言配置激活消息接收器，当更改激活语言配置文件时，框架调用接收器。
+[ThreadFocusSink.cpp](doc/ThreadFocusSink.md)									|线程输入焦点消息接收器。
+[FunctionProviderSink.cpp](doc/FunctionProviderSink.md)							|扩展功能提供者。
+
+## 初始化输入法
+
+Source Files																	|Document
+-|-
+[CompositionProcessorEngine.cpp](doc/CompositionProcessorEngine.md)				|合成处理器引擎。
+
+## 3.4 
+
+Source Files																	|Document
+-|-
 [BaseDictionaryEngine.cpp](doc/BaseDictionaryEngine.md)							|词典引擎基类。
 [TableDictionaryEngine.cpp](doc/TableDictionaryEngine.md)						|切分表。
 [DictionaryParser.cpp](doc/DictionaryParser.md)									|句法分析器。
@@ -46,7 +52,7 @@ Source Files																	|Document
 [CandidateListUIPresenter.cpp](doc/CandidateListUIPresenter.md)					|候选列表控制器。
 [Compartment.cpp](doc/Compartment.md)											|缓冲池。
 [Composition.cpp](doc/Composition.md)											|输入组合终止消息接收器。
-[CompositionProcessorEngine.cpp](doc/CompositionProcessorEngine.md)				|输入组合处理器。
+
 [TfInputProcessorProfile.cpp](doc/TfInputProcessorProfile.md)					|文本服务语言配置操作。
 [RegKey.cpp](doc/RegKey.md)														|注册表类。
 [DisplayAttribute.cpp](doc/DisplayAttribute.md)									|显示属性。
@@ -59,7 +65,7 @@ Source Files																	|Document
 [EnumTfCandidates.cpp](doc/EnumTfCandidates.md)									|候选文字串对象枚举器。
 [File.cpp](doc/File.md)															|文件，读取词典文件。
 [FileMapping.cpp](doc/FileMapping.md)											|文件映射对象，将词典文件映射为内存数组。
-[FunctionProviderSink.cpp](doc/FunctionProviderSink.md)							|扩展功能提供者。
+[TfTextLayoutSink.cpp](doc/TfTextLayoutSink.md)		|文本布局消息接收器。
 [KeyHandler.cpp](doc/KeyHandler.md)												|处理按键。
 [KeyHandlerEditSession.cpp](doc/KeyHandlerEditSession.md)						|按键处理编辑会话。
 [KeyStateCategory.cpp](doc/KeyStateCategory.md)									|按键处理分类。

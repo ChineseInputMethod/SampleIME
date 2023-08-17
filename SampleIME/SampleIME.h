@@ -17,16 +17,16 @@ class CCompositionProcessorEngine;
 const DWORD WM_CheckGlobalCompartment = WM_USER;
 LRESULT CALLBACK CSampleIME_WindowProc(HWND wndHandle, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
-class CSampleIME : public ITfTextInputProcessorEx,
-    public ITfThreadMgrEventSink,
-    public ITfTextEditSink,
-    public ITfKeyEventSink,
-    public ITfCompositionSink,
-    public ITfDisplayAttributeProvider,
-    public ITfActiveLanguageProfileNotifySink,
-    public ITfThreadFocusSink,
-    public ITfFunctionProvider,
-    public ITfFnGetPreferredTouchKeyboardLayout
+class CSampleIME : public ITfTextInputProcessorEx,//文本输入处理器
+    public ITfThreadMgrEventSink,//线程管理器事件接收器
+    public ITfTextEditSink,//编辑会话完成消息接收器
+    public ITfKeyEventSink,//键盘事件接收器
+    public ITfCompositionSink,//输入组合终止消息接收器
+    public ITfDisplayAttributeProvider,//显示属性提供者
+    public ITfActiveLanguageProfileNotifySink,//语言配置激活消息接收器
+    public ITfThreadFocusSink,//线程输入焦点消息接收器
+    public ITfFunctionProvider,//文本服务语言配置操作
+    public ITfFnGetPreferredTouchKeyboardLayout//获取首选触摸键盘布局
 {
 public:
     CSampleIME();

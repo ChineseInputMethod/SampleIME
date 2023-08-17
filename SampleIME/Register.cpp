@@ -33,7 +33,7 @@ static const GUID SupportCategories[] = {
 BOOL RegisterProfiles()
 {
     HRESULT hr = S_FALSE;
-//https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nn-msctf-itfinputprocessorprofilemgr
+//https://github.com/ChineseInputMethod/Interface/blob/master/TSFmanager/ITfInputProcessorProfileMgr.md
     ITfInputProcessorProfileMgr *pITfInputProcessorProfileMgr = nullptr;
     hr = CoCreateInstance(CLSID_TF_InputProcessorProfiles, NULL, CLSCTX_INPROC_SERVER,
         IID_ITfInputProcessorProfileMgr, (void**)&pITfInputProcessorProfileMgr);
@@ -117,8 +117,8 @@ Exit:
 //----------------------------------------------------------------------------
 
 BOOL RegisterCategories()
-{
-    ITfCategoryMgr* pCategoryMgr = nullptr;//类别管理器
+{//https://github.com/ChineseInputMethod/Interface/blob/master/TSFmanager/ITfCategoryMgr.md
+    ITfCategoryMgr* pCategoryMgr = nullptr;
     HRESULT hr = S_OK;
 
     hr = CoCreateInstance(CLSID_TF_CategoryMgr, NULL, CLSCTX_INPROC_SERVER, IID_ITfCategoryMgr, (void**)&pCategoryMgr);
