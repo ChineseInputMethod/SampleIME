@@ -19528,7 +19528,7 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <TracepointText>ITfTextEditSink</TracepointText>
+      <TracepointText>$FUNCTION ITfTextEditSink</TracepointText>
       <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
@@ -20057,10 +20057,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>233</startLine>
+        <startLine>239</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>233</EndLine>
-        <EndColumn>85</EndColumn>
+        <EndLine>239</EndLine>
+        <EndColumn>29</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -20073,7 +20073,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>ActivateEx(ITfThreadMgr *pThreadMgr, TfClientId tfClientId, DWORD dwFlags)</NamedLocationText>
-      <NamedLocationLine>13</NamedLocationLine>
+      <NamedLocationLine>19</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -20148,7 +20148,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -20203,7 +20203,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -24275,10 +24275,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText>$FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
