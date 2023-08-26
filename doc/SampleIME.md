@@ -20,7 +20,7 @@ Interface								|Description
 -|-
 [ITfThreadMgrEventSink][5]				|线程管理器事件接收器，主要处理焦点事件。
 [ITfTextEditSink][6]					|编辑会话完成消息接收器，用于感知其他文本服务对编辑内容的更改。
-[ITfKeyEventSink][7]					|键盘事件接收器。
+[ITfKeyEventSink][7]					|键盘事件接收器，用于接收按键和虚拟按键事件。
 [ITfActiveLanguageProfileNotifySink][8]	|语言配置激活消息接收器，当更改激活语言配置文件时，框架调用接收器。
 [ITfThreadFocusSink][9]					|线程输入焦点消息接收器。
 [ITfFunctionProvider][10]				|扩展功能提供者。

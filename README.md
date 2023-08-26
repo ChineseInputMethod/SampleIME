@@ -25,7 +25,7 @@ Source Files																	|Document
 [SampleIME.cpp](doc/SampleIME.md)												|TSF文本服务框架，扩展了对无界面元素程序和触摸键盘支持。
 [ThreadMgrEventSink.cpp](doc/ThreadMgrEventSink.md)								|线程管理器事件接收器，主要处理焦点事件。
 [TextEditSink.cpp](doc/TextEditSink.md)											|编辑会话完成消息接收器，用于感知其他文本服务对编辑内容的更改。
-[KeyEventSink.cpp](doc/KeyEventSink.md)											|键盘事件接收器。
+[KeyEventSink.cpp](doc/KeyEventSink.md)											|键盘事件接收器，用于接收按键和虚拟按键事件。
 [ActiveLanguageProfileNotifySink.cpp](doc/ActiveLanguageProfileNotifySink.md)	|语言配置激活消息接收器，当更改激活语言配置文件时，框架调用接收器。
 [ThreadFocusSink.cpp](doc/ThreadFocusSink.md)									|线程输入焦点消息接收器。
 [FunctionProviderSink.cpp](doc/FunctionProviderSink.md)							|扩展功能提供者。

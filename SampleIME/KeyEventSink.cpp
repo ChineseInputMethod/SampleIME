@@ -20,7 +20,7 @@
 // Because the code mostly works with VKeys, here map a WCHAR back to a VKKey for certain
 // vkeys that the IME handles specially
 __inline UINT VKeyFromVKPacketAndWchar(UINT vk, WCHAR wch)
-{
+{//https://learn.microsoft.com/zh-cn/windows/win32/inputdev/virtual-key-codes
     UINT vkRet = vk;
     if (LOWORD(vk) == VK_PACKET)
     {
@@ -183,13 +183,13 @@ WCHAR CSampleIME::ConvertVKey(UINT code)
 {
     //
     // Map virtual key to scan code
-    //
+    //½«ÐéÄâ¼üÓ³Éäµ½É¨ÃèÂë
     UINT scanCode = 0;
-    scanCode = MapVirtualKey(code, 0);
+    scanCode = MapVirtualKey(code, 0);//https://learn.microsoft.com/zh-cn/windows/win32/api/winuser/nf-winuser-mapvirtualkeyw
 
     //
     // Keyboard state
-    //
+    //https://learn.microsoft.com/zh-cn/windows/win32/api/winuser/nf-winuser-setkeyboardstate
     BYTE abKbdState[256] = {'\0'};
     if (!GetKeyboardState(abKbdState))
     {
@@ -198,10 +198,10 @@ WCHAR CSampleIME::ConvertVKey(UINT code)
 
     //
     // Map virtual key to character code
-    //
+    //½«ÐéÄâ¼üÓ³Éäµ½×Ö·û´úÂë
     WCHAR wch = '\0';
     if (ToUnicode(code, scanCode, abKbdState, &wch, 1, 0) == 1)
-    {
+    {//https://learn.microsoft.com/zh-cn/windows/win32/api/winuser/nf-winuser-tounicode
         return wch;
     }
 
