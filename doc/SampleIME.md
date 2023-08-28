@@ -28,8 +28,8 @@ Interface								|Description
 
 [5]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfThreadMgrEventSink.md
 [6]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfTextEditSink.md
-[7]: https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nn-msctf-itfkeyeventsink
-[8]: https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nn-msctf-itfactivelanguageprofilenotifysink
+[7]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfKeyEventSink.md
+[8]: https://github.com/ChineseInputMethod/Interface/blob/master/Application/ITfActiveLanguageProfileNotifySink.md
 [9]: https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nn-msctf-itfthreadfocussink
 [10]: https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nn-msctf-itffunctionprovider
 
