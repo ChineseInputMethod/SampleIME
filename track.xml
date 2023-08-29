@@ -11486,10 +11486,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText>$FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -20170,10 +20171,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>254</startLine>
+        <startLine>259</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>254</EndLine>
-        <EndColumn>41</EndColumn>
+        <EndLine>259</EndLine>
+        <EndColumn>37</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -20186,7 +20187,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>ActivateEx(ITfThreadMgr *pThreadMgr, TfClientId tfClientId, DWORD dwFlags)</NamedLocationText>
-      <NamedLocationLine>34</NamedLocationLine>
+      <NamedLocationLine>39</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -20206,7 +20207,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -20225,10 +20226,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>259</startLine>
+        <startLine>264</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>259</EndLine>
-        <EndColumn>37</EndColumn>
+        <EndLine>264</EndLine>
+        <EndColumn>35</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -20241,7 +20242,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>ActivateEx(ITfThreadMgr *pThreadMgr, TfClientId tfClientId, DWORD dwFlags)</NamedLocationText>
-      <NamedLocationLine>39</NamedLocationLine>
+      <NamedLocationLine>44</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>

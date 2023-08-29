@@ -22,7 +22,7 @@ Interface								|Description
 [ITfTextEditSink][6]					|编辑会话完成消息接收器，用于感知其他文本服务对编辑内容的更改。
 [ITfKeyEventSink][7]					|键盘事件接收器，用于接收按键和虚拟按键事件。
 [ITfActiveLanguageProfileNotifySink][8]	|语言配置激活消息接收器，当更改激活语言配置文件时，框架调用接收器。
-[ITfThreadFocusSink][9]					|线程输入焦点消息接收器。
+[ITfThreadFocusSink][9]					|线程输入焦点消息接收器，在线程接收或失去UI焦点时接收通知。
 [ITfFunctionProvider][10]				|扩展功能提供者。
 
 
@@ -30,7 +30,7 @@ Interface								|Description
 [6]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfTextEditSink.md
 [7]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfKeyEventSink.md
 [8]: https://github.com/ChineseInputMethod/Interface/blob/master/Application/ITfActiveLanguageProfileNotifySink.md
-[9]: https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nn-msctf-itfthreadfocussink
+[9]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfThreadFocusSink.md
 [10]: https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nn-msctf-itffunctionprovider
 
 
