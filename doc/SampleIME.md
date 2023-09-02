@@ -23,21 +23,20 @@ Interface								|Description
 [ITfKeyEventSink][7]					|键盘事件接收器，用于接收按键和虚拟按键事件。
 [ITfActiveLanguageProfileNotifySink][8]	|语言配置激活消息接收器，当更改激活语言配置文件时，框架调用接收器。
 [ITfThreadFocusSink][9]					|线程输入焦点消息接收器，在线程接收或失去UI焦点时接收通知。
-[ITfFunctionProvider][10]				|扩展功能提供者。
-
+[ITfFunctionProvider][10]				|扩展功能提供者，提供各种函数对象。
 
 [5]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfThreadMgrEventSink.md
 [6]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfTextEditSink.md
 [7]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfKeyEventSink.md
 [8]: https://github.com/ChineseInputMethod/Interface/blob/master/Application/ITfActiveLanguageProfileNotifySink.md
 [9]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfThreadFocusSink.md
-[10]: https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nn-msctf-itffunctionprovider
+[10]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfFunctionProvider.md
 
 
 ## 3.5.1 激活输入法
 
 当输入法被激活时（键盘布局被载入），ITfTextInputProcessorEx::ActivateEx方法首先被调用。
-ITfTextInputProcessorEx是ITfTextInputProcessor的升级版本，扩展了激活方式，例如增加了对uiless模式的支持。
+ITfTextInputProcessorEx是ITfTextInputProcessor的升级版本，扩展了激活方式，例如增加了对UILess模式的支持。
 
 激活输入法的主要任务是安装事件接收器和初始化输入法。
 
@@ -48,7 +47,7 @@ _InitTextEditSink()						|安装编辑会话完成消息接收器。
 _InitKeyEventSink()						|安装键盘事件接收器。
 _InitActiveLanguageProfileNotifySink()	|安装语言配置激活消息接收器，当更改激活语言配置文件时，框架调用接收器。
 _InitThreadFocusSink()					|安装线程输入焦点消息接收器。
-_InitFunctionProviderSink()				|安装扩展功能提供者。创建一个候选词搜索引擎。
+_InitFunctionProviderSink()				|安装扩展功能提供者，创建一个搜索集成引擎。
 
 Function						|Description
 -|-
@@ -57,4 +56,4 @@ _AddTextProcessorEngine()		|添加文本处理引擎。创建一个编码分词�
 
 ## 3.5.2 触摸键盘布局
 
-## 3.5.3 创建候选词搜索引擎
+>https://learn.microsoft.com/zh-cn/windows/apps/design/input/input-method-editor-requirements#ime-and-touch-keyboard

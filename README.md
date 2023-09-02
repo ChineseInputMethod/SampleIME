@@ -28,7 +28,7 @@ Source Files																	|Document
 [KeyEventSink.cpp](doc/KeyEventSink.md)											|键盘事件接收器，用于接收按键和虚拟按键事件。
 [ActiveLanguageProfileNotifySink.cpp](doc/ActiveLanguageProfileNotifySink.md)	|语言配置激活消息接收器，当更改激活语言配置文件时，框架调用接收器。
 [ThreadFocusSink.cpp](doc/ThreadFocusSink.md)									|线程输入焦点消息接收器，在线程接收或失去UI焦点时接收通知。
-[FunctionProviderSink.cpp](doc/FunctionProviderSink.md)							|扩展功能提供者。
+[FunctionProviderSink.cpp](doc/FunctionProviderSink.md)							|扩展功能提供者，提供各种函数对象。
 
 ## 初始化输入法
 
