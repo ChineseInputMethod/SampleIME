@@ -34,7 +34,10 @@ Source Files																	|Document
 
 Source Files																	|Document
 -|-
-[CompositionProcessorEngine.cpp](doc/CompositionProcessorEngine.md)				|合成处理器引擎。
+[CompositionProcessorEngine.cpp](doc/CompositionProcessorEngine.md)				|合成处理器引擎，输入法核心类。
+[TfInputProcessorProfile.cpp](doc/TfInputProcessorProfile.md)					|文本服务语言配置，用来操作一个或多个文本服务的语言配置文件。
+[Compartment.cpp](doc/Compartment.md)											|缓冲池。
+[LanguageBar.cpp](doc/LanguageBar.md)											|语言栏按钮项信息。
 
 ## 3.4 
 
@@ -50,10 +53,7 @@ Source Files																	|Document
 [ScrollBarWindow.cpp](doc/ScrollBarWindow.md)									|滚动条窗口。
 [ShadowWindow.cpp](doc/ShadowWindow.md)											|阴影窗口。
 [CandidateListUIPresenter.cpp](doc/CandidateListUIPresenter.md)					|候选列表控制器。
-[Compartment.cpp](doc/Compartment.md)											|缓冲池。
 [Composition.cpp](doc/Composition.md)											|输入组合终止消息接收器。
-
-[TfInputProcessorProfile.cpp](doc/TfInputProcessorProfile.md)					|文本服务语言配置操作。
 [RegKey.cpp](doc/RegKey.md)														|注册表类。
 [DisplayAttribute.cpp](doc/DisplayAttribute.md)									|显示属性。
 [DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)							|显示属性信息。
@@ -69,7 +69,6 @@ Source Files																	|Document
 [KeyHandler.cpp](doc/KeyHandler.md)												|处理按键。
 [KeyHandlerEditSession.cpp](doc/KeyHandlerEditSession.md)						|按键处理编辑会话。
 [KeyStateCategory.cpp](doc/KeyStateCategory.md)									|按键处理分类。
-[LanguageBar.cpp](doc/LanguageBar.md)											|语言栏按钮项信息。
 [SampleIMEBaseStructure.cpp](doc/SampleIMEBaseStructure.md)						|数据结构。
 [SearchCandidateProvider.cpp](doc/SearchCandidateProvider.md)					|搜索候选提供者。
 [StartComposition.cpp](doc/StartComposition.md)									|开始输入。

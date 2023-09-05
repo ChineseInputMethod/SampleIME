@@ -7,7 +7,7 @@ Interface									|Description
 [ITfTextInputProcessorEx][1]				|文本输入处理器，继承ITfTextInputProcessor，扩展了文本服务的激活方式。
 [ITfDisplayAttributeProvider][2]			|显示属性提供者，在显示属性专题讲解。当输入法注册了显示属性类别后，由客户端查询显示属性。
 [ITfCompositionSink][3]						|输入组合终止消息接收器，在输入合成专题讲解。意外终止合成时被调用。
-[ITfFnGetPreferredTouchKeyboardLayout][4]	|获取首选触摸键盘布局。
+[ITfFnGetPreferredTouchKeyboardLayout][4]	|获取首选触摸键盘布局，指定Windows 8触摸键盘支持的键盘布局。
 
 [1]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfTextInputProcessorEx.md
 [2]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfDisplayAttributeProvider.md
@@ -32,7 +32,6 @@ Interface								|Description
 [9]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfThreadFocusSink.md
 [10]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfFunctionProvider.md
 
-
 ## 3.5.1 激活输入法
 
 当输入法被激活时（键盘布局被载入），ITfTextInputProcessorEx::ActivateEx方法首先被调用。
@@ -55,5 +54,11 @@ _InitDisplayAttributeGuidAtom()	|注册显示属性标识符。
 _AddTextProcessorEngine()		|添加文本处理引擎。创建一个编码分词引擎。
 
 ## 3.5.2 触摸键盘布局
+
+Interface			|Description
+-|-
+[ITfFunction][11]	|扩展功能对象，ITfFunction接口是各个函数接口的基接口。
+
+[11]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfFunction.md
 
 >https://learn.microsoft.com/zh-cn/windows/apps/design/input/input-method-editor-requirements#ime-and-touch-keyboard
