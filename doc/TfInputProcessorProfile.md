@@ -1,6 +1,6 @@
 ## 3.13 文本服务语言配置
 
-文本服务语言配置，用来操作一个或多个文本服务的语言配置文件。
+文本服务语言配置，注册表中输入法的属性设置。
 
 Interface						|Description
 -|-
@@ -22,4 +22,32 @@ HRESULT CTfInputProcessorProfile::CreateInstance()
 
 ## 3.13.2 获取当前活动语言的标识符
 
-## 3.13.2 获取当前活动语言的标识符
+```C++
+HRESULT CTfInputProcessorProfile::GetCurrentLanguage(_Out_ LANGID *plangid)
+{
+    if (_pInputProcessorProfile)
+    {
+        return _pInputProcessorProfile->GetCurrentLanguage(plangid);
+    }
+    else
+    {
+        return E_FAIL;
+    }
+}
+```
+
+## 3.13.3 获取当前活动语言的默认配置文件
+
+```C++
+HRESULT CTfInputProcessorProfile::GetDefaultLanguageProfile(LANGID langid, REFGUID catid, _Out_ CLSID *pclsid, _Out_ GUID *pguidProfile)
+{
+    if (_pInputProcessorProfile)
+    {
+        return _pInputProcessorProfile->GetDefaultLanguageProfile(langid, catid, pclsid, pguidProfile);
+    }
+    else
+    {
+        return E_FAIL;
+    }
+}
+```

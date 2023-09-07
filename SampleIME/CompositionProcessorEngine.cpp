@@ -695,9 +695,9 @@ void CCompositionProcessorEngine::SetKeystrokeTable(_Inout_ CSampleImeArray<_KEY
 
 void CCompositionProcessorEngine::SetupPreserved(_In_ ITfThreadMgr *pThreadMgr, TfClientId tfClientId)
 {
-    TF_PRESERVEDKEY preservedKeyImeMode;
-    preservedKeyImeMode.uVKey = VK_SHIFT;
-    preservedKeyImeMode.uModifiers = _TF_MOD_ON_KEYUP_SHIFT_ONLY;
+    TF_PRESERVEDKEY preservedKeyImeMode;//https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/ns-msctf-tf_preservedkey
+    preservedKeyImeMode.uVKey = VK_SHIFT;//https://learn.microsoft.com/zh-cn/windows/win32/inputdev/virtual-key-codes
+    preservedKeyImeMode.uModifiers = _TF_MOD_ON_KEYUP_SHIFT_ONLY;//https://learn.microsoft.com/zh-cn/windows/win32/tsf/tf-mod--constants
     SetPreservedKey(Global::SampleIMEGuidImeModePreserveKey, preservedKeyImeMode, Global::ImeModeDescription, &_PreservedKey_IMEMode);
 
     TF_PRESERVEDKEY preservedKeyDoubleSingleByte;

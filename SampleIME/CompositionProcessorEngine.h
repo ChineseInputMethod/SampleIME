@@ -158,9 +158,9 @@ private:
         LPCWSTR Description;
     };
 
-    XPreservedKey _PreservedKey_IMEMode;
-    XPreservedKey _PreservedKey_DoubleSingleByte;
-    XPreservedKey _PreservedKey_Punctuation;
+    XPreservedKey _PreservedKey_IMEMode;//中/英
+    XPreservedKey _PreservedKey_DoubleSingleByte;//全角/半角
+    XPreservedKey _PreservedKey_Punctuation;//中文标点
 
     // Punctuation data
     CSampleImeArray<CPunctuationPair> _PunctuationPair;

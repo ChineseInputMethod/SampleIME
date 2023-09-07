@@ -2,4 +2,3 @@
 
 %windir%\system32\regsvr32.exe /u %~dp0x64\Debug\SampleIME.dll
 del %~dp0x64\Debug\SampleIMESimplifiedQuanPin.txt
-pause

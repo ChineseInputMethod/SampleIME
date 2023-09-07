@@ -1,12 +1,49 @@
-## 3.12 扩展功能提供者
+## 3.12 合成处理器引擎
 
-合成处理器引擎，输入法核心类。
+在输入法被激活时，调用CSampleIME::_AddTextProcessorEngine()方法，初始化输入法设置。
 
-## 3.12.1 设置输入法
+## 3.12.1 获取语言配置文件
 
+首先获取输入法的语言配置文件。
 
 ```C++
+    if (FAILED(profile.CreateInstance()))
+    {
+        return FALSE;
+    }
 
+    if (FAILED(profile.GetCurrentLanguage(&langid)))
+    {
+        return FALSE;
+    }
+
+    if (FAILED(profile.GetDefaultLanguageProfile(langid, GUID_TFCAT_TIP_KEYBOARD, &clsid, &guidProfile)))
+    {
+        return FALSE;
+    }
 ```
 
-## 3.12.2 
+## 3.12.2 创建合成处理器引擎
+
+然后创建合成处理器引擎，这是输入法的核心类。
+
+```C++
+    if (_pCompositionProcessorEngine == nullptr)
+    {
+        _pCompositionProcessorEngine = new (std::nothrow) CCompositionProcessorEngine();
+    }
+```
+
+## 3.12.3 设置语言配置文件
+
+最后调用_pCompositionProcessorEngine->SetupLanguageProfile()方法，设置输入法的语言配置文件。
+
+Function							|Description
+-|-
+SetupPreserved()					|设置输入法状态开关快捷键。
+InitializeSampleIMECompartment()	|将输入法默认状态设置到缓冲区，然后再从缓冲区获取私有状态。
+SetupPunctuationPair()				|
+SetupLanguageBar()					|
+SetupKeystroke()					|
+SetupConfiguration()				|
+SetupDictionaryFile()				|

@@ -112,9 +112,9 @@ extern HFONT defaultlFontHandle;  // Global font object we use everywhere
 
 extern const CLSID SampleIMECLSID;
 extern const CLSID SampleIMEGuidProfile;
-extern const CLSID SampleIMEGuidImeModePreserveKey;
-extern const CLSID SampleIMEGuidDoubleSingleBytePreserveKey;
-extern const CLSID SampleIMEGuidPunctuationPreserveKey;
+extern const CLSID SampleIMEGuidImeModePreserveKey;//中/英
+extern const CLSID SampleIMEGuidDoubleSingleBytePreserveKey;//全角/半角
+extern const CLSID SampleIMEGuidPunctuationPreserveKey;//中文标点
 
 LRESULT CALLBACK ThreadKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam);
 BOOL CheckModifiers(UINT uModCurrent, UINT uMod);
