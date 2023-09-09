@@ -69,7 +69,7 @@ extern const GUID SampleIMEGuidPunctuationPreserveKey = {
 };
 
 //---------------------------------------------------------------------
-// Compartments
+// Compartments全角/半角
 //---------------------------------------------------------------------
 // {101011C5-CF72-4F0C-A515-153019593F10}
 extern const GUID SampleIMEGuidCompartmentDoubleSingleByte = {
@@ -79,7 +79,7 @@ extern const GUID SampleIMEGuidCompartmentDoubleSingleByte = {
     { 0xa5, 0x15, 0x15, 0x30, 0x19, 0x59, 0x3f, 0x10 }
 };
 
-// {DD321BCC-A7F8-4561-9B61-9B3508C9BA97}
+// {DD321BCC-A7F8-4561-9B61-9B3508C9BA97}中文标点
 extern const GUID SampleIMEGuidCompartmentPunctuation = {
     0xdd321bcc,
     0xa7f8,

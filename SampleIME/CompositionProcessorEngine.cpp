@@ -1076,7 +1076,7 @@ void CCompositionProcessorEngine::SetupPunctuationPair()
 
 void CCompositionProcessorEngine::InitializeSampleIMECompartment(_In_ ITfThreadMgr *pThreadMgr, TfClientId tfClientId)
 {
-	// set initial mode
+	// set initial mode https://learn.microsoft.com/zh-cn/windows/win32/tsf/predefined-compartments
     CCompartment CompartmentKeyboardOpen(pThreadMgr, tfClientId, GUID_COMPARTMENT_KEYBOARD_OPENCLOSE);
     CompartmentKeyboardOpen._SetCompartmentBOOL(TRUE);
 
@@ -1217,18 +1217,18 @@ void CCompositionProcessorEngine::PrivateCompartmentsUpdated(_In_ ITfThreadMgr *
     BOOL isDouble = FALSE;
     CCompartment CompartmentDoubleSingleByte(pThreadMgr, _tfClientId, Global::SampleIMEGuidCompartmentDoubleSingleByte);
     if (SUCCEEDED(CompartmentDoubleSingleByte._GetCompartmentBOOL(isDouble)))
-    {
-        if (!isDouble && (conversionMode & TF_CONVERSIONMODE_FULLSHAPE))
+    {//https://learn.microsoft.com/zh-cn/windows/win32/tsf/flags-for-conversion-mode
+        if (!isDouble && (conversionMode & TF_CONVERSIONMODE_FULLSHAPE))//如果isDouble==FALSE，而且当前状态是全角状态
         {
-            conversionMode &= ~TF_CONVERSIONMODE_FULLSHAPE;
+            conversionMode &= ~TF_CONVERSIONMODE_FULLSHAPE;//设置为非全角状态
         }
-        else if (isDouble && !(conversionMode & TF_CONVERSIONMODE_FULLSHAPE))
+        else if (isDouble && !(conversionMode & TF_CONVERSIONMODE_FULLSHAPE))//如果isDouble==TRUE，而且当前状态不是全角状态
         {
-            conversionMode |= TF_CONVERSIONMODE_FULLSHAPE;
+            conversionMode |= TF_CONVERSIONMODE_FULLSHAPE;//设置为全角状态
         }
     }
 
-    BOOL isPunctuation = FALSE;
+    BOOL isPunctuation = FALSE;//标点符号
     CCompartment CompartmentPunctuation(pThreadMgr, _tfClientId, Global::SampleIMEGuidCompartmentPunctuation);
     if (SUCCEEDED(CompartmentPunctuation._GetCompartmentBOOL(isPunctuation)))
     {

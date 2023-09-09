@@ -1,6 +1,6 @@
 ## 3.12 合成处理器引擎
 
-在输入法被激活时，调用CSampleIME::_AddTextProcessorEngine()方法，初始化输入法设置。
+在输入法被激活时，调用CSampleIME::_AddTextProcessorEngine()方法，设置输入法配置。
 
 ## 3.12.1 获取语言配置文件
 
@@ -41,9 +41,9 @@
 Function							|Description
 -|-
 SetupPreserved()					|设置输入法状态开关快捷键。
-InitializeSampleIMECompartment()	|将输入法默认状态设置到缓冲区，然后再从缓冲区获取私有状态。
-SetupPunctuationPair()				|
-SetupLanguageBar()					|
+InitializeSampleIMECompartment()	|将输入法默认状态设置到缓冲区。
+SetupPunctuationPair()				|设置标点对。
+SetupLanguageBar()					|设置语言栏。
 SetupKeystroke()					|
 SetupConfiguration()				|
 SetupDictionaryFile()				|

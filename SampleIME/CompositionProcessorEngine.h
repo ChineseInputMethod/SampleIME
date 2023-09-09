@@ -163,13 +163,13 @@ private:
     XPreservedKey _PreservedKey_Punctuation;//中文标点
 
     // Punctuation data
-    CSampleImeArray<CPunctuationPair> _PunctuationPair;
-    CSampleImeArray<CPunctuationNestPair> _PunctuationNestPair;
+    CSampleImeArray<CPunctuationPair> _PunctuationPair;//"'
+    CSampleImeArray<CPunctuationNestPair> _PunctuationNestPair;//<>
 
     // Language bar data
-    CLangBarItemButton* _pLanguageBar_IMEMode;
-    CLangBarItemButton* _pLanguageBar_DoubleSingleByte;
-    CLangBarItemButton* _pLanguageBar_Punctuation;
+    CLangBarItemButton* _pLanguageBar_IMEMode;//中/英
+    CLangBarItemButton* _pLanguageBar_DoubleSingleByte;//全角/半角
+    CLangBarItemButton* _pLanguageBar_Punctuation;//中文标点
 
     // Compartment
     CCompartment* _pCompartmentConversion;
