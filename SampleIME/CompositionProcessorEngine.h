@@ -138,7 +138,7 @@ private:
     GUID _guidProfile;
     TfClientId  _tfClientId;
 
-    CSampleImeArray<_KEYSTROKE> _KeystrokeComposition;
+    CSampleImeArray<_KEYSTROKE> _KeystrokeComposition;//A-Z
     CSampleImeArray<_KEYSTROKE> _KeystrokeCandidate;
     CSampleImeArray<_KEYSTROKE> _KeystrokeCandidateWildcard;
     CSampleImeArray<_KEYSTROKE> _KeystrokeCandidateSymbol;

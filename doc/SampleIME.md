@@ -62,7 +62,3 @@ Interface			|Description
 [11]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfFunction.md
 
 >https://learn.microsoft.com/zh-cn/windows/apps/design/input/input-method-editor-requirements#ime-and-touch-keyboard
-
-## 3.5.3 初始化输入法
-
-调用_AddTextProcessorEngine()完成后，ActivateEx()方法退出。TSF管理器按照输入法的配置初始化输入法。

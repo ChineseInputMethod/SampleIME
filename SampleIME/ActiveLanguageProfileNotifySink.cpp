@@ -47,9 +47,9 @@ STDAPI CSampleIME::OnActivated(_In_ REFCLSID clsid, _In_ REFGUID guidProfile, _I
 
     if (isActivated)
     {
-        _pCompositionProcessorEngine->ShowAllLanguageBarIcons();
+        _pCompositionProcessorEngine->ShowAllLanguageBarIcons();//和语言栏状态比较
 
-        _pCompositionProcessorEngine->ConversionModeCompartmentUpdated(_pThreadMgr);
+        _pCompositionProcessorEngine->ConversionModeCompartmentUpdated(_pThreadMgr);//和线程状态比较
     }
     else
     {

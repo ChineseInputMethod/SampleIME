@@ -43,7 +43,16 @@ Function							|Description
 SetupPreserved()					|设置输入法状态开关快捷键。
 InitializeSampleIMECompartment()	|将输入法默认状态设置到缓冲区。
 SetupPunctuationPair()				|设置标点对。
-SetupLanguageBar()					|设置语言栏。
-SetupKeystroke()					|
-SetupConfiguration()				|
-SetupDictionaryFile()				|
+SetupLanguageBar()					|设置输入法状态开关。
+SetupKeystroke()					|设置编码键。
+SetupConfiguration()				|设置候选栏。
+SetupDictionaryFile()				|打开输入法词典文件。
+
+## 3.12.4 完成初始化
+
+调用_AddTextProcessorEngine()完成后，ActivateEx()方法退出，输入法完成初始化。
+然后根据安装的事件接收器，开始进入工作状态。
+
+首先ITfActiveLanguageProfileNotifySink::OnActivated()方法被调用。这是输入法做为普通应用程序响应键盘布局激活事件。
+
+然后ITfThreadMgrEventSink::OnSetFocus()方法被调用，这是输入法做为普通应用程序响应输入焦点事件。

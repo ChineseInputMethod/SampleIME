@@ -1,6 +1,6 @@
 ## 3.15 语言栏
 
-语言栏，用来设置输入法状态开关。
+语言栏，设置输入法状态开关。
 
 ## 3.15.1 语言栏项管理器
 
@@ -55,13 +55,13 @@ STDAPI CLangBarItemButton::GetInfo(_Out_ TF_LANGBARITEMINFO *pInfo)
 
 ## 3.15.3 语言栏项消息接收器
 
-Interface						|Description
+Interface				|Description
 -|-
 [ITfLangBarItemSink][3]	|语言栏项消息接收器，用于将语言栏项中的更改通知语言栏。
 
 [3]: https://github.com/ChineseInputMethod/Interface/blob/master/LanguageBar/ITfLangBarItemSink.md
 
-安装ITfCompartmentEventSink公共缓冲池事件接收器后，当公共缓冲池发生改变时，ITfCompartmentEventSink::OnChange()函数将被调用。
+当调用ITfLangBarItemMgr::AddItem()方法，将语言栏项（输入法）安装到语言栏后，语言栏（系统）立即调用ITfSource::AdviseSink()方法，将ITfLangBarItemSink语言栏项消息接收器安装到语言栏项（输入法）中。
 
 ```C++
 STDAPI CLangBarItemButton::AdviseSink(__RPC__in REFIID riid, __RPC__in_opt IUnknown *punk, __RPC__out DWORD *pdwCookie)
@@ -95,10 +95,27 @@ STDAPI CLangBarItemButton::AdviseSink(__RPC__in REFIID riid, __RPC__in_opt IUnkn
 }
 ```
 
+当更改输入法状态时，输入法调用ITfLangBarItemSink::OnUpdate()方法，通知语言栏（系统）。
+
 ## 3.15.4 语言栏按钮项信息
 
-Interface						|Description
+Interface					|Description
 -|-
-[ITfLangBarItemSink][3]	|语言栏项消息接收器，用于将语言栏项中的更改通知语言栏。
+[ITfLangBarItemButton][4]	|语言栏按钮项信息，由语言栏管理器用来获取语言栏上的按钮项信息。
 
-[3]: https://github.com/ChineseInputMethod/Interface/blob/master/LanguageBar/ITfLangBarItemSink.md
+[4]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfLangBarItemButton.md
+
+```C++
+STDAPI CLangBarItemButton::OnClick(TfLBIClick click, POINT pt, _In_ const RECT *prcArea)
+{
+    click;pt;
+    prcArea;
+
+    BOOL isOn = FALSE;
+
+    _pCompartment->_GetCompartmentBOOL(isOn);
+    _pCompartment->_SetCompartmentBOOL(isOn ? FALSE : TRUE);
+
+    return S_OK;
+}
+```
