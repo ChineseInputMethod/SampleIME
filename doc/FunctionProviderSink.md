@@ -1,8 +1,8 @@
-## 3.11 扩展功能提供者
+## 3.10 扩展功能提供者
 
 扩展功能提供者，提供各种函数对象。
 
-## 3.11.1 安装扩展功能提供者
+## 3.10.1 安装扩展功能提供者
 
 Interface				|Description
 -|-
@@ -26,7 +26,7 @@ Interface				|Description
     }
 ```
 
-## 3.11.2 获取指定的函数对象
+## 3.10.2 获取指定的函数对象
 
 安装扩展功能提供者后，TSF管理器会调用CSampleIME::GetFunction()方法，获取指定的函数对象。
 
@@ -57,7 +57,7 @@ HRESULT CSampleIME::GetFunction(__RPC__in REFGUID rguid, __RPC__in REFIID riid, 
 }
 ```
 
-## 3.11.3 搜索集成
+## 3.10.3 搜索集成
 
 >https://learn.microsoft.com/zh-cn/windows/apps/design/input/input-method-editor-requirements#ime-search-integration
 
