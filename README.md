@@ -38,7 +38,7 @@ Source Files														|Document
 [Compartment.cpp](doc/Compartment.md)								|公共缓冲池，用来保存输入法状态开关。
 [LanguageBar.cpp](doc/LanguageBar.md)								|语言栏，设置输入法状态开关。
 
-## 当按下编码键之后
+## 处理按键事件
 
 Source Files																	|Document
 -|-

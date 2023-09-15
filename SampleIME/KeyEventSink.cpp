@@ -34,7 +34,7 @@ __inline UINT VKeyFromVKPacketAndWchar(UINT vk, WCHAR wch)
         }
         else if ((wch >= L'a') && (wch <= L'z'))
         {
-            vkRet = (UINT)(L'A') + ((UINT)(L'z') - static_cast<UINT>(wch));
+            vkRet = (UINT)(L'A') + ((UINT)(L'z') - static_cast<UINT>(wch));//?
         }
         else if ((wch >= L'A') && (wch <= L'Z'))
         {
@@ -96,7 +96,7 @@ BOOL CSampleIME::_IsKeyEaten(_In_ ITfContext *pContext, UINT codeIn, _Out_ UINT 
     // Map virtual key to character code
     //
     BOOL isTouchKeyboardSpecialKeys = FALSE;
-    WCHAR wch = ConvertVKey(codeIn);
+    WCHAR wch = ConvertVKey(codeIn);//将虚拟键转换为字符
     *pCodeOut = VKeyFromVKPacketAndWchar(codeIn, wch);
     if ((wch == THIRDPARTY_NEXTPAGE) || (wch == THIRDPARTY_PREVPAGE))
     {
@@ -307,12 +307,12 @@ STDAPI CSampleIME::OnTestKeyDown(ITfContext *pContext, WPARAM wParam, LPARAM lPa
 //----------------------------------------------------------------------------
 
 STDAPI CSampleIME::OnKeyDown(ITfContext *pContext, WPARAM wParam, LPARAM lParam, BOOL *pIsEaten)
-{
-    Global::UpdateModifiers(wParam, lParam);
+{//https://learn.microsoft.com/zh-cn/windows/win32/inputdev/about-keyboard-input
+    Global::UpdateModifiers(wParam, lParam);//更新全局变量::ModifiersValue
 
     _KEYSTROKE_STATE KeystrokeState;
-    WCHAR wch = '\0';
-    UINT code = 0;
+    WCHAR wch = '\0';//字符
+    UINT code = 0;//虚拟码
 
     *pIsEaten = _IsKeyEaten(pContext, (UINT)wParam, &code, &wch, &KeystrokeState);
 
