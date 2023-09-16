@@ -1494,7 +1494,7 @@ void CCompositionProcessorEngine::InitKeyStrokeTable()
     {
         _keystrokeTable[i].VirtualKey = 'A' + i;
         _keystrokeTable[i].Modifiers = 0;
-        _keystrokeTable[i].Function = FUNCTION_INPUT;
+        _keystrokeTable[i].Function = FUNCTION_INPUT;//编码键
     }
 }
 
@@ -1833,7 +1833,7 @@ BOOL CCompositionProcessorEngine::IsVirtualKeyKeystrokeComposition(UINT uCode, _
         {
             if (function == FUNCTION_NONE)
             {
-                pKeyState->Category = CATEGORY_COMPOSING;
+                pKeyState->Category = CATEGORY_COMPOSING;//编码键
                 pKeyState->Function = pKeystroke->Function;
                 return TRUE;
             }

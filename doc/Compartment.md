@@ -1,10 +1,10 @@
-## 3.13 公共缓冲池
+## 3.14 公共缓冲池
 
 公共缓冲池，用来保存输入法状态开关。
 
 >作者并不真正理解Compartment的含义，这里也有可能是COM的套间技术，总之有个隔离区域保存输入法的配置。
 
-## 3.13.1 公共缓冲池管理器
+## 3.14.1 公共缓冲池管理器
 
 Interface				|Description
 -|-
@@ -29,7 +29,7 @@ HRESULT CCompartment::_GetCompartment(_Outptr_ ITfCompartment **ppCompartment)
 }
 ```
 
-## 3.13.2 操作公共缓冲池
+## 3.14.2 操作公共缓冲池
 
 Interface			|Description
 -|-
@@ -57,7 +57,7 @@ HRESULT CCompartment::_SetCompartmentBOOL(_In_ BOOL flag)
 }
 ```
 
-## 3.13.3 公共缓冲池事件接收器
+## 3.14.3 公共缓冲池事件接收器
 
 Interface						|Description
 -|-

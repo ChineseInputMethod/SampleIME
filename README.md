@@ -25,6 +25,7 @@ Source Files																	|Document
 [SampleIME.cpp](doc/SampleIME.md)												|TSF文本服务框架，扩展了对无界面元素程序和触摸键盘支持。
 [ThreadMgrEventSink.cpp](doc/ThreadMgrEventSink.md)								|线程管理器事件接收器，主要处理焦点事件。
 [TextEditSink.cpp](doc/TextEditSink.md)											|编辑会话完成消息接收器，用于感知其他文本服务对编辑内容的更改。
+[KeyEventSink.cpp](doc/KeyEventSink.md)											|键盘事件接收器，用于接收按键和虚拟按键事件。
 [ActiveLanguageProfileNotifySink.cpp](doc/ActiveLanguageProfileNotifySink.md)	|语言配置激活消息接收器，当更改激活语言配置文件时，框架调用接收器。
 [ThreadFocusSink.cpp](doc/ThreadFocusSink.md)									|线程输入焦点消息接收器，在线程接收或失去UI焦点时接收通知。
 [FunctionProviderSink.cpp](doc/FunctionProviderSink.md)							|扩展功能提供者，提供各种函数对象。
@@ -37,14 +38,15 @@ Source Files														|Document
 [TfInputProcessorProfile.cpp](doc/TfInputProcessorProfile.md)		|文本服务语言配置，用来操作一个或多个文本服务的语言配置文件。
 [Compartment.cpp](doc/Compartment.md)								|公共缓冲池，用来保存输入法状态开关。
 [LanguageBar.cpp](doc/LanguageBar.md)								|语言栏，设置输入法状态开关。
+[File.cpp](doc/File.md)												|文件，打开码表文件。
+[FileMapping.cpp](doc/FileMapping.md)								|文件映射，将码表文件创建为文件映射对象。
 
 ## 处理按键事件
 
 Source Files																	|Document
 -|-
-[KeyEventSink.cpp](doc/KeyEventSink.md)											|键盘事件接收器，用于接收按键和虚拟按键事件。
-[KeyHandler.cpp](doc/KeyHandler.md)												|处理按键。
-[EditSession.cpp](doc/EditSession.md)											|编辑会话。
+[KeyHandler.cpp](doc/KeyHandler.md)												|按键处理器，用来处理按键事件。
+[EditSession.cpp](doc/EditSession.md)											|编辑会话基接口，本章工程所有编辑会话均继承此接口。
 [KeyHandlerEditSession.cpp](doc/KeyHandlerEditSession.md)						|按键处理编辑会话。
 [KeyStateCategory.cpp](doc/KeyStateCategory.md)									|按键处理分类。
 
@@ -71,8 +73,6 @@ Source Files																	|Document
 [EndComposition.cpp](doc/EndComposition.md)										|结束输入。
 [EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)					|显示属性信息对象枚举器。
 [EnumTfCandidates.cpp](doc/EnumTfCandidates.md)									|候选文字串对象枚举器。
-[File.cpp](doc/File.md)															|文件，读取词典文件。
-[FileMapping.cpp](doc/FileMapping.md)											|文件映射对象，将词典文件映射为内存数组。
 [TfTextLayoutSink.cpp](doc/TfTextLayoutSink.md)		|文本布局消息接收器。
 [SampleIMEBaseStructure.cpp](doc/SampleIMEBaseStructure.md)						|数据结构。
 [SearchCandidateProvider.cpp](doc/SearchCandidateProvider.md)					|搜索候选提供者。

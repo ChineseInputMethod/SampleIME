@@ -71,9 +71,9 @@ BOOL CFile::CreateFile(_In_ PCWSTR pFileName, DWORD desiredAccess,
     }
 
     StringCchCopyN(_pFileName, fullPathLen + 1, pFileName, fullPathLen);
-
-    _fileHandle = ::CreateFile(pFileName, desiredAccess, sharedMode,
-        lpSecurityAttributes, creationDisposition, flagsAndAttributes, templateFileHandle);
+    //https://learn.microsoft.com/zh-cn/windows/win32/api/fileapi/nf-fileapi-createfilew
+    _fileHandle = ::CreateFile(pFileName, desiredAccess, sharedMode, //要创建或打开的文件或设备的名称,请求对文件或设备的访问权限,请求的文件或设备的共享模式
+        lpSecurityAttributes, creationDisposition, flagsAndAttributes, templateFileHandle);//指向 SECURITY_ATTRIBUTES 结构的指针,要对存在或不存在的文件或设备执行的操作,文件或设备属性和标志,具有 GENERIC_READ 访问权限的模板文件的有效句柄
 
     if (_fileHandle == INVALID_HANDLE_VALUE)
     {

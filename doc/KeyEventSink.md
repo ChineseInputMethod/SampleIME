@@ -1,8 +1,8 @@
-## 3.15 键盘事件接收器
+## 3.8 键盘事件接收器
 
 键盘事件接收器，用于接收按键和虚拟按键事件。
 
-## 3.15.1 安装键盘事件接收器
+## 3.8.1 安装键盘事件接收器
 
 Interface				|Description
 -|-
@@ -19,7 +19,7 @@ Interface				|Description
     hr = pKeystrokeMgr->AdviseKeyEventSink(_tfClientId, (ITfKeyEventSink *)this, TRUE);
 ```
 
-## 3.15.2 预处理按键
+## 3.8.2 预处理按键
 
 当按下和释放按键时，OnTestKeyDown()和OnTestKeyUp()方法将被调用。
 OnTestKeyDown()和OnTestKeyUp()方法调用_IsKeyEaten()函数，判断是否需要继续处理按键事件。
@@ -27,7 +27,7 @@ OnTestKeyDown()和OnTestKeyUp()方法调用_IsKeyEaten()函数，判断是否需
 
 >如果用wordpad.exe调试输入法，不会调用OnTestKeyDown()和OnTestKeyUp()函数。
 
-## 3.15.3 处理按键事件
+## 3.8.3 处理按键事件
 
 Interface				|Description
 -|-

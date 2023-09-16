@@ -1,8 +1,8 @@
-## 3.14 语言栏
+## 3.15 语言栏
 
 语言栏，设置输入法状态开关。
 
-## 3.14.1 语言栏项管理器
+## 3.15.1 语言栏项管理器
 
 Interface				|Description
 -|-
@@ -36,7 +36,7 @@ HRESULT CLangBarItemButton::_AddItem(_In_ ITfThreadMgr *pThreadMgr)
 }
 ```
 
-## 3.14.2 语言栏项信息
+## 3.15.2 语言栏项信息
 
 Interface			|Description
 -|-
@@ -53,7 +53,7 @@ STDAPI CLangBarItemButton::GetInfo(_Out_ TF_LANGBARITEMINFO *pInfo)
 }
 ```
 
-## 3.14.3 语言栏项消息接收器
+## 3.15.3 语言栏项消息接收器
 
 Interface				|Description
 -|-
@@ -97,7 +97,7 @@ STDAPI CLangBarItemButton::AdviseSink(__RPC__in REFIID riid, __RPC__in_opt IUnkn
 
 当更改输入法状态时，输入法调用ITfLangBarItemSink::OnUpdate()方法，通知语言栏（系统）。
 
-## 3.14.4 语言栏按钮项信息
+## 3.15.4 语言栏按钮项信息
 
 Interface					|Description
 -|-
