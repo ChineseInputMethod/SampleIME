@@ -14050,10 +14050,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -16432,10 +16433,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION {code} {wch}</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -16652,10 +16654,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION {ec}</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />

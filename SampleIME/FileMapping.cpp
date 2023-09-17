@@ -52,15 +52,15 @@ BOOL CFileMapping::SetupReadBuffer()
 {
     if (_fileSize > sizeof(WCHAR))
     {
-        //
-        // Read file in file mapping
         //文件映射对象
+        // Read file in file mapping
+        //https://learn.microsoft.com/zh-cn/windows/win32/api/memoryapi/nf-memoryapi-createfilemappingw
         _fileMappingHandle = CreateFileMapping(_fileHandle, NULL, PAGE_READONLY, 0, 0, NULL);
         if (_fileMappingHandle)
-        {
+        {//https://learn.microsoft.com/zh-cn/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile
             _pMapBuffer = (const WCHAR *)MapViewOfFile(_fileMappingHandle, FILE_MAP_READ, 0, 0, 0);
             if (_pMapBuffer)
-            {
+            {//https://learn.microsoft.com/zh-cn/windows/win32/api/winbase/nf-winbase-istextunicode
                 if (IsTextUnicode(_pMapBuffer, (int)_fileSize, NULL))
                 {
                     _pReadBuffer = (WCHAR*)_pMapBuffer;

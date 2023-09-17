@@ -1,8 +1,8 @@
-## 3.16 按键处理器
+## 3.18 按键处理器
 
 按键处理器，用来处理按键事件。
 
-## 3.16.1 发起编辑会话
+## 3.18.1 发起编辑会话
 
 当按下键盘按键，TSF管理器会调用输入法的OnKeyDown()方法。
 当输入法处理该按键时，调用_InvokeKeyHandler()方法处理按键事件。
@@ -37,7 +37,7 @@ Exit:
 }
 ```
 
-## 3.16.2 处理编码键
+## 3.18.2 处理编码键
 
 ```C++
 HRESULT CSampleIME::_HandleCompositionInput(TfEditCookie ec, _In_ ITfContext *pContext, WCHAR wch)
