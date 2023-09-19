@@ -43,12 +43,12 @@ Source Files														|Document
 
 ## 处理按键事件
 
-Source Files																	|Document
+Source Files												|Document
 -|-
-[KeyHandler.cpp](doc/KeyHandler.md)												|按键处理器，用来处理按键事件。
-[EditSession.cpp](doc/EditSession.md)											|编辑会话基接口，本章工程所有编辑会话均继承此接口。
-[KeyHandlerEditSession.cpp](doc/KeyHandlerEditSession.md)						|按键处理编辑会话，在会话中按照按键分类调用相应处理函数。
-[KeyStateCategory.cpp](doc/KeyStateCategory.md)									|按键处理分类，按照按键分类调用相应处理函数。
+[KeyHandler.cpp](doc/KeyHandler.md)							|按键处理器，用来处理按键事件。
+[EditSession.cpp](doc/EditSession.md)						|编辑会话基接口，本章工程所有编辑会话均继承此接口。
+[KeyHandlerEditSession.cpp](doc/KeyHandlerEditSession.md)	|按键处理编辑会话，在会话中按照按键分类调用相应处理函数。
+[KeyStateCategory.cpp](doc/KeyStateCategory.md)				|按键处理分类，按照按键分类调用相应处理函数。
 
 ## 3.4 
 

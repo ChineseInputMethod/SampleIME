@@ -29,19 +29,19 @@
 BOOL CSampleIME::_IsRangeCovered(TfEditCookie ec, _In_ ITfRange *pRangeTest, _In_ ITfRange *pRangeCover)
 {
     LONG lResult = 0;;
-
+//https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nf-msctf-itfrange-comparestart
     if (FAILED(pRangeCover->CompareStart(ec, pRangeTest, TF_ANCHOR_START, &lResult)) 
         || (lResult > 0))
     {
         return FALSE;
-    }
-
+    }//感觉文档说反了，如果lResult > 0，this开始点应该位于that开始点之后
+//https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/nf-msctf-itfrange-compareend
     if (FAILED(pRangeCover->CompareEnd(ec, pRangeTest, TF_ANCHOR_END, &lResult)) 
         || (lResult < 0))
     {
         return FALSE;
     }
-
+//同样感觉文档说反了，如果lResult < 0，this结束点应该位于that结束点之前
     return TRUE;
 }
 

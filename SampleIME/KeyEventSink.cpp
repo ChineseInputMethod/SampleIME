@@ -194,7 +194,7 @@ WCHAR CSampleIME::ConvertVKey(UINT code)
     if (!GetKeyboardState(abKbdState))
     {
         return 0;
-    }
+    }//大小写字母在同一按键上，因此扫描码和虚键是一样的，所以必须读取整个键盘状态，具体为大小写锁定键状态，才能判断按下的是大写字符还是小写字符。
 
     //
     // Map virtual key to character code

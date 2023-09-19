@@ -95,7 +95,7 @@ Exit:
 //////////////////////////////////////////////////////////////////////
 
 //+---------------------------------------------------------------------------
-//开始输入
+//开始合成
 // _StartComposition
 //
 // this starts the new (std::nothrow) composition at the selection of the current 

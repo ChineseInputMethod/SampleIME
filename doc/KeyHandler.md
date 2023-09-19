@@ -39,6 +39,11 @@ Exit:
 
 ## 3.18.2 处理编码键
 
+当按下编码键后，如果没有开始合成，则开始合成，保存合成上下文。<br>
+然后获取当前插入范围,与合成范围比较，如果合成范围不覆盖插入点，则不继续处理。<br>
+然后将编码保存到合成处理器引擎。<br>
+最后调用_HandleCompositionInputWorker()，开始处理编码。
+
 ```C++
 HRESULT CSampleIME::_HandleCompositionInput(TfEditCookie ec, _In_ ITfContext *pContext, WCHAR wch)
 {
@@ -90,3 +95,5 @@ Exit:
     return S_OK;
 }
 ```
+
+## 3.18.3 处理编码
