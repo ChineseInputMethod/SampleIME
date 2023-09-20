@@ -56,3 +56,5 @@ SetupDictionaryFile()				|打开输入法词典文件。
 首先ITfActiveLanguageProfileNotifySink::OnActivated()方法被调用。这是输入法做为普通应用程序响应键盘布局激活事件。
 然后ITfLangBarItemButton接口被调用，这是因为输入法在语言栏中安装了三个按钮，语言栏调用按钮信息。
 至此，输入法进入工作状态，等待响应事件。
+
+## 3.12.5 获取候选列表

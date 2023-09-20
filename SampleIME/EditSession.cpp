@@ -55,7 +55,7 @@ STDAPI CEditSessionBase::QueryInterface(REFIID riid, _Outptr_ void **ppvObj)
     if (IsEqualIID(riid, IID_IUnknown) ||
         IsEqualIID(riid, IID_ITfEditSession))
     {
-        *ppvObj = (ITfLangBarItemButton *)this;
+        *ppvObj = (ITfLangBarItemButton *)this;//不明白为何这样
     }
 
     if (*ppvObj)

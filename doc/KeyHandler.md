@@ -39,7 +39,7 @@ Exit:
 
 ## 3.18.2 处理编码键
 
-当按下编码键后，如果没有开始合成，则开始合成，保存合成上下文。<br>
+当按下编码键后，如果没有开始合成，则开始合成，保存合成以及上下文。<br>
 然后获取当前插入范围,与合成范围比较，如果合成范围不覆盖插入点，则不继续处理。<br>
 然后将编码保存到合成处理器引擎。<br>
 最后调用_HandleCompositionInputWorker()，开始处理编码。
@@ -97,3 +97,56 @@ Exit:
 ```
 
 ## 3.18.3 处理编码
+
+```C++
+HRESULT CSampleIME::_HandleCompositionInputWorker(_In_ CCompositionProcessorEngine *pCompositionProcessorEngine, TfEditCookie ec, _In_ ITfContext *pContext)
+{
+    HRESULT hr = S_OK;
+    CSampleImeArray<CStringRange> readingStrings;
+    BOOL isWildcardIncluded = TRUE;
+
+    //
+    // Get reading string from composition processor engine
+    //
+    pCompositionProcessorEngine->GetReadingStrings(&readingStrings, &isWildcardIncluded);
+
+    for (UINT index = 0; index < readingStrings.Count(); index++)
+    {
+        hr = _AddComposingAndChar(ec, pContext, readingStrings.GetAt(index));
+        if (FAILED(hr))
+        {
+            return hr;
+        }
+    }
+
+    //
+    // Get candidate string from composition processor engine
+    //
+    CSampleImeArray<CCandidateListItem> candidateList;
+
+    pCompositionProcessorEngine->GetCandidateList(&candidateList, TRUE, FALSE);
+
+    if ((candidateList.Count()))
+    {
+        hr = _CreateAndStartCandidate(pCompositionProcessorEngine, ec, pContext);
+        if (SUCCEEDED(hr))
+        {
+            _pCandidateListUIPresenter->_ClearList();
+            _pCandidateListUIPresenter->_SetText(&candidateList, TRUE);
+        }
+    }
+    else if (_pCandidateListUIPresenter)
+    {
+        _pCandidateListUIPresenter->_ClearList();
+    }
+    else if (readingStrings.Count() && isWildcardIncluded)
+    {
+        hr = _CreateAndStartCandidate(pCompositionProcessorEngine, ec, pContext);
+        if (SUCCEEDED(hr))
+        {
+            _pCandidateListUIPresenter->_ClearList();
+        }
+    }
+    return hr;
+}
+```

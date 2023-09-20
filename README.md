@@ -30,7 +30,7 @@ Source Files																	|Document
 [ThreadFocusSink.cpp](doc/ThreadFocusSink.md)									|线程输入焦点消息接收器，在线程接收或失去UI焦点时接收通知。
 [FunctionProviderSink.cpp](doc/FunctionProviderSink.md)							|扩展功能提供者，提供各种函数对象。
 
-## 配置输入法
+## 输入法配置
 
 Source Files														|Document
 -|-
@@ -41,16 +41,16 @@ Source Files														|Document
 [File.cpp](doc/File.md)												|文件，打开码表文件。
 [FileMapping.cpp](doc/FileMapping.md)								|文件映射，将码表文件创建为文件映射对象。
 
-## 处理按键事件
+## 按键事件
 
 Source Files												|Document
 -|-
 [KeyHandler.cpp](doc/KeyHandler.md)							|按键处理器，用来处理按键事件。
 [EditSession.cpp](doc/EditSession.md)						|编辑会话基接口，本章工程所有编辑会话均继承此接口。
 [KeyHandlerEditSession.cpp](doc/KeyHandlerEditSession.md)	|按键处理编辑会话，在会话中按照按键分类调用相应处理函数。
-[KeyStateCategory.cpp](doc/KeyStateCategory.md)				|按键处理分类，按照按键分类调用相应处理函数。
+[KeyStateCategory.cpp](doc/KeyStateCategory.md)				|按键分类，按照按键分类调用相应处理函数。
 
-## 3.4 
+## 候选列表
 
 Source Files																	|Document
 -|-

@@ -127,7 +127,7 @@ STDAPI CSampleIME::QueryInterface(REFIID riid, _Outptr_ void **ppvObj)
     }
     else if (IsEqualIID(riid, IID_ITfTextInputProcessorEx))
     {
-        *ppvObj = (ITfTextInputProcessorEx *)this;
+         *ppvObj = (ITfTextInputProcessorEx *)this;
     }
     else if (IsEqualIID(riid, IID_ITfThreadMgrEventSink))
     {
