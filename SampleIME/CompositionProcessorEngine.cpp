@@ -275,7 +275,7 @@ BOOL CCompositionProcessorEngine::AddVirtualKey(WCHAR wch)
     {
         delete [] _keystrokeBuffer.Get();
     }
-
+//编码实际保存位置
     _keystrokeBuffer.Set(pwch, srgKeystrokeBufLen + 1);
 
     return TRUE;

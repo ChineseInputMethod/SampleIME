@@ -98,6 +98,18 @@ Exit:
 
 ## 3.18.3 处理编码
 
+假设最简单的场景，既只输入一个编码“a”。那么输入法主要完成两项工作：<br>
+1、在输入窗口显示编码“a”。<br>
+2、在候选窗口显示汉字“啊……”。
+
+在TSF框架里编码是由TSF管理器控制的，所以输入法仅仅是将编码写入Composition合成。<br>
+Windows程序习惯将数据与视图分离，所以有单独的CandidateList候选列表数据处理过程。
+
+在CSampleIME::_HandleCompositionInputWorker()函数中，首先从合成处理器引擎中获取汉字编码。<br>
+然后将汉字编码写入Composition合成。<br>
+接着获取CandidateList候选列表。<br>
+最后将CandidateList候选列表写入候选列表UI控制器。
+
 ```C++
 HRESULT CSampleIME::_HandleCompositionInputWorker(_In_ CCompositionProcessorEngine *pCompositionProcessorEngine, TfEditCookie ec, _In_ ITfContext *pContext)
 {
@@ -150,3 +162,9 @@ HRESULT CSampleIME::_HandleCompositionInputWorker(_In_ CCompositionProcessorEngi
     return hr;
 }
 ```
+
+>_AddComposingAndChar(ec, pContext, readingStrings.GetAt(index))将在合成主题讲解。
+GetCandidateList(&candidateList, TRUE, FALSE)将在候选列表主题讲解。
+_pCandidateListUIPresenter->_SetText(&candidateList, TRUE)将在候选窗口主题讲解。
+
+其他更复杂的编码处理，将在后续主题讲解。

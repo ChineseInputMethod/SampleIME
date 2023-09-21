@@ -77,7 +77,7 @@ HRESULT CSampleIME::_AddComposingAndChar(TfEditCookie ec, _In_ ITfContext *pCont
 
     ULONG fetched = 0;
     TF_SELECTION tfSelection;
-
+    //当前插入点
     if (pContext->GetSelection(ec, TF_DEFAULT_SELECTION, 1, &tfSelection, &fetched) != S_OK || fetched == 0)
         return S_FALSE;
 
@@ -85,14 +85,14 @@ HRESULT CSampleIME::_AddComposingAndChar(TfEditCookie ec, _In_ ITfContext *pCont
     // make range start to selection
     //
     ITfRange* pAheadSelection = nullptr;
-    hr = pContext->GetStart(ec, &pAheadSelection);
+    hr = pContext->GetStart(ec, &pAheadSelection);//上下文开始
     if (SUCCEEDED(hr))
     {
-        hr = pAheadSelection->ShiftEndToRange(ec, tfSelection.range, TF_ANCHOR_START);
+        hr = pAheadSelection->ShiftEndToRange(ec, tfSelection.range, TF_ANCHOR_START);//将文本范围设置为从上下文开始到当前插入点
         if (SUCCEEDED(hr))
         {
             ITfRange* pRange = nullptr;
-            BOOL exist_composing = _FindComposingRange(ec, pContext, pAheadSelection, &pRange);
+            BOOL exist_composing = _FindComposingRange(ec, pContext, pAheadSelection, &pRange);//查找合成范围
 
             _SetInputString(ec, pContext, pRange, pstrAddString, exist_composing);
 
@@ -146,9 +146,9 @@ HRESULT CSampleIME::_AddCharAndFinalize(TfEditCookie ec, _In_ ITfContext *pConte
 }
 
 //+---------------------------------------------------------------------------
-//
+//查找合成范围
 // _FindComposingRange
-//
+//编码以合成方式，已经存在于上下文中了！也就是说，编码已经被预写入上下文中了！这是日韩输入法与中文输入法的差别之处。
 //----------------------------------------------------------------------------
 
 BOOL CSampleIME::_FindComposingRange(TfEditCookie ec, _In_ ITfContext *pContext, _In_ ITfRange *pSelection, _Outptr_result_maybenull_ ITfRange **ppRange)
