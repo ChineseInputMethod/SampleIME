@@ -54,10 +54,14 @@ Source Files												|Document
 
 Source Files																	|Document
 -|-
+[SampleIMEBaseStructure.h](doc/SampleIMEBaseStructure.md)						|数据结构，输入法自定义数据结构。
 [BaseDictionaryEngine.cpp](doc/BaseDictionaryEngine.md)							|词典引擎基类。
 [TableDictionaryEngine.cpp](doc/TableDictionaryEngine.md)						|切分表。
 [DictionaryParser.cpp](doc/DictionaryParser.md)									|句法分析器。
 [DictionarySearch.cpp](doc/DictionarySearch.md)									|词典搜索。
+
+Source Files																	|Document
+-|-
 [BaseWindow.cpp](doc/BaseWindow.md)												|窗口基类，派生窗口。
 [ButtonWindow.cpp](doc/ButtonWindow.md)											|按钮窗口。
 [CandidateWindow.cpp](doc/CandidateWindow.md)									|候选窗口。
@@ -74,7 +78,6 @@ Source Files																	|Document
 [EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)					|显示属性信息对象枚举器。
 [EnumTfCandidates.cpp](doc/EnumTfCandidates.md)									|候选文字串对象枚举器。
 [TfTextLayoutSink.cpp](doc/TfTextLayoutSink.md)		|文本布局消息接收器。
-[SampleIMEBaseStructure.cpp](doc/SampleIMEBaseStructure.md)						|数据结构。
 [SearchCandidateProvider.cpp](doc/SearchCandidateProvider.md)					|搜索候选提供者。
 [StartComposition.cpp](doc/StartComposition.md)									|开始输入。
 [TipCandidateList.cpp](doc/TipCandidateList.md)									|候选列表对象。

@@ -7808,10 +7808,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -7863,10 +7864,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -7973,10 +7975,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -8083,10 +8086,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -8194,10 +8198,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -8249,10 +8254,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -9253,7 +9259,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9309,7 +9315,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9364,7 +9370,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9419,7 +9425,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9474,7 +9480,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9529,7 +9535,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9584,7 +9590,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9639,7 +9645,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9694,7 +9700,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9749,7 +9755,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9804,7 +9810,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9859,7 +9865,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9914,7 +9920,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9969,7 +9975,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -10024,7 +10030,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -10079,7 +10085,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -10134,7 +10140,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -10189,7 +10195,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -10301,7 +10307,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -10356,7 +10362,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -10572,10 +10578,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -10792,10 +10799,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -12341,10 +12349,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -12916,11 +12925,11 @@
       <LocationType>SourceLocation</LocationType>
       <TextPosition>
         <Version>4</Version>
-        <FileName>.\SampleIME\EditSession.h</FileName>
-        <startLine>24</startLine>
+        <FileName>.\SampleIME\EditSession.cpp</FileName>
+        <startLine>57</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>24</EndLine>
-        <EndColumn>60</EndColumn>
+        <EndLine>57</EndLine>
+        <EndColumn>56</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -12932,7 +12941,8 @@
           <Bytes />
         </Checksum>
       </TextPosition>
-      <NamedLocationLine>0</NamedLocationLine>
+      <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
+      <NamedLocationLine>11</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -12952,7 +12962,63 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
+      <Labels />
+      <RequestRemapped>0</RequestRemapped>
+      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
+      <SnapshotCountTarget>1</SnapshotCountTarget>
+      <parentIndex>-1</parentIndex>
+    </Breakpoint>
+    <Breakpoint>
+      <Version>15</Version>
+      <IsEnabled>1</IsEnabled>
+      <IsVisible>1</IsVisible>
+      <IsEmulated>0</IsEmulated>
+      <IsCondition>0</IsCondition>
+      <IsProductionBps>0</IsProductionBps>
+      <ConditionType>WhenTrue</ConditionType>
+      <LocationType>SourceLocation</LocationType>
+      <TextPosition>
+        <Version>4</Version>
+        <FileName>.\SampleIME\EditSession.cpp</FileName>
+        <startLine>58</startLine>
+        <StartColumn>0</StartColumn>
+        <EndLine>58</EndLine>
+        <EndColumn>5</EndColumn>
+        <MarkerId>0</MarkerId>
+        <IsLineBased>1</IsLineBased>
+        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
+        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
+        <Checksum>
+          <Version>1</Version>
+          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
+          <ByteCount>0</ByteCount>
+          <Bytes />
+        </Checksum>
+      </TextPosition>
+      <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
+      <NamedLocationLine>12</NamedLocationLine>
+      <NamedLocationColumn>0</NamedLocationColumn>
+      <HitCountType>NoHitCount</HitCountType>
+      <HitCountTarget>1</HitCountTarget>
+      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
+      <IsMapped>0</IsMapped>
+      <BreakpointType>PendingBreakpoint</BreakpointType>
+      <AddressLocation>
+        <Version>0</Version>
+        <MarkerId>0</MarkerId>
+        <FunctionLine>0</FunctionLine>
+        <FunctionColumn>0</FunctionColumn>
+        <Language>00000000-0000-0000-0000-000000000000</Language>
+      </AddressLocation>
+      <DataCount>4</DataCount>
+      <TracepointText>$FUNCTION {riid} {*ppvObj}</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
+      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
+      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
+      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -14389,7 +14455,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -14445,7 +14511,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -14500,7 +14566,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -14555,7 +14621,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -14945,7 +15011,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -15001,7 +15067,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -15112,7 +15178,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -15168,7 +15234,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -15223,7 +15289,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -15390,7 +15456,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -15446,7 +15512,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -15556,7 +15622,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -15883,10 +15949,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION {wch}</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -15938,10 +16005,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -16103,10 +16171,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -17095,10 +17164,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -17480,10 +17550,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -18195,10 +18266,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -18745,10 +18817,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -21043,10 +21116,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>125</startLine>
+        <startLine>126</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>125</EndLine>
-        <EndColumn>48</EndColumn>
+        <EndLine>126</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21059,7 +21132,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>11</NamedLocationLine>
+      <NamedLocationLine>12</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21074,13 +21147,13 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <TracepointText>$FUNCTION {riid}</TracepointText>
+      <TracepointText>$FUNCTION {riid} {*ppvObj}</TracepointText>
       <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -21099,10 +21172,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>129</startLine>
+        <startLine>130</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>129</EndLine>
-        <EndColumn>50</EndColumn>
+        <EndLine>130</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21115,7 +21188,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>15</NamedLocationLine>
+      <NamedLocationLine>16</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21130,13 +21203,13 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <TracepointText>$FUNCTION {riid}</TracepointText>
+      <TracepointText>$FUNCTION {riid} {*ppvObj}</TracepointText>
       <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -21155,10 +21228,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>133</startLine>
+        <startLine>134</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>133</EndLine>
-        <EndColumn>48</EndColumn>
+        <EndLine>134</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21171,7 +21244,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>19</NamedLocationLine>
+      <NamedLocationLine>20</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21186,13 +21259,13 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <TracepointText>$FUNCTION {riid}</TracepointText>
+      <TracepointText>$FUNCTION {riid} {*ppvObj}</TracepointText>
       <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -21211,10 +21284,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>137</startLine>
+        <startLine>138</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>137</EndLine>
-        <EndColumn>42</EndColumn>
+        <EndLine>138</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21227,7 +21300,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>23</NamedLocationLine>
+      <NamedLocationLine>24</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21242,13 +21315,13 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <TracepointText>$FUNCTION {riid}</TracepointText>
+      <TracepointText>$FUNCTION {riid} {*ppvObj}</TracepointText>
       <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -21267,10 +21340,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>141</startLine>
+        <startLine>142</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>141</EndLine>
-        <EndColumn>42</EndColumn>
+        <EndLine>142</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21283,7 +21356,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>27</NamedLocationLine>
+      <NamedLocationLine>28</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21304,7 +21377,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -21323,10 +21396,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>145</startLine>
+        <startLine>146</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>145</EndLine>
-        <EndColumn>61</EndColumn>
+        <EndLine>146</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21339,7 +21412,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>31</NamedLocationLine>
+      <NamedLocationLine>32</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21354,13 +21427,13 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <TracepointText>$FUNCTION {riid}</TracepointText>
+      <TracepointText>$FUNCTION {riid} {*ppvObj}</TracepointText>
       <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -21379,10 +21452,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>149</startLine>
+        <startLine>150</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>149</EndLine>
-        <EndColumn>42</EndColumn>
+        <EndLine>150</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21395,7 +21468,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>35</NamedLocationLine>
+      <NamedLocationLine>36</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21416,7 +21489,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -21435,10 +21508,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>153</startLine>
+        <startLine>154</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>153</EndLine>
-        <EndColumn>54</EndColumn>
+        <EndLine>154</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21451,7 +21524,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>39</NamedLocationLine>
+      <NamedLocationLine>40</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21472,7 +21545,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -21491,10 +21564,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>157</startLine>
+        <startLine>158</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>157</EndLine>
-        <EndColumn>45</EndColumn>
+        <EndLine>158</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21507,7 +21580,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>43</NamedLocationLine>
+      <NamedLocationLine>44</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21522,13 +21595,13 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <TracepointText>$FUNCTION {riid}</TracepointText>
+      <TracepointText>$FUNCTION {riid} {*ppvObj}</TracepointText>
       <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -21547,10 +21620,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>161</startLine>
+        <startLine>162</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>161</EndLine>
-        <EndColumn>46</EndColumn>
+        <EndLine>162</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21563,7 +21636,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>47</NamedLocationLine>
+      <NamedLocationLine>48</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21578,13 +21651,13 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <TracepointText>$FUNCTION {riid}</TracepointText>
+      <TracepointText>$FUNCTION {riid} {*ppvObj}</TracepointText>
       <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -21603,10 +21676,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>165</startLine>
+        <startLine>166</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>165</EndLine>
-        <EndColumn>38</EndColumn>
+        <EndLine>166</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21619,7 +21692,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>51</NamedLocationLine>
+      <NamedLocationLine>52</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21640,7 +21713,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -21659,10 +21732,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
-        <startLine>169</startLine>
+        <startLine>170</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>169</EndLine>
-        <EndColumn>63</EndColumn>
+        <EndLine>170</EndLine>
+        <EndColumn>5</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -21675,7 +21748,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
-      <NamedLocationLine>55</NamedLocationLine>
+      <NamedLocationLine>56</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -21696,7 +21769,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -25553,10 +25626,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -25608,10 +25682,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -25663,10 +25738,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />

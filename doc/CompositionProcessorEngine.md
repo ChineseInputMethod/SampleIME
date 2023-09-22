@@ -58,3 +58,120 @@ SetupDictionaryFile()				|打开输入法词典文件。
 至此，输入法进入工作状态，等待响应事件。
 
 ## 3.12.5 获取候选列表
+
+当用户按下编码键后，输入法调用CCompositionProcessorEngine::GetCandidateList()函数，获取候选列表。
+
+首先，在编码后面添加一个通配符，只是输入法做的一个简单处理，例如没有拼音为“b”的编码，所以当用户按下b后，候选列表是空的，添加一个通配符防止出现这种情况。<br>
+然后，输入法调用CTableDictionaryEngine::CollectWordForWildcard()函数，获取候选列表。<br>
+接着，调用CBaseDictionaryEngine::SortListItemByFindKeyCode()函数，为这个候选列表排序。<br>
+最后，清除候选列表项编码的通配符。
+
+```C++
+void CCompositionProcessorEngine::GetCandidateList(_Inout_ CSampleImeArray<CCandidateListItem> *pCandidateList, BOOL isIncrementalWordSearch, BOOL isWildcardSearch)
+{
+    if (!IsDictionaryAvailable())
+    {
+        return;
+    }
+
+    if (isIncrementalWordSearch)
+    {
+        CStringRange wildcardSearch;
+        DWORD_PTR keystrokeBufLen = _keystrokeBuffer.GetLength() + 2;
+        PWCHAR pwch = new (std::nothrow) WCHAR[ keystrokeBufLen ];
+        if (!pwch)
+        {
+            return;
+        }
+
+        // check keystroke buffer already has wildcard char which end user want wildcard serach
+        DWORD wildcardIndex = 0;
+        BOOL isFindWildcard = FALSE;
+
+        if (IsWildcard())
+        {
+            for (wildcardIndex = 0; wildcardIndex < _keystrokeBuffer.GetLength(); wildcardIndex++)
+            {
+                if (IsWildcardChar(*(_keystrokeBuffer.Get() + wildcardIndex)))
+                {
+                    isFindWildcard = TRUE;
+                    break;
+                }
+            }
+        }
+
+        StringCchCopyN(pwch, keystrokeBufLen, _keystrokeBuffer.Get(), _keystrokeBuffer.GetLength());
+
+        if (!isFindWildcard)
+        {
+            // add wildcard char for incremental search
+            StringCchCat(pwch, keystrokeBufLen, L"*");
+        }
+
+        size_t len = 0;
+        if (StringCchLength(pwch, STRSAFE_MAX_CCH, &len) == S_OK)
+        {
+            wildcardSearch.Set(pwch, len);
+        }
+        else
+        {
+            return;
+        }
+
+        _pTableDictionaryEngine->CollectWordForWildcard(&wildcardSearch, pCandidateList);
+
+        if (0 >= pCandidateList->Count())
+        {
+            return;
+        }
+
+        if (IsKeystrokeSort())
+        {
+            _pTableDictionaryEngine->SortListItemByFindKeyCode(pCandidateList);
+        }
+
+        // Incremental search would show keystroke data from all candidate list items
+        // but wont show identical keystroke data for user inputted.
+        for (UINT index = 0; index < pCandidateList->Count(); index++)
+        {
+            CCandidateListItem *pLI = pCandidateList->GetAt(index);
+            DWORD_PTR keystrokeBufferLen = 0;
+
+            if (IsWildcard())
+            {
+                keystrokeBufferLen = wildcardIndex;
+            }
+            else
+            {
+                keystrokeBufferLen = _keystrokeBuffer.GetLength();
+            }
+
+            CStringRange newFindKeyCode;
+            newFindKeyCode.Set(pLI->_FindKeyCode.Get() + keystrokeBufferLen, pLI->_FindKeyCode.GetLength() - keystrokeBufferLen);
+            pLI->_FindKeyCode.Set(newFindKeyCode);
+        }
+
+        delete [] pwch;
+    }
+    else if (isWildcardSearch)
+    {
+        _pTableDictionaryEngine->CollectWordForWildcard(&_keystrokeBuffer, pCandidateList);
+    }
+    else
+    {
+        _pTableDictionaryEngine->CollectWord(&_keystrokeBuffer, pCandidateList);
+    }
+
+    for (UINT index = 0; index < pCandidateList->Count();)
+    {
+        CCandidateListItem *pLI = pCandidateList->GetAt(index);
+        CStringRange startItemString;
+        CStringRange endItemString;
+
+        startItemString.Set(pLI->_ItemString.Get(), 1);
+        endItemString.Set(pLI->_ItemString.Get() + pLI->_ItemString.GetLength() - 1, 1);
+
+        index++;
+    }
+}
+```
