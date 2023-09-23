@@ -10,7 +10,7 @@
 #include "DictionarySearch.h"
 
 //+---------------------------------------------------------------------------
-//切分表
+//字典表引擎
 // CollectWord
 //
 //----------------------------------------------------------------------------
@@ -68,7 +68,7 @@ VOID CTableDictionaryEngine::CollectWord(_In_ CStringRange *pKeyCode, _Inout_ CS
 
 VOID CTableDictionaryEngine::CollectWordForWildcard(_In_ CStringRange *pKeyCode, _Inout_ CSampleImeArray<CCandidateListItem> *pItemList)
 {
-    CDictionaryResult* pdret = nullptr;
+    CDictionaryResult* pdret = nullptr;//搜索结果
     CDictionarySearch dshSearch(_locale, _pDictionaryFile, pKeyCode);
 
     while (dshSearch.FindPhraseForWildcard(&pdret))
@@ -76,7 +76,7 @@ VOID CTableDictionaryEngine::CollectWordForWildcard(_In_ CStringRange *pKeyCode,
         for (UINT iIndex = 0; iIndex < pdret->_FindPhraseList.Count(); iIndex++)
         {
             CCandidateListItem* pLI = nullptr;
-            pLI = pItemList->Append();
+            pLI = pItemList->Append();//将搜索结果添加到候选列表中
             if (pLI)
             {
                 pLI->_ItemString.Set(*pdret->_FindPhraseList.GetAt(iIndex));

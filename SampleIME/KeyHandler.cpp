@@ -189,13 +189,13 @@ HRESULT CSampleIME::_HandleCompositionInputWorker(_In_ CCompositionProcessorEngi
 
     //
     // Get candidate string from composition processor engine
-    //
+    //候选列表
     CSampleImeArray<CCandidateListItem> candidateList;
 
     pCompositionProcessorEngine->GetCandidateList(&candidateList, TRUE, FALSE);
 
     if ((candidateList.Count()))
-    {
+    {//将候选列表写入候选窗口
         hr = _CreateAndStartCandidate(pCompositionProcessorEngine, ec, pContext);
         if (SUCCEEDED(hr))
         {

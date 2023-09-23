@@ -164,7 +164,7 @@ HRESULT CSampleIME::_HandleCompositionInputWorker(_In_ CCompositionProcessorEngi
 ```
 
 >_AddComposingAndChar(ec, pContext, readingStrings.GetAt(index))将在合成主题讲解。
-GetCandidateList(&candidateList, TRUE, FALSE)将在候选列表主题讲解。
-_pCandidateListUIPresenter->_SetText(&candidateList, TRUE)将在候选窗口主题讲解。
+>GetCandidateList(&candidateList, TRUE, FALSE)将在候选列表主题讲解。
+>_pCandidateListUIPresenter->_SetText(&candidateList, TRUE)将在候选窗口主题讲解。
 
 其他更复杂的编码处理，将在后续主题讲解。

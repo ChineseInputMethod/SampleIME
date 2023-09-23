@@ -55,10 +55,10 @@ Source Files												|Document
 Source Files																	|Document
 -|-
 [SampleIMEBaseStructure.h](doc/SampleIMEBaseStructure.md)						|数据结构，输入法自定义数据结构。
-[BaseDictionaryEngine.cpp](doc/BaseDictionaryEngine.md)							|词典引擎基类。
-[TableDictionaryEngine.cpp](doc/TableDictionaryEngine.md)						|切分表。
-[DictionaryParser.cpp](doc/DictionaryParser.md)									|句法分析器。
+[TableDictionaryEngine.cpp](doc/TableDictionaryEngine.md)						|字典表引擎，获取候选列表。
 [DictionarySearch.cpp](doc/DictionarySearch.md)									|词典搜索。
+[DictionaryParser.cpp](doc/DictionaryParser.md)									|句法分析器。
+[BaseDictionaryEngine.cpp](doc/BaseDictionaryEngine.md)							|词典引擎基类。
 
 Source Files																	|Document
 -|-
