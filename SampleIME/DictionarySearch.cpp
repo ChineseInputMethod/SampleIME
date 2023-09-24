@@ -78,7 +78,7 @@ BOOL CDictionarySearch::FindWorker(BOOL isTextSearch, _Out_ CDictionaryResult **
     {
         return FALSE;
     }
-
+    
     const WCHAR *pwch = GetBufferInWChar();
     DWORD_PTR indexTrace = 0;     // in char
     *ppdret = nullptr;

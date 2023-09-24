@@ -89,7 +89,7 @@ HRESULT FindChar(WCHAR wch, _In_ LPCWSTR pwszBuffer, DWORD_PTR dwBufLen, _Out_ D
     *pdwIndex = 0;
     while (*pwszBuffer && (*pwszBuffer != wch) && dwBufLen)
     {
-        dwBufLen--;
+        dwBufLen--;//处理词典最后剩余编码短于输入编码情况
         pwszBuffer++;
         index++;
     }
@@ -197,7 +197,7 @@ int CStringRange::Compare(LCID locale, _In_ CStringRange* pString1, _In_ CString
 }
 
 BOOL CStringRange::WildcardCompare(LCID locale, _In_ CStringRange* stringWithWildcard, _In_ CStringRange* targetString)
-{
+{//递归实现的通配符比较
     if (stringWithWildcard->GetLength() == 0)
     {
         return targetString->GetLength() == 0 ? TRUE : FALSE;
