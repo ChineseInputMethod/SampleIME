@@ -90,7 +90,7 @@ LPCWSTR CDictionaryParser::GetToken(_In_reads_(dwBufLen) LPCWSTR pwszBuffer, DWO
     ch = *pwszBuffer;
     while ((ch) && (ch != chDelimiter) && dwBufLen)
     {
-        dwBufLen--;
+        dwBufLen--;//处理汉字编码短于输入编码情况
         pwszBuffer++;
 
         if (ch == Global::StringDelimiter)
@@ -117,7 +117,7 @@ LPCWSTR CDictionaryParser::GetToken(_In_reads_(dwBufLen) LPCWSTR pwszBuffer, DWO
     {
         LPCWSTR pwszStart = psrgValue->Get();
 
-        psrgValue->Set(pwszStart, pwszBuffer - pwszStart);
+        psrgValue->Set(pwszStart, pwszBuffer - pwszStart);//
 
         RemoveWhiteSpaceFromBegin(psrgValue);
         RemoveWhiteSpaceFromEnd(psrgValue);

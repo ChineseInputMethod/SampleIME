@@ -57,7 +57,7 @@ Source Files												|Document
 [SampleIMEBaseStructure.h](doc/SampleIMEBaseStructure.md)	|数据结构，输入法自定义数据结构。
 [TableDictionaryEngine.cpp](doc/TableDictionaryEngine.md)	|词典引擎，获取候选列表。
 [DictionarySearch.cpp](doc/DictionarySearch.md)				|词典搜索，在词典中搜索编码为输入编码的汉字。
-[DictionaryParser.cpp](doc/DictionaryParser.md)				|词典解析。
+[DictionaryParser.cpp](doc/DictionaryParser.md)				|词典搜索基类，为搜索词典提供辅助函数。
 [BaseDictionaryEngine.cpp](doc/BaseDictionaryEngine.md)		|词典引擎基类。
 
 Source Files																	|Document
