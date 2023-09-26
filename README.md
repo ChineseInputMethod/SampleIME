@@ -57,17 +57,23 @@ Source Files												|Document
 [SampleIMEBaseStructure.h](doc/SampleIMEBaseStructure.md)	|数据结构，输入法自定义数据结构。
 [TableDictionaryEngine.cpp](doc/TableDictionaryEngine.md)	|词典引擎，获取候选列表。
 [DictionarySearch.cpp](doc/DictionarySearch.md)				|词典搜索，在词典中搜索编码为输入编码的汉字。
-[DictionaryParser.cpp](doc/DictionaryParser.md)				|词典搜索基类，为搜索词典提供辅助函数。
+[DictionaryParser.cpp](doc/DictionaryParser.md)				|词典搜索基类，为词典搜索提供辅助函数。
 [BaseDictionaryEngine.cpp](doc/BaseDictionaryEngine.md)		|词典引擎基类。
+
+## 候选窗口
+
+Source Files													|Document
+-|-
+[CandidateListUIPresenter.cpp](doc/CandidateListUIPresenter.md)	|候选列表控制器。
+[TfTextLayoutSink.cpp](doc/TfTextLayoutSink.md)					|文本布局消息接收器。
+[BaseWindow.cpp](doc/BaseWindow.md)								|窗口基类，派生窗口。
+[CandidateWindow.cpp](doc/CandidateWindow.md)					|候选窗口。
+[ButtonWindow.cpp](doc/ButtonWindow.md)							|按钮窗口。
+[ScrollBarWindow.cpp](doc/ScrollBarWindow.md)					|滚动条窗口。
+[ShadowWindow.cpp](doc/ShadowWindow.md)							|阴影窗口。
 
 Source Files																	|Document
 -|-
-[BaseWindow.cpp](doc/BaseWindow.md)												|窗口基类，派生窗口。
-[ButtonWindow.cpp](doc/ButtonWindow.md)											|按钮窗口。
-[CandidateWindow.cpp](doc/CandidateWindow.md)									|候选窗口。
-[ScrollBarWindow.cpp](doc/ScrollBarWindow.md)									|滚动条窗口。
-[ShadowWindow.cpp](doc/ShadowWindow.md)											|阴影窗口。
-[CandidateListUIPresenter.cpp](doc/CandidateListUIPresenter.md)					|候选列表控制器。
 [Composition.cpp](doc/Composition.md)											|输入组合终止消息接收器。
 [RegKey.cpp](doc/RegKey.md)														|注册表类。
 [DisplayAttribute.cpp](doc/DisplayAttribute.md)									|显示属性。
@@ -77,7 +83,6 @@ Source Files																	|Document
 [EndComposition.cpp](doc/EndComposition.md)										|结束输入。
 [EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)					|显示属性信息对象枚举器。
 [EnumTfCandidates.cpp](doc/EnumTfCandidates.md)									|候选文字串对象枚举器。
-[TfTextLayoutSink.cpp](doc/TfTextLayoutSink.md)		|文本布局消息接收器。
 [SearchCandidateProvider.cpp](doc/SearchCandidateProvider.md)					|搜索候选提供者。
 [StartComposition.cpp](doc/StartComposition.md)									|开始输入。
 [TipCandidateList.cpp](doc/TipCandidateList.md)									|候选列表对象。
