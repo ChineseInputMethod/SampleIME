@@ -58,14 +58,20 @@ Source Files												|Document
 [TableDictionaryEngine.cpp](doc/TableDictionaryEngine.md)	|词典引擎，获取候选列表。
 [DictionarySearch.cpp](doc/DictionarySearch.md)				|词典搜索，在词典中搜索编码为输入编码的汉字。
 [DictionaryParser.cpp](doc/DictionaryParser.md)				|词典搜索基类，为词典搜索提供辅助函数。
-[BaseDictionaryEngine.cpp](doc/BaseDictionaryEngine.md)		|词典引擎基类。
+[BaseDictionaryEngine.cpp](doc/BaseDictionaryEngine.md)		|词典引擎基类，为词典引擎提供辅助函数。
 
-## 候选窗口
+## 候选窗口控制
 
 Source Files													|Document
 -|-
-[CandidateListUIPresenter.cpp](doc/CandidateListUIPresenter.md)	|候选列表控制器。
-[TfTextLayoutSink.cpp](doc/TfTextLayoutSink.md)					|文本布局消息接收器。
+[CandidateListUIPresenter.cpp](doc/CandidateListUIPresenter.md)	|候选窗口控制器，控制候选窗口的显示。
+[TfTextLayoutSink.cpp](doc/TfTextLayoutSink.md)					|文本布局消息接收器，通过跟踪布局更改消息，实现光标跟随。
+[GetTextExtentEditSession.cpp](doc/GetTextExtentEditSession.md)	|文本布局。
+
+## 候选窗口绘制
+
+Source Files													|Document
+-|-
 [BaseWindow.cpp](doc/BaseWindow.md)								|窗口基类，派生窗口。
 [CandidateWindow.cpp](doc/CandidateWindow.md)					|候选窗口。
 [ButtonWindow.cpp](doc/ButtonWindow.md)							|按钮窗口。
@@ -79,7 +85,6 @@ Source Files																	|Document
 [DisplayAttribute.cpp](doc/DisplayAttribute.md)									|显示属性。
 [DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)							|显示属性信息。
 [DisplayAttributeProvider.cpp](doc/DisplayAttributeProvider.md)					|显示属性提供者。
-[GetTextExtentEditSession.cpp](doc/GetTextExtentEditSession.md)					|文本布局。
 [EndComposition.cpp](doc/EndComposition.md)										|结束输入。
 [EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)					|显示属性信息对象枚举器。
 [EnumTfCandidates.cpp](doc/EnumTfCandidates.md)									|候选文字串对象枚举器。

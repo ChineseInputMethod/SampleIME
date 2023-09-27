@@ -168,3 +168,57 @@ HRESULT CSampleIME::_HandleCompositionInputWorker(_In_ CCompositionProcessorEngi
 >_pCandidateListUIPresenter->_SetText(&candidateList, TRUE)将在候选窗口主题讲解。
 
 其他更复杂的编码处理，将在后续主题讲解。
+
+## 3.18.4 创建候选窗口
+
+当用户按下编码键，输入法生成候选列表后，开始创建候选窗口。
+
+```C++
+HRESULT CSampleIME::_CreateAndStartCandidate(_In_ CCompositionProcessorEngine *pCompositionProcessorEngine, TfEditCookie ec, _In_ ITfContext *pContext)
+{
+    HRESULT hr = S_OK;
+
+    if (((_candidateMode == CANDIDATE_PHRASE) && (_pCandidateListUIPresenter))
+        || ((_candidateMode == CANDIDATE_NONE) && (_pCandidateListUIPresenter)))
+    {
+        // Recreate candidate list
+        _pCandidateListUIPresenter->_EndCandidateList();
+        delete _pCandidateListUIPresenter;
+        _pCandidateListUIPresenter = nullptr;
+
+        _candidateMode = CANDIDATE_NONE;
+        _isCandidateWithWildcard = FALSE;
+    }
+
+    if (_pCandidateListUIPresenter == nullptr)
+    {
+        _pCandidateListUIPresenter = new (std::nothrow) CCandidateListUIPresenter(this, Global::AtomCandidateWindow,
+            CATEGORY_CANDIDATE,
+            pCompositionProcessorEngine->GetCandidateListIndexRange(),
+            FALSE);
+        if (!_pCandidateListUIPresenter)
+        {
+            return E_OUTOFMEMORY;
+        }
+
+        _candidateMode = CANDIDATE_INCREMENTAL;
+        _isCandidateWithWildcard = FALSE;
+
+        // we don't cache the document manager object. So get it from pContext.
+        ITfDocumentMgr* pDocumentMgr = nullptr;
+        if (SUCCEEDED(pContext->GetDocumentMgr(&pDocumentMgr)))
+        {
+            // get the composition range.
+            ITfRange* pRange = nullptr;
+            if (SUCCEEDED(_pComposition->GetRange(&pRange)))
+            {
+                hr = _pCandidateListUIPresenter->_StartCandidateList(_tfClientId, pDocumentMgr, pContext, ec, pRange, pCompositionProcessorEngine->GetCandidateWindowWidth());
+                pRange->Release();
+            }
+            pDocumentMgr->Release();
+        }
+    }
+
+    return hr;
+}
+```
