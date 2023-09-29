@@ -95,21 +95,21 @@ void CBaseWindow::_UninitWindowClass(ATOM atom)
 
 BOOL CBaseWindow::_Create(ATOM atom, DWORD dwExStyle, DWORD dwStyle, _In_opt_ CBaseWindow *pParentWnd, int wndWidth, int wndHeight, _In_opt_ HWND parentWndHandle)
 {
-    _pParentWnd = pParentWnd;
+    _pParentWnd = pParentWnd;//候选窗口此参数为NULL，子窗口此参数为候选窗口。也就是说，候选窗口的父窗口为文档窗口，子窗口的所有者窗口为候选窗口
 
     if (atom != 0)
     {
         // create real window
 
-        _wndHandle = CreateWindowEx(dwExStyle,
-            (LPCTSTR)atom,
-            NULL,
-            dwStyle,
-            0, 0,
-            wndWidth, wndHeight,
+        _wndHandle = CreateWindowEx(dwExStyle,//扩展窗口样式
+            (LPCTSTR)atom,//类原子
+            NULL,//窗口名称
+            dwStyle,//窗口样式
+            0, 0,//窗口位置
+            wndWidth, wndHeight,//窗口尺寸
             _pParentWnd ? _pParentWnd->_GetWnd() : parentWndHandle,    // parentWndHandle
-            NULL,
-            Global::dllInstanceHandle,
+            NULL,//菜单句柄
+            Global::dllInstanceHandle,//实例句柄
             this);   // lpParam
 
         if (!_wndHandle)

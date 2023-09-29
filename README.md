@@ -65,15 +65,15 @@ Source Files												|Document
 Source Files													|Document
 -|-
 [CandidateListUIPresenter.cpp](doc/CandidateListUIPresenter.md)	|候选窗口控制器，控制候选窗口的显示。
-[TfTextLayoutSink.cpp](doc/TfTextLayoutSink.md)					|文本布局消息接收器，通过跟踪布局更改消息，实现光标跟随。
-[GetTextExtentEditSession.cpp](doc/GetTextExtentEditSession.md)	|文本布局。
+[TfTextLayoutSink.cpp](doc/TfTextLayoutSink.md)					|文本布局消息接收器，通过响应布局更改消息，实现光标跟随。
+[GetTextExtentEditSession.cpp](doc/GetTextExtentEditSession.md)	|文本布局会话，处理文本布局消息。
 
 ## 候选窗口绘制
 
 Source Files													|Document
 -|-
-[BaseWindow.cpp](doc/BaseWindow.md)								|窗口基类，派生窗口。
 [CandidateWindow.cpp](doc/CandidateWindow.md)					|候选窗口。
+[BaseWindow.cpp](doc/BaseWindow.md)								|窗口基类，派生窗口。
 [ButtonWindow.cpp](doc/ButtonWindow.md)							|按钮窗口。
 [ScrollBarWindow.cpp](doc/ScrollBarWindow.md)					|滚动条窗口。
 [ShadowWindow.cpp](doc/ShadowWindow.md)							|阴影窗口。

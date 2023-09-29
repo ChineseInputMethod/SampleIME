@@ -98,7 +98,7 @@ BOOL CCandidateWindow::_CreateMainWindow(ATOM atom, _In_opt_ HWND parentWndHandl
     if (!CBaseWindow::_Create(atom,
         WS_EX_TOPMOST | WS_EX_TOOLWINDOW,
         WS_BORDER | WS_POPUP,
-        NULL, 0, 0, parentWndHandle))
+        NULL, 0, 0, parentWndHandle))//父窗口为文档窗口句柄
     {
         return FALSE;
     }

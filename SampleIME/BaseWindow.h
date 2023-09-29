@@ -146,7 +146,7 @@ private:
     }
 
 private:
-    HWND _wndHandle;
+    HWND _wndHandle;//ºòÑ¡´°¿Ú¾ä±ú
 
     CBaseWindow *_pParentWnd;
     CBaseWindow *_pUIWnd;

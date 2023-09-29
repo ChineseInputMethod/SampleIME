@@ -2,7 +2,7 @@
 
 候选窗口控制器，控制候选窗口的显示。
 
-## 3.27.1 创建候选窗口
+## 3.27.1 候选窗口创建过程
 
 当用户按下编码键，输入法生成候选列表后，调用CCandidateListUIPresenter::_StartCandidateList()函数，创建候选窗口。
 
@@ -54,9 +54,9 @@ Exit:
 
 Interface				|Description
 -|-
-[ITfTextLayoutSink][1]	|当上下文视图的布局发生更改时，会收到通知。
+[ITfUIElementMgr][1]	|UI元素管理器，文本服务调用ITfUIElementMgr，向应用程序查询UI可见性。
 
-[1]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfTextLayoutSink.md
+[1]: https://github.com/ChineseInputMethod/Interface/blob/master/TSFmanager/ITfUIElementMgr.md
 
 ```C++
 HRESULT CCandidateListUIPresenter::BeginUIElement()
@@ -82,3 +82,44 @@ Exit:
     return hr;
 }
 ```
+
+## 3.27.3 创建候选窗口
+
+输入法在MakeCandidateWindow()创建候选窗口类，开始创建候选窗口。
+
+```C++
+HRESULT CCandidateListUIPresenter::MakeCandidateWindow(_In_ ITfContext *pContextDocument, _In_ UINT wndWidth)
+{
+    HRESULT hr = S_OK;
+
+    if (nullptr != _pCandidateWnd)
+    {
+        return hr;
+    }
+
+    _pCandidateWnd = new (std::nothrow) CCandidateWindow(_CandWndCallback, this, _pIndexRange, _pTextService->_IsStoreAppMode());
+    if (_pCandidateWnd == nullptr)
+    {
+        hr = E_OUTOFMEMORY;
+        goto Exit;
+    }
+
+    HWND parentWndHandle = nullptr;
+    ITfContextView* pView = nullptr;
+    if (SUCCEEDED(pContextDocument->GetActiveView(&pView)))
+    {
+        pView->GetWnd(&parentWndHandle);
+    }
+
+    if (!_pCandidateWnd->_Create(_atom, wndWidth, parentWndHandle))
+    {
+        hr = E_OUTOFMEMORY;
+        goto Exit;
+    }
+
+Exit:
+    return hr;
+}
+```
+
+## 3.27.4 显示候选窗口
