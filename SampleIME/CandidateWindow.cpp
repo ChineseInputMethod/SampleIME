@@ -96,8 +96,8 @@ BOOL CCandidateWindow::_CreateMainWindow(ATOM atom, _In_opt_ HWND parentWndHandl
     _SetUIWnd(this);
 
     if (!CBaseWindow::_Create(atom,
-        WS_EX_TOPMOST | WS_EX_TOOLWINDOW,
-        WS_BORDER | WS_POPUP,
+        WS_EX_TOPMOST | WS_EX_TOOLWINDOW,//https://learn.microsoft.com/zh-cn/windows/win32/winmsg/extended-window-styles
+        WS_BORDER | WS_POPUP,//https://learn.microsoft.com/zh-cn/windows/win32/winmsg/window-styles
         NULL, 0, 0, parentWndHandle))//父窗口为文档窗口句柄
     {
         return FALSE;

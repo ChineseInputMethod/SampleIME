@@ -179,7 +179,7 @@ void CShadowWindow::_InitSettings()
     HDC dcHandle = GetDC(nullptr);
 
     // device caps
-    int cBitsPixelScreen = GetDeviceCaps(dcHandle, BITSPIXEL);
+    int cBitsPixelScreen = GetDeviceCaps(dcHandle, BITSPIXEL);//每个像素的相邻颜色位数
 
     _isGradient = cBitsPixelScreen > 8;
 

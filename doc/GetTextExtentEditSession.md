@@ -4,6 +4,8 @@
 
 ## 3.29.1 处理文本布局消息
 
+在文本布局会话中，输入法获取合成位置，然后在合成下方显示候选窗口。
+
 ```C++
 STDAPI CGetTextExtentEditSession::DoEditSession(TfEditCookie ec)
 {

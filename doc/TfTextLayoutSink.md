@@ -39,8 +39,8 @@ HRESULT CTfTextLayoutSink::_AdviseTextLayoutSink()
 
 当上下文视图的布局发生更改时，OnLayoutChange()函数会被调用。
 
-在TSF处理逻辑上，合成中的编码被写入上下文，就会触发文本布局更改事件。输入法响应事件，申请编辑会话，更改候选窗口内容和位置。<br>
-但是，第三方输入法一般自己管理输入编码，不会将输入编码实际写入上下文，所以实现光标跟随，需要一点技巧。具体如何实现，在下一章讲解。
+在TSF处理逻辑上，输入编码被写入合成，就会触发文本布局更改事件。输入法响应事件，申请编辑会话，更改候选窗口内容和位置。<br>
+但是，第三方输入法一般自己管理输入编码，不会将输入编码实际写入合成，所以实现光标跟随，需要一点技巧。具体如何实现，将在下一章讲解。
 
 ```C++
 STDAPI CTfTextLayoutSink::OnLayoutChange(_In_ ITfContext *pContext, TfLayoutCode lcode, _In_ ITfContextView *pContextView)
