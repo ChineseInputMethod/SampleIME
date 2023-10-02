@@ -988,12 +988,12 @@ BOOL CCandidateListUIPresenter::_MovePage(_In_ int offSet)
 void CCandidateListUIPresenter::_MoveWindowToTextExt()
 {
     RECT rc;
-
+    //获取合成的位置
     if (FAILED(_GetTextExt(&rc)))
     {
         return;
     }
-
+    //将候选窗口移动到合成的左下位置。
     _pCandidateWnd->_Move(rc.left, rc.bottom);
 }
 //+---------------------------------------------------------------------------

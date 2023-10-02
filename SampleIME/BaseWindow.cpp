@@ -315,7 +315,7 @@ BOOL CBaseWindow::_GetWindowRect(_Inout_ LPRECT lpRect)
 BOOL CBaseWindow::_GetClientRect(_Inout_ LPRECT lpRect)
 {
     if (_wndHandle != nullptr)
-    {
+    {//https://learn.microsoft.com/zh-cn/windows/win32/api/winuser/nf-winuser-getclientrect
         return GetClientRect(_wndHandle, lpRect);
     }
     else
@@ -348,9 +348,9 @@ HRESULT CBaseWindow::_GetWindowExtent(_In_ const RECT *prcTextExtent, _In_opt_ R
 }
 
 //+---------------------------------------------------------------------------
-//
+//光标跟随
 // CalcFitPointAroundTextExtent
-//
+//将候选窗口显示在合成周边
 //----------------------------------------------------------------------------
 
 void CBaseWindow::CalcFitPointAroundTextExtent(_In_ const RECT *prcTextExtent, _In_ const RECT *prcWorkArea, _In_ const RECT *prcWindow, _Out_ POINT *ppt)
@@ -360,11 +360,11 @@ void CBaseWindow::CalcFitPointAroundTextExtent(_In_ const RECT *prcTextExtent, _
 
     // set rcTargetWindow[0] which rectangle attached on bottom side of text extent
     rcTargetWindow[0] = *prcWindow;
-    OffsetRect(&rcTargetWindow[0], prcTextExtent->left, prcTextExtent->bottom);
+    OffsetRect(&rcTargetWindow[0], prcTextExtent->left, prcTextExtent->bottom);//显示在合成下方
 
     // set rcTargetWindow[1] which rectangle attached on top side of text extent
     rcTargetWindow[1] = *prcWindow;
-    OffsetRect(&rcTargetWindow[1], prcTextExtent->left, prcTextExtent->top - (prcWindow->bottom - prcWindow->top));
+    OffsetRect(&rcTargetWindow[1], prcTextExtent->left, prcTextExtent->top - (prcWindow->bottom - prcWindow->top));//显示在合成上方
 
     //
     // check target rectangle fit in workarea
@@ -444,7 +444,7 @@ DWORD CBaseWindow::RectInRect(_In_ const RECT *prcLimit, _In_ const RECT *prcTar
     {
         return RECT_INSIDE;
     }
-
+    //比较水平范围
     // Check horizontal range.  Target can be
     // - wider than the limit (assert here since it should never happen)
     // - entirely outside the limit (RECT_OVERLEFT or RECT_OVERRIGHT)
@@ -462,7 +462,7 @@ DWORD CBaseWindow::RectInRect(_In_ const RECT *prcLimit, _In_ const RECT *prcTar
     {
         dwFlags |= RECT_OVER_RIGHT;
     }
-
+    //比较垂直范围
     // Check vertical range.  Target can be
     // - taller than the limit (assert here since it should never happen)
     // - entirely outside the limit (RECT_OVERTOP or RECT_OVERBOTTOM)
@@ -618,7 +618,7 @@ void CBaseWindow::GetWorkAreaFromPoint(_In_ const POINT& ptPoint, _Out_ LPRECT l
         MONITORINFO MonitorInfo = {0};
 
         MonitorInfo.cbSize = sizeof(MONITORINFO);
-        if (GetMonitorInfo(hMonitor, &MonitorInfo))
+        if (GetMonitorInfo(hMonitor, &MonitorInfo))//https://learn.microsoft.com/zh-cn/windows/win32/api/winuser/nf-winuser-getmonitorinfow
         {
             *lprcWorkArea = MonitorInfo.rcWork;
             return;

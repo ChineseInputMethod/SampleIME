@@ -62,10 +62,10 @@ BOOL CCandidateWindow::_CreateMainWindow(ATOM atom, _In_opt_ HWND parentWndHandl
 }
 ```
 
-## 3.30.3 创建滚动条窗口
+## 3.30.3 调整窗口大小
 
 ```C++
 
 ```
 
-## 3.30.4 调整窗口大小
+## 3.30.4 

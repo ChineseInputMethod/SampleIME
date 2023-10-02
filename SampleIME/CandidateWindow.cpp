@@ -131,7 +131,7 @@ BOOL CCandidateWindow::_CreateVScrollWindow()
 
     SHELL_MODE shellMode = _isStoreAppMode ? STOREAPP : DESKTOP;
     CScrollBarWindowFactory* pFactory = CScrollBarWindowFactory::Instance();
-    _pVScrollBarWnd = pFactory->MakeScrollBarWindow(shellMode);
+    _pVScrollBarWnd = pFactory->MakeScrollBarWindow(shellMode);//CScrollBarNullWindow
 
     if (_pVScrollBarWnd == nullptr)
     {
@@ -254,7 +254,7 @@ LRESULT CALLBACK CCandidateWindow::_WindowProcCallback(_In_ HWND wndHandle, UINT
         _DeleteShadowWnd();
         return 0;
 
-    case WM_WINDOWPOSCHANGED:
+    case WM_WINDOWPOSCHANGED://https://learn.microsoft.com/zh-cn/windows/win32/winmsg/wm-windowposchanged
         {
             WINDOWPOS* pWndPos = (WINDOWPOS*)lParam;
 
@@ -274,7 +274,7 @@ LRESULT CALLBACK CCandidateWindow::_WindowProcCallback(_In_ HWND wndHandle, UINT
         }
         break;
 
-    case WM_WINDOWPOSCHANGING:
+    case WM_WINDOWPOSCHANGING://https://learn.microsoft.com/zh-CN/windows/win32/winmsg/wm-windowposchanging
         {
             WINDOWPOS* pWndPos = (WINDOWPOS*)lParam;
 
