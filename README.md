@@ -78,17 +78,29 @@ Source Files									|Document
 [ScrollBarWindow.cpp](doc/ScrollBarWindow.md)	|滚动条窗口。
 [ButtonWindow.cpp](doc/ButtonWindow.md)			|按钮窗口。
 
-Source Files																	|Document
+## 合成
+
+Source Files									|Document
 -|-
-[Composition.cpp](doc/Composition.md)											|输入组合终止消息接收器。
-[RegKey.cpp](doc/RegKey.md)														|注册表类。
-[DisplayAttribute.cpp](doc/DisplayAttribute.md)									|显示属性。
-[DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)							|显示属性信息。
-[DisplayAttributeProvider.cpp](doc/DisplayAttributeProvider.md)					|显示属性提供者。
-[EndComposition.cpp](doc/EndComposition.md)										|结束输入。
-[EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)					|显示属性信息对象枚举器。
-[EnumTfCandidates.cpp](doc/EnumTfCandidates.md)									|候选文字串对象枚举器。
-[SearchCandidateProvider.cpp](doc/SearchCandidateProvider.md)					|搜索候选提供者。
-[StartComposition.cpp](doc/StartComposition.md)									|开始输入。
-[TipCandidateList.cpp](doc/TipCandidateList.md)									|候选列表对象。
-[TipCandidateString.cpp](doc/TipCandidateString.md)								|候选文字串对象。
+[Composition.cpp](doc/Composition.md)			|输入组合终止消息接收器。
+[EndComposition.cpp](doc/EndComposition.md)		|结束输入。
+[StartComposition.cpp](doc/StartComposition.md)	|开始输入。
+
+## 显示属性
+
+Source Files													|Document
+-|-
+[DisplayAttribute.cpp](doc/DisplayAttribute.md)					|显示属性。
+[DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)			|显示属性信息。
+[DisplayAttributeProvider.cpp](doc/DisplayAttributeProvider.md)	|显示属性提供者。
+[EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)	|显示属性信息对象枚举器。
+
+## 无界面模式
+
+Source Files													|Document
+-|-
+[RegKey.cpp](doc/RegKey.md)										|注册表类。
+[EnumTfCandidates.cpp](doc/EnumTfCandidates.md)					|候选文字串对象枚举器。
+[SearchCandidateProvider.cpp](doc/SearchCandidateProvider.md)	|搜索候选提供者。
+[TipCandidateList.cpp](doc/TipCandidateList.md)					|候选列表对象。
+[TipCandidateString.cpp](doc/TipCandidateString.md)				|候选文字串对象。

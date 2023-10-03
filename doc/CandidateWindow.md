@@ -62,10 +62,71 @@ BOOL CCandidateWindow::_CreateMainWindow(ATOM atom, _In_opt_ HWND parentWndHandl
 }
 ```
 
-## 3.30.3 调整窗口大小
+## 3.30.3 添加候选窗口数据
+
+CCandidateWindow::_AddString()函数只是简单为候选列表生成了一个副本。<br>
+在实际的输入法开发中，一般也应该为每个候选窗口生成一个副本。<br>
+这是因为输入法可能在多个软件中运行，每个候选窗口的候选列表应该是独立的。<br>
 
 ```C++
+void CCandidateWindow::_AddString(_Inout_ CCandidateListItem *pCandidateItem, _In_ BOOL isAddFindKeyCode)
+{
+    DWORD_PTR dwItemString = pCandidateItem->_ItemString.GetLength();
+    const WCHAR* pwchString = nullptr;
+    if (dwItemString)
+    {
+        pwchString = new (std::nothrow) WCHAR[ dwItemString ];
+        if (!pwchString)
+        {
+            return;
+        }
+        memcpy((void*)pwchString, pCandidateItem->_ItemString.Get(), dwItemString * sizeof(WCHAR));
+    }
 
+    DWORD_PTR itemWildcard = pCandidateItem->_FindKeyCode.GetLength();
+    const WCHAR* pwchWildcard = nullptr;
+    if (itemWildcard && isAddFindKeyCode)
+    {
+        pwchWildcard = new (std::nothrow) WCHAR[ itemWildcard ];
+        if (!pwchWildcard)
+        {
+            if (pwchString)
+            {
+                delete [] pwchString;
+            }
+            return;
+        }
+        memcpy((void*)pwchWildcard, pCandidateItem->_FindKeyCode.Get(), itemWildcard * sizeof(WCHAR));
+    }
+
+    CCandidateListItem* pLI = nullptr;
+    pLI = _candidateList.Append();
+    if (!pLI)
+    {
+        if (pwchString)
+        {
+            delete [] pwchString;
+            pwchString = nullptr;
+        }
+        if (pwchWildcard)
+        {
+            delete [] pwchWildcard;
+            pwchWildcard = nullptr;
+        }
+        return;
+    }
+
+    if (pwchString)
+    {
+        pLI->_ItemString.Set(pwchString, dwItemString);
+    }
+    if (pwchWildcard)
+    {
+        pLI->_FindKeyCode.Set(pwchWildcard, itemWildcard);
+    }
+
+    return;
+}
 ```
 
 ## 3.30.4 

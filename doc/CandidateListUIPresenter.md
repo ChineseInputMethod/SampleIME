@@ -122,4 +122,33 @@ Exit:
 }
 ```
 
-## 3.27.4 
+## 3.27.4 显示候选列表
+
+当用户按下编码键，输入法生成候选列表，创建候选窗口，然后将候选列表添加到候选窗口中。
+
+首先，调用AddCandidateToCandidateListUI()函数，将候选列表复制一份副本给候选窗口。
+然后，调用SetPageIndexWithScrollInfo()函数，。
+最后，调用_pCandidateWnd->_InvalidateRect()函数，。
+
+```C++
+void CCandidateListUIPresenter::_SetText(_In_ CSampleImeArray<CCandidateListItem> *pCandidateList, BOOL isAddFindKeyCode)
+{
+    AddCandidateToCandidateListUI(pCandidateList, isAddFindKeyCode);
+
+    SetPageIndexWithScrollInfo(pCandidateList);
+
+    if (_isShowMode)
+    {
+        _pCandidateWnd->_InvalidateRect();
+    }
+    else
+    {
+        _updatedFlags = TF_CLUIE_COUNT       |
+            TF_CLUIE_SELECTION   |
+            TF_CLUIE_STRING      |
+            TF_CLUIE_PAGEINDEX   |
+            TF_CLUIE_CURRENTPAGE;
+        _UpdateUIElement();
+    }
+}
+```
