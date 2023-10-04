@@ -73,7 +73,7 @@ Source Files													|Document
 Source Files									|Document
 -|-
 [CandidateWindow.cpp](doc/CandidateWindow.md)	|候选窗口，在主窗口中显示候选列表。
-[BaseWindow.cpp](doc/BaseWindow.md)				|窗口基类，派生窗口。
+[BaseWindow.cpp](doc/BaseWindow.md)				|窗口基类，为派生类调用API函数。
 [ShadowWindow.cpp](doc/ShadowWindow.md)			|阴影窗口。
 [ScrollBarWindow.cpp](doc/ScrollBarWindow.md)	|滚动条窗口。
 [ButtonWindow.cpp](doc/ButtonWindow.md)			|按钮窗口。

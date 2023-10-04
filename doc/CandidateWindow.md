@@ -128,5 +128,3 @@ void CCandidateWindow::_AddString(_Inout_ CCandidateListItem *pCandidateItem, _I
     return;
 }
 ```
-
-## 3.30.4 

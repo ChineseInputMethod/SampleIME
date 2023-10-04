@@ -1107,7 +1107,7 @@ HRESULT CCandidateWindow::_SetPageIndex(UINT *pIndex, _In_ UINT uPageCnt)
 
     for (UINT i = 0; i < uPageCnt; i++)
     {
-        UINT *pLastNewPageIndex = _PageIndex.Append();
+        UINT *pLastNewPageIndex = _PageIndex.Append();//每页的第一项索引
         if (pLastNewPageIndex != nullptr)
         {
             *pLastNewPageIndex = *pIndex;

@@ -127,8 +127,8 @@ Exit:
 当用户按下编码键，输入法生成候选列表，创建候选窗口，然后将候选列表添加到候选窗口中。
 
 首先，调用AddCandidateToCandidateListUI()函数，将候选列表复制一份副本给候选窗口。
-然后，调用SetPageIndexWithScrollInfo()函数，。
-最后，调用_pCandidateWnd->_InvalidateRect()函数，。
+然后，调用SetPageIndexWithScrollInfo()函数，设置候选页索引。
+最后，调用_pCandidateWnd->_InvalidateRect()函数，失效工作区。
 
 ```C++
 void CCandidateListUIPresenter::_SetText(_In_ CSampleImeArray<CCandidateListItem> *pCandidateList, BOOL isAddFindKeyCode)

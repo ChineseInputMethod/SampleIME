@@ -849,14 +849,14 @@ void CCandidateListUIPresenter::AddCandidateToCandidateListUI(_In_ CSampleImeArr
 
 void CCandidateListUIPresenter::SetPageIndexWithScrollInfo(_In_ CSampleImeArray<CCandidateListItem> *pCandidateList)
 {
-    UINT candCntInPage = _pIndexRange->Count();
-    UINT bufferSize = pCandidateList->Count() / candCntInPage + 1;
+    UINT candCntInPage = _pIndexRange->Count();//每页多少候选项
+    UINT bufferSize = pCandidateList->Count() / candCntInPage + 1;//一共多少页候选字词
     UINT* puPageIndex = new (std::nothrow) UINT[ bufferSize ];
     if (puPageIndex != nullptr)
     {
         for (UINT i = 0; i < bufferSize; i++)
         {
-            puPageIndex[i] = i * candCntInPage;
+            puPageIndex[i] = i * candCntInPage;//每页的第一个候选项
         }
 
         _pCandidateWnd->_SetPageIndex(puPageIndex, bufferSize);
