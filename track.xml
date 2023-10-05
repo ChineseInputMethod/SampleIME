@@ -9154,62 +9154,6 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\CompositionProcessorEngine.cpp</FileName>
-        <startLine>1587</startLine>
-        <StartColumn>0</StartColumn>
-        <EndLine>1587</EndLine>
-        <EndColumn>24</EndColumn>
-        <MarkerId>0</MarkerId>
-        <IsLineBased>1</IsLineBased>
-        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
-        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
-        <Checksum>
-          <Version>1</Version>
-          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
-          <ByteCount>0</ByteCount>
-          <Bytes />
-        </Checksum>
-      </TextPosition>
-      <NamedLocationText>IsVirtualKeyNeed(UINT uCode, _In_reads_(1) WCHAR *pwch, BOOL fComposing, CANDIDATE_MODE candidateMode, BOOL hasCandidateWithWildcard, _Out_opt_ _KEYSTROKE_STATE *pKeyState)</NamedLocationText>
-      <NamedLocationLine>16</NamedLocationLine>
-      <NamedLocationColumn>0</NamedLocationColumn>
-      <HitCountType>NoHitCount</HitCountType>
-      <HitCountTarget>1</HitCountTarget>
-      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
-      <IsMapped>0</IsMapped>
-      <BreakpointType>PendingBreakpoint</BreakpointType>
-      <AddressLocation>
-        <Version>0</Version>
-        <MarkerId>0</MarkerId>
-        <FunctionLine>0</FunctionLine>
-        <FunctionColumn>0</FunctionColumn>
-        <Language>00000000-0000-0000-0000-000000000000</Language>
-      </AddressLocation>
-      <DataCount>4</DataCount>
-      <TracepointText> {fComposing} candidateMode =={candidateMode}</TracepointText>
-      <IsTracepointActive>1</IsTracepointActive>
-      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
-      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>0</IsBreakWhenHit>
-      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
-      <Labels />
-      <RequestRemapped>0</RequestRemapped>
-      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
-      <SnapshotCountTarget>1</SnapshotCountTarget>
-      <parentIndex>-1</parentIndex>
-    </Breakpoint>
-    <Breakpoint>
-      <Version>15</Version>
-      <IsEnabled>1</IsEnabled>
-      <IsVisible>1</IsVisible>
-      <IsEmulated>0</IsEmulated>
-      <IsCondition>0</IsCondition>
-      <IsProductionBps>0</IsProductionBps>
-      <ConditionType>WhenTrue</ConditionType>
-      <LocationType>SourceLocation</LocationType>
-      <TextPosition>
-        <Version>4</Version>
-        <FileName>.\SampleIME\CompositionProcessorEngine.cpp</FileName>
         <startLine>1597</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>1597</EndLine>
@@ -9302,6 +9246,61 @@
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
+      <Labels />
+      <RequestRemapped>0</RequestRemapped>
+      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
+      <SnapshotCountTarget>1</SnapshotCountTarget>
+      <parentIndex>-1</parentIndex>
+    </Breakpoint>
+    <Breakpoint>
+      <Version>15</Version>
+      <IsEnabled>1</IsEnabled>
+      <IsVisible>1</IsVisible>
+      <IsEmulated>0</IsEmulated>
+      <IsCondition>0</IsCondition>
+      <IsProductionBps>0</IsProductionBps>
+      <ConditionType>WhenTrue</ConditionType>
+      <LocationType>SourceLocation</LocationType>
+      <TextPosition>
+        <Version>4</Version>
+        <FileName>.\SampleIME\CompositionProcessorEngine.cpp</FileName>
+        <startLine>1608</startLine>
+        <StartColumn>0</StartColumn>
+        <EndLine>1608</EndLine>
+        <EndColumn>110</EndColumn>
+        <MarkerId>0</MarkerId>
+        <IsLineBased>1</IsLineBased>
+        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
+        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
+        <Checksum>
+          <Version>1</Version>
+          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
+          <ByteCount>0</ByteCount>
+          <Bytes />
+        </Checksum>
+      </TextPosition>
+      <NamedLocationText>IsVirtualKeyNeed(UINT uCode, _In_reads_(1) WCHAR *pwch, BOOL fComposing, CANDIDATE_MODE candidateMode, BOOL hasCandidateWithWildcard, _Out_opt_ _KEYSTROKE_STATE *pKeyState)</NamedLocationText>
+      <NamedLocationLine>37</NamedLocationLine>
+      <NamedLocationColumn>0</NamedLocationColumn>
+      <HitCountType>NoHitCount</HitCountType>
+      <HitCountTarget>1</HitCountTarget>
+      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
+      <IsMapped>0</IsMapped>
+      <BreakpointType>PendingBreakpoint</BreakpointType>
+      <AddressLocation>
+        <Version>0</Version>
+        <MarkerId>0</MarkerId>
+        <FunctionLine>0</FunctionLine>
+        <FunctionColumn>0</FunctionColumn>
+        <Language>00000000-0000-0000-0000-000000000000</Language>
+      </AddressLocation>
+      <DataCount>4</DataCount>
+      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
+      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
+      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9430,10 +9429,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\CompositionProcessorEngine.cpp</FileName>
-        <startLine>1625</startLine>
+        <startLine>1626</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>1625</EndLine>
-        <EndColumn>13</EndColumn>
+        <EndLine>1626</EndLine>
+        <EndColumn>28</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -9446,7 +9445,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>IsVirtualKeyNeed(UINT uCode, _In_reads_(1) WCHAR *pwch, BOOL fComposing, CANDIDATE_MODE candidateMode, BOOL hasCandidateWithWildcard, _Out_opt_ _KEYSTROKE_STATE *pKeyState)</NamedLocationText>
-      <NamedLocationLine>54</NamedLocationLine>
+      <NamedLocationLine>55</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -9466,7 +9465,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9540,10 +9539,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\CompositionProcessorEngine.cpp</FileName>
-        <startLine>1642</startLine>
+        <startLine>1648</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>1642</EndLine>
-        <EndColumn>29</EndColumn>
+        <EndLine>1648</EndLine>
+        <EndColumn>79</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -9556,7 +9555,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>IsVirtualKeyNeed(UINT uCode, _In_reads_(1) WCHAR *pwch, BOOL fComposing, CANDIDATE_MODE candidateMode, BOOL hasCandidateWithWildcard, _Out_opt_ _KEYSTROKE_STATE *pKeyState)</NamedLocationText>
-      <NamedLocationLine>71</NamedLocationLine>
+      <NamedLocationLine>77</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -9576,7 +9575,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9705,10 +9704,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\CompositionProcessorEngine.cpp</FileName>
-        <startLine>1680</startLine>
+        <startLine>1726</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>1680</EndLine>
-        <EndColumn>26</EndColumn>
+        <EndLine>1726</EndLine>
+        <EndColumn>22</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -9721,7 +9720,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>IsVirtualKeyNeed(UINT uCode, _In_reads_(1) WCHAR *pwch, BOOL fComposing, CANDIDATE_MODE candidateMode, BOOL hasCandidateWithWildcard, _Out_opt_ _KEYSTROKE_STATE *pKeyState)</NamedLocationText>
-      <NamedLocationLine>109</NamedLocationLine>
+      <NamedLocationLine>155</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -9760,10 +9759,10 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\CompositionProcessorEngine.cpp</FileName>
-        <startLine>1726</startLine>
+        <startLine>1762</startLine>
         <StartColumn>0</StartColumn>
-        <EndLine>1726</EndLine>
-        <EndColumn>22</EndColumn>
+        <EndLine>1762</EndLine>
+        <EndColumn>9</EndColumn>
         <MarkerId>0</MarkerId>
         <IsLineBased>1</IsLineBased>
         <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
@@ -9776,7 +9775,7 @@
         </Checksum>
       </TextPosition>
       <NamedLocationText>IsVirtualKeyNeed(UINT uCode, _In_reads_(1) WCHAR *pwch, BOOL fComposing, CANDIDATE_MODE candidateMode, BOOL hasCandidateWithWildcard, _Out_opt_ _KEYSTROKE_STATE *pKeyState)</NamedLocationText>
-      <NamedLocationLine>155</NamedLocationLine>
+      <NamedLocationLine>191</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -9796,7 +9795,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -9942,61 +9941,6 @@
       </TextPosition>
       <NamedLocationText>IsVirtualKeyNeed(UINT uCode, _In_reads_(1) WCHAR *pwch, BOOL fComposing, CANDIDATE_MODE candidateMode, BOOL hasCandidateWithWildcard, _Out_opt_ _KEYSTROKE_STATE *pKeyState)</NamedLocationText>
       <NamedLocationLine>222</NamedLocationLine>
-      <NamedLocationColumn>0</NamedLocationColumn>
-      <HitCountType>NoHitCount</HitCountType>
-      <HitCountTarget>1</HitCountTarget>
-      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
-      <IsMapped>0</IsMapped>
-      <BreakpointType>PendingBreakpoint</BreakpointType>
-      <AddressLocation>
-        <Version>0</Version>
-        <MarkerId>0</MarkerId>
-        <FunctionLine>0</FunctionLine>
-        <FunctionColumn>0</FunctionColumn>
-        <Language>00000000-0000-0000-0000-000000000000</Language>
-      </AddressLocation>
-      <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
-      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
-      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
-      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
-      <Labels />
-      <RequestRemapped>0</RequestRemapped>
-      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
-      <SnapshotCountTarget>1</SnapshotCountTarget>
-      <parentIndex>-1</parentIndex>
-    </Breakpoint>
-    <Breakpoint>
-      <Version>15</Version>
-      <IsEnabled>1</IsEnabled>
-      <IsVisible>1</IsVisible>
-      <IsEmulated>0</IsEmulated>
-      <IsCondition>0</IsCondition>
-      <IsProductionBps>0</IsProductionBps>
-      <ConditionType>WhenTrue</ConditionType>
-      <LocationType>SourceLocation</LocationType>
-      <TextPosition>
-        <Version>4</Version>
-        <FileName>.\SampleIME\CompositionProcessorEngine.cpp</FileName>
-        <startLine>1803</startLine>
-        <StartColumn>0</StartColumn>
-        <EndLine>1803</EndLine>
-        <EndColumn>21</EndColumn>
-        <MarkerId>0</MarkerId>
-        <IsLineBased>1</IsLineBased>
-        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
-        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
-        <Checksum>
-          <Version>1</Version>
-          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
-          <ByteCount>0</ByteCount>
-          <Bytes />
-        </Checksum>
-      </TextPosition>
-      <NamedLocationText>IsVirtualKeyNeed(UINT uCode, _In_reads_(1) WCHAR *pwch, BOOL fComposing, CANDIDATE_MODE candidateMode, BOOL hasCandidateWithWildcard, _Out_opt_ _KEYSTROKE_STATE *pKeyState)</NamedLocationText>
-      <NamedLocationLine>232</NamedLocationLine>
       <NamedLocationColumn>0</NamedLocationColumn>
       <HitCountType>NoHitCount</HitCountType>
       <HitCountTarget>1</HitCountTarget>
@@ -10288,10 +10232,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -10343,10 +10288,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -10898,10 +10844,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -11008,10 +10955,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText> $FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -12063,10 +12011,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText>$FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -12338,10 +12287,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText>$FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />
@@ -14942,7 +14892,7 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <TracepointText> $FUNCTION end</TracepointText>
+      <TracepointText>$FUNCTION end</TracepointText>
       <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
@@ -15133,6 +15083,61 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\KeyEventSink.cpp</FileName>
+        <startLine>383</startLine>
+        <StartColumn>0</StartColumn>
+        <EndLine>383</EndLine>
+        <EndColumn>1</EndColumn>
+        <MarkerId>0</MarkerId>
+        <IsLineBased>1</IsLineBased>
+        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
+        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
+        <Checksum>
+          <Version>1</Version>
+          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
+          <ByteCount>0</ByteCount>
+          <Bytes />
+        </Checksum>
+      </TextPosition>
+      <NamedLocationLine>0</NamedLocationLine>
+      <NamedLocationColumn>0</NamedLocationColumn>
+      <HitCountType>NoHitCount</HitCountType>
+      <HitCountTarget>1</HitCountTarget>
+      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
+      <IsMapped>0</IsMapped>
+      <BreakpointType>PendingBreakpoint</BreakpointType>
+      <AddressLocation>
+        <Version>0</Version>
+        <MarkerId>0</MarkerId>
+        <FunctionLine>0</FunctionLine>
+        <FunctionColumn>0</FunctionColumn>
+        <Language>00000000-0000-0000-0000-000000000000</Language>
+      </AddressLocation>
+      <DataCount>4</DataCount>
+      <TracepointText>/*</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
+      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
+      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
+      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
+      <UseChecksum>1</UseChecksum>
+      <Labels />
+      <RequestRemapped>0</RequestRemapped>
+      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
+      <SnapshotCountTarget>1</SnapshotCountTarget>
+      <parentIndex>-1</parentIndex>
+    </Breakpoint>
+    <Breakpoint>
+      <Version>15</Version>
+      <IsEnabled>1</IsEnabled>
+      <IsVisible>1</IsVisible>
+      <IsEmulated>0</IsEmulated>
+      <IsCondition>0</IsCondition>
+      <IsProductionBps>0</IsProductionBps>
+      <ConditionType>WhenTrue</ConditionType>
+      <LocationType>SourceLocation</LocationType>
+      <TextPosition>
+        <Version>4</Version>
+        <FileName>.\SampleIME\KeyEventSink.cpp</FileName>
         <startLine>384</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>384</EndLine>
@@ -15164,12 +15169,125 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText>$FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
+      <Labels />
+      <RequestRemapped>0</RequestRemapped>
+      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
+      <SnapshotCountTarget>1</SnapshotCountTarget>
+      <parentIndex>-1</parentIndex>
+    </Breakpoint>
+    <Breakpoint>
+      <Version>15</Version>
+      <IsEnabled>1</IsEnabled>
+      <IsVisible>1</IsVisible>
+      <IsEmulated>0</IsEmulated>
+      <IsCondition>0</IsCondition>
+      <IsProductionBps>0</IsProductionBps>
+      <ConditionType>WhenTrue</ConditionType>
+      <LocationType>SourceLocation</LocationType>
+      <TextPosition>
+        <Version>4</Version>
+        <FileName>.\SampleIME\KeyEventSink.cpp</FileName>
+        <startLine>390</startLine>
+        <StartColumn>0</StartColumn>
+        <EndLine>390</EndLine>
+        <EndColumn>0</EndColumn>
+        <MarkerId>0</MarkerId>
+        <IsLineBased>1</IsLineBased>
+        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
+        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
+        <Checksum>
+          <Version>1</Version>
+          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
+          <ByteCount>0</ByteCount>
+          <Bytes />
+        </Checksum>
+      </TextPosition>
+      <NamedLocationText>OnKeyUp(ITfContext *pContext, WPARAM wParam, LPARAM lParam, BOOL *pIsEaten)</NamedLocationText>
+      <NamedLocationLine>7</NamedLocationLine>
+      <NamedLocationColumn>0</NamedLocationColumn>
+      <HitCountType>NoHitCount</HitCountType>
+      <HitCountTarget>1</HitCountTarget>
+      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
+      <IsMapped>0</IsMapped>
+      <BreakpointType>PendingBreakpoint</BreakpointType>
+      <AddressLocation>
+        <Version>0</Version>
+        <MarkerId>0</MarkerId>
+        <FunctionLine>0</FunctionLine>
+        <FunctionColumn>0</FunctionColumn>
+        <Language>00000000-0000-0000-0000-000000000000</Language>
+      </AddressLocation>
+      <DataCount>4</DataCount>
+      <TracepointText>$FUNCTION end</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
+      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
+      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
+      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
+      <UseChecksum>1</UseChecksum>
+      <Labels />
+      <RequestRemapped>0</RequestRemapped>
+      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
+      <SnapshotCountTarget>1</SnapshotCountTarget>
+      <parentIndex>-1</parentIndex>
+    </Breakpoint>
+    <Breakpoint>
+      <Version>15</Version>
+      <IsEnabled>1</IsEnabled>
+      <IsVisible>1</IsVisible>
+      <IsEmulated>0</IsEmulated>
+      <IsCondition>0</IsCondition>
+      <IsProductionBps>0</IsProductionBps>
+      <ConditionType>WhenTrue</ConditionType>
+      <LocationType>SourceLocation</LocationType>
+      <TextPosition>
+        <Version>4</Version>
+        <FileName>.\SampleIME\KeyEventSink.cpp</FileName>
+        <startLine>391</startLine>
+        <StartColumn>0</StartColumn>
+        <EndLine>391</EndLine>
+        <EndColumn>16</EndColumn>
+        <MarkerId>0</MarkerId>
+        <IsLineBased>1</IsLineBased>
+        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
+        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
+        <Checksum>
+          <Version>1</Version>
+          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
+          <ByteCount>0</ByteCount>
+          <Bytes />
+        </Checksum>
+      </TextPosition>
+      <NamedLocationText>OnKeyUp(ITfContext *pContext, WPARAM wParam, LPARAM lParam, BOOL *pIsEaten)</NamedLocationText>
+      <NamedLocationLine>8</NamedLocationLine>
+      <NamedLocationColumn>0</NamedLocationColumn>
+      <HitCountType>NoHitCount</HitCountType>
+      <HitCountTarget>1</HitCountTarget>
+      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
+      <IsMapped>0</IsMapped>
+      <BreakpointType>PendingBreakpoint</BreakpointType>
+      <AddressLocation>
+        <Version>0</Version>
+        <MarkerId>0</MarkerId>
+        <FunctionLine>0</FunctionLine>
+        <FunctionColumn>0</FunctionColumn>
+        <Language>00000000-0000-0000-0000-000000000000</Language>
+      </AddressLocation>
+      <DataCount>4</DataCount>
+      <TracepointText>*/</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
+      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
+      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
+      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -18613,61 +18731,6 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\LanguageBar.cpp</FileName>
-        <startLine>322</startLine>
-        <StartColumn>0</StartColumn>
-        <EndLine>322</EndLine>
-        <EndColumn>65</EndColumn>
-        <MarkerId>0</MarkerId>
-        <IsLineBased>1</IsLineBased>
-        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
-        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
-        <Checksum>
-          <Version>1</Version>
-          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
-          <ByteCount>0</ByteCount>
-          <Bytes />
-        </Checksum>
-      </TextPosition>
-      <NamedLocationText>SetStatus(DWORD dwStatus, BOOL fSet)</NamedLocationText>
-      <NamedLocationLine>22</NamedLocationLine>
-      <NamedLocationColumn>0</NamedLocationColumn>
-      <HitCountType>NoHitCount</HitCountType>
-      <HitCountTarget>1</HitCountTarget>
-      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
-      <IsMapped>0</IsMapped>
-      <BreakpointType>PendingBreakpoint</BreakpointType>
-      <AddressLocation>
-        <Version>0</Version>
-        <MarkerId>0</MarkerId>
-        <FunctionLine>0</FunctionLine>
-        <FunctionColumn>0</FunctionColumn>
-        <Language>00000000-0000-0000-0000-000000000000</Language>
-      </AddressLocation>
-      <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
-      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
-      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
-      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>0</UseChecksum>
-      <Labels />
-      <RequestRemapped>0</RequestRemapped>
-      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
-      <SnapshotCountTarget>1</SnapshotCountTarget>
-      <parentIndex>-1</parentIndex>
-    </Breakpoint>
-    <Breakpoint>
-      <Version>15</Version>
-      <IsEnabled>1</IsEnabled>
-      <IsVisible>1</IsVisible>
-      <IsEmulated>0</IsEmulated>
-      <IsCondition>0</IsCondition>
-      <IsProductionBps>0</IsProductionBps>
-      <ConditionType>WhenTrue</ConditionType>
-      <LocationType>SourceLocation</LocationType>
-      <TextPosition>
-        <Version>4</Version>
-        <FileName>.\SampleIME\LanguageBar.cpp</FileName>
         <startLine>337</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>337</EndLine>
@@ -20888,6 +20951,61 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
+        <startLine>141</startLine>
+        <StartColumn>0</StartColumn>
+        <EndLine>141</EndLine>
+        <EndColumn>42</EndColumn>
+        <MarkerId>0</MarkerId>
+        <IsLineBased>1</IsLineBased>
+        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
+        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
+        <Checksum>
+          <Version>1</Version>
+          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
+          <ByteCount>0</ByteCount>
+          <Bytes />
+        </Checksum>
+      </TextPosition>
+      <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
+      <NamedLocationLine>27</NamedLocationLine>
+      <NamedLocationColumn>0</NamedLocationColumn>
+      <HitCountType>NoHitCount</HitCountType>
+      <HitCountTarget>1</HitCountTarget>
+      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
+      <IsMapped>0</IsMapped>
+      <BreakpointType>PendingBreakpoint</BreakpointType>
+      <AddressLocation>
+        <Version>0</Version>
+        <MarkerId>0</MarkerId>
+        <FunctionLine>0</FunctionLine>
+        <FunctionColumn>0</FunctionColumn>
+        <Language>00000000-0000-0000-0000-000000000000</Language>
+      </AddressLocation>
+      <DataCount>4</DataCount>
+      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
+      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
+      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
+      <UseChecksum>1</UseChecksum>
+      <Labels />
+      <RequestRemapped>0</RequestRemapped>
+      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
+      <SnapshotCountTarget>1</SnapshotCountTarget>
+      <parentIndex>-1</parentIndex>
+    </Breakpoint>
+    <Breakpoint>
+      <Version>15</Version>
+      <IsEnabled>1</IsEnabled>
+      <IsVisible>1</IsVisible>
+      <IsEmulated>0</IsEmulated>
+      <IsCondition>0</IsCondition>
+      <IsProductionBps>0</IsProductionBps>
+      <ConditionType>WhenTrue</ConditionType>
+      <LocationType>SourceLocation</LocationType>
+      <TextPosition>
+        <Version>4</Version>
+        <FileName>.\SampleIME\SampleIME.cpp</FileName>
         <startLine>142</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>142</EndLine>
@@ -21000,6 +21118,61 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
+        <startLine>149</startLine>
+        <StartColumn>0</StartColumn>
+        <EndLine>149</EndLine>
+        <EndColumn>42</EndColumn>
+        <MarkerId>0</MarkerId>
+        <IsLineBased>1</IsLineBased>
+        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
+        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
+        <Checksum>
+          <Version>1</Version>
+          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
+          <ByteCount>0</ByteCount>
+          <Bytes />
+        </Checksum>
+      </TextPosition>
+      <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
+      <NamedLocationLine>35</NamedLocationLine>
+      <NamedLocationColumn>0</NamedLocationColumn>
+      <HitCountType>NoHitCount</HitCountType>
+      <HitCountTarget>1</HitCountTarget>
+      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
+      <IsMapped>0</IsMapped>
+      <BreakpointType>PendingBreakpoint</BreakpointType>
+      <AddressLocation>
+        <Version>0</Version>
+        <MarkerId>0</MarkerId>
+        <FunctionLine>0</FunctionLine>
+        <FunctionColumn>0</FunctionColumn>
+        <Language>00000000-0000-0000-0000-000000000000</Language>
+      </AddressLocation>
+      <DataCount>4</DataCount>
+      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
+      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
+      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
+      <UseChecksum>1</UseChecksum>
+      <Labels />
+      <RequestRemapped>0</RequestRemapped>
+      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
+      <SnapshotCountTarget>1</SnapshotCountTarget>
+      <parentIndex>-1</parentIndex>
+    </Breakpoint>
+    <Breakpoint>
+      <Version>15</Version>
+      <IsEnabled>1</IsEnabled>
+      <IsVisible>1</IsVisible>
+      <IsEmulated>0</IsEmulated>
+      <IsCondition>0</IsCondition>
+      <IsProductionBps>0</IsProductionBps>
+      <ConditionType>WhenTrue</ConditionType>
+      <LocationType>SourceLocation</LocationType>
+      <TextPosition>
+        <Version>4</Version>
+        <FileName>.\SampleIME\SampleIME.cpp</FileName>
         <startLine>150</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>150</EndLine>
@@ -21087,7 +21260,7 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <TracepointText>ITfDisplayAttributeProvider</TracepointText>
+      <TracepointText>$FUNCTION {riid} {*ppvObj}</TracepointText>
       <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
@@ -21224,6 +21397,61 @@
       <TextPosition>
         <Version>4</Version>
         <FileName>.\SampleIME\SampleIME.cpp</FileName>
+        <startLine>165</startLine>
+        <StartColumn>0</StartColumn>
+        <EndLine>165</EndLine>
+        <EndColumn>38</EndColumn>
+        <MarkerId>0</MarkerId>
+        <IsLineBased>1</IsLineBased>
+        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
+        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
+        <Checksum>
+          <Version>1</Version>
+          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
+          <ByteCount>0</ByteCount>
+          <Bytes />
+        </Checksum>
+      </TextPosition>
+      <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
+      <NamedLocationLine>51</NamedLocationLine>
+      <NamedLocationColumn>0</NamedLocationColumn>
+      <HitCountType>NoHitCount</HitCountType>
+      <HitCountTarget>1</HitCountTarget>
+      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
+      <IsMapped>0</IsMapped>
+      <BreakpointType>PendingBreakpoint</BreakpointType>
+      <AddressLocation>
+        <Version>0</Version>
+        <MarkerId>0</MarkerId>
+        <FunctionLine>0</FunctionLine>
+        <FunctionColumn>0</FunctionColumn>
+        <Language>00000000-0000-0000-0000-000000000000</Language>
+      </AddressLocation>
+      <DataCount>4</DataCount>
+      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
+      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
+      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
+      <UseChecksum>1</UseChecksum>
+      <Labels />
+      <RequestRemapped>0</RequestRemapped>
+      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
+      <SnapshotCountTarget>1</SnapshotCountTarget>
+      <parentIndex>-1</parentIndex>
+    </Breakpoint>
+    <Breakpoint>
+      <Version>15</Version>
+      <IsEnabled>1</IsEnabled>
+      <IsVisible>1</IsVisible>
+      <IsEmulated>0</IsEmulated>
+      <IsCondition>0</IsCondition>
+      <IsProductionBps>0</IsProductionBps>
+      <ConditionType>WhenTrue</ConditionType>
+      <LocationType>SourceLocation</LocationType>
+      <TextPosition>
+        <Version>4</Version>
+        <FileName>.\SampleIME\SampleIME.cpp</FileName>
         <startLine>166</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>166</EndLine>
@@ -21262,6 +21490,61 @@
       <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
+      <Labels />
+      <RequestRemapped>0</RequestRemapped>
+      <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
+      <SnapshotCountTarget>1</SnapshotCountTarget>
+      <parentIndex>-1</parentIndex>
+    </Breakpoint>
+    <Breakpoint>
+      <Version>15</Version>
+      <IsEnabled>1</IsEnabled>
+      <IsVisible>1</IsVisible>
+      <IsEmulated>0</IsEmulated>
+      <IsCondition>0</IsCondition>
+      <IsProductionBps>0</IsProductionBps>
+      <ConditionType>WhenTrue</ConditionType>
+      <LocationType>SourceLocation</LocationType>
+      <TextPosition>
+        <Version>4</Version>
+        <FileName>.\SampleIME\SampleIME.cpp</FileName>
+        <startLine>169</startLine>
+        <StartColumn>0</StartColumn>
+        <EndLine>169</EndLine>
+        <EndColumn>63</EndColumn>
+        <MarkerId>0</MarkerId>
+        <IsLineBased>1</IsLineBased>
+        <IsDocumentPathNotFound>0</IsDocumentPathNotFound>
+        <ShouldUpdateTextSpan>1</ShouldUpdateTextSpan>
+        <Checksum>
+          <Version>1</Version>
+          <Algorithm>00000000-0000-0000-0000-000000000000</Algorithm>
+          <ByteCount>0</ByteCount>
+          <Bytes />
+        </Checksum>
+      </TextPosition>
+      <NamedLocationText>QueryInterface(REFIID riid, _Outptr_ void **ppvObj)</NamedLocationText>
+      <NamedLocationLine>55</NamedLocationLine>
+      <NamedLocationColumn>0</NamedLocationColumn>
+      <HitCountType>NoHitCount</HitCountType>
+      <HitCountTarget>1</HitCountTarget>
+      <Language>3a12d0b7-c26c-11d0-b442-00a0244a1dd2</Language>
+      <IsMapped>0</IsMapped>
+      <BreakpointType>PendingBreakpoint</BreakpointType>
+      <AddressLocation>
+        <Version>0</Version>
+        <MarkerId>0</MarkerId>
+        <FunctionLine>0</FunctionLine>
+        <FunctionColumn>0</FunctionColumn>
+        <Language>00000000-0000-0000-0000-000000000000</Language>
+      </AddressLocation>
+      <DataCount>4</DataCount>
+      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointTargetType>VsOutputWindow</TracepointTargetType>
+      <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
+      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
+      <UseChecksum>1</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -24585,7 +24868,7 @@
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
       <IsBreakWhenHit>1</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
-      <UseChecksum>1</UseChecksum>
+      <UseChecksum>0</UseChecksum>
       <Labels />
       <RequestRemapped>0</RequestRemapped>
       <IsSnapshotWhenHit>1</IsSnapshotWhenHit>
@@ -25024,10 +25307,11 @@
         <Language>00000000-0000-0000-0000-000000000000</Language>
       </AddressLocation>
       <DataCount>4</DataCount>
-      <IsTracepointActive>0</IsTracepointActive>
+      <TracepointText>$FUNCTION</TracepointText>
+      <IsTracepointActive>1</IsTracepointActive>
       <TracepointTargetType>VsOutputWindow</TracepointTargetType>
       <TimeTravelTraceMarker>NoTracing</TimeTravelTraceMarker>
-      <IsBreakWhenHit>1</IsBreakWhenHit>
+      <IsBreakWhenHit>0</IsBreakWhenHit>
       <IsRunMacroWhenHit>0</IsRunMacroWhenHit>
       <UseChecksum>0</UseChecksum>
       <Labels />

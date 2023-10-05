@@ -170,7 +170,7 @@ BOOL CSampleIME::_IsKeyEaten(_In_ ITfContext *pContext, UINT codeIn, _Out_ UINT 
         }
     }
 
-    return isTouchKeyboardSpecialKeys;
+    return isTouchKeyboardSpecialKeys;//抬起按键返回FALSE
 }
 
 //+---------------------------------------------------------------------------
@@ -387,7 +387,7 @@ STDAPI CSampleIME::OnKeyUp(ITfContext *pContext, WPARAM wParam, LPARAM lParam, B
     WCHAR wch = '\0';
     UINT code = 0;
 
-    *pIsEaten = _IsKeyEaten(pContext, (UINT)wParam, &code, &wch, NULL);
+    *pIsEaten = _IsKeyEaten(pContext, (UINT)wParam, &code, &wch, NULL);//按下与抬起调用的区别是最后一个参数不同
 
     return S_OK;
 }

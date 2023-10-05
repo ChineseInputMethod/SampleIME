@@ -1638,7 +1638,7 @@ BOOL CCompositionProcessorEngine::IsVirtualKeyNeed(UINT uCode, _In_reads_(1) WCH
     else if (candidateMode == CANDIDATE_INCREMENTAL)
     {
         BOOL isRetCode = TRUE;
-        if (IsVirtualKeyKeystrokeCandidate(uCode, pKeyState, candidateMode, &isRetCode, &_KeystrokeCandidate))
+        if (IsVirtualKeyKeystrokeCandidate(uCode, pKeyState, candidateMode, &isRetCode, &_KeystrokeCandidate))//FALSE
         {
             return isRetCode;
         }
@@ -1801,7 +1801,7 @@ BOOL CCompositionProcessorEngine::IsVirtualKeyNeed(UINT uCode, _In_reads_(1) WCH
             pKeyState->Category = CATEGORY_INVOKE_COMPOSITION_EDIT_SESSION;
             pKeyState->Function = FUNCTION_FINALIZE_TEXTSTORE;
         }
-        return FALSE;
+        return FALSE;//抬起返回FALSE
     }
 
     return FALSE;
