@@ -128,3 +128,38 @@ void CCandidateWindow::_AddString(_Inout_ CCandidateListItem *pCandidateItem, _I
     return;
 }
 ```
+
+## 3.30.4 绘制消息
+
+当输入法调用_pCandidateWnd->_InvalidateRect()函数，失效工作区后，系统向窗口发送WM_PAINT消息。<br>
+窗口过程调用CCandidateWindow::_OnPaint()函数，处理WM_PAINT消息。
+
+首先，调用_GetCurrentPage()函数，获取当前候选页。<br>
+然后，调用_AdjustPageIndex()函数，获取当前候选项。<br>
+最后，调用_DrawList()函数，绘制当前候选页面。
+
+```C++
+void CCandidateWindow::_OnPaint(_In_ HDC dcHandle, _In_ PAINTSTRUCT *pPaintStruct)
+{
+    SetBkMode(dcHandle, TRANSPARENT);//透明
+
+    HFONT hFontOld = (HFONT)SelectObject(dcHandle, Global::defaultlFontHandle);
+
+    FillRect(dcHandle, &pPaintStruct->rcPaint, _brshBkColor);//COLOR_WINDOW+1
+
+    UINT currentPageIndex = 0;
+    UINT currentPage = 0;
+
+    if (FAILED(_GetCurrentPage(&currentPage)))
+    {
+        goto cleanup;
+    }
+    
+    _AdjustPageIndex(currentPage, currentPageIndex);
+
+    _DrawList(dcHandle, currentPageIndex, &pPaintStruct->rcPaint);
+
+cleanup:
+    SelectObject(dcHandle, hFontOld);
+}
+```

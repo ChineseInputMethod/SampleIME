@@ -417,11 +417,11 @@ void CCandidateWindow::_HandleMouseMsg(_In_ UINT mouseMsg, _In_ POINT point)
 
 void CCandidateWindow::_OnPaint(_In_ HDC dcHandle, _In_ PAINTSTRUCT *pPaintStruct)
 {
-    SetBkMode(dcHandle, TRANSPARENT);
+    SetBkMode(dcHandle, TRANSPARENT);//Í¸Ã÷
 
     HFONT hFontOld = (HFONT)SelectObject(dcHandle, Global::defaultlFontHandle);
 
-    FillRect(dcHandle, &pPaintStruct->rcPaint, _brshBkColor);
+    FillRect(dcHandle, &pPaintStruct->rcPaint, _brshBkColor);//COLOR_WINDOW+1
 
     UINT currentPageIndex = 0;
     UINT currentPage = 0;
