@@ -9,6 +9,8 @@ track.xml		|断点文件，跟踪主要函数的调用关系。
 install.bat		|安装文件，安装debug64位版。
 uninstall.bat	|卸载文件。
 
+# 上篇
+
 ## COM组件框架
 
 Source Files					|Document
@@ -78,6 +80,8 @@ Source Files									|Document
 [ScrollBarWindow.cpp](doc/ScrollBarWindow.md)	|滚动条窗口。
 [ButtonWindow.cpp](doc/ButtonWindow.md)			|按钮窗口。
 
+# 下篇
+
 ## 合成
 
 Source Files									|Document
@@ -94,6 +98,8 @@ Source Files													|Document
 [DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)			|显示属性信息。
 [DisplayAttributeProvider.cpp](doc/DisplayAttributeProvider.md)	|显示属性提供者。
 [EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)	|显示属性信息对象枚举器。
+
+# 番外
 
 ## 无界面模式
 

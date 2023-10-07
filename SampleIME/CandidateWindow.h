@@ -94,7 +94,7 @@ private:
 private:
     UINT _currentSelection;
     CSampleImeArray<CCandidateListItem> _candidateList;
-    CSampleImeArray<UINT> _PageIndex;
+    CSampleImeArray<UINT> _PageIndex;//候选页索引（候选列表有多少页）
 
     COLORREF _crTextColor;
     COLORREF _crBkColor;
@@ -105,7 +105,7 @@ private:
     int _cxTitle;
     UINT _wndWidth;
 
-    CCandidateRange* _pIndexRange;
+    CCandidateRange* _pIndexRange;//候选项索引（每页有多少个候选项）
 
     CANDWNDCALLBACK _pfnCallback;
     void* _pObj;

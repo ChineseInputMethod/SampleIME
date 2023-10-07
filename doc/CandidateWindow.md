@@ -135,7 +135,7 @@ void CCandidateWindow::_AddString(_Inout_ CCandidateListItem *pCandidateItem, _I
 窗口过程调用CCandidateWindow::_OnPaint()函数，处理WM_PAINT消息。
 
 首先，调用_GetCurrentPage()函数，获取当前候选页。<br>
-然后，调用_AdjustPageIndex()函数，获取当前候选项。<br>
+然后，调用_AdjustPageIndex()函数，调整当前候选项。<br>
 最后，调用_DrawList()函数，绘制当前候选页面。
 
 ```C++

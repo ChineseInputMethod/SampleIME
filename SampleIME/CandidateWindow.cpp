@@ -632,7 +632,7 @@ void CCandidateWindow::_DrawList(_In_ HDC dcHandle, _In_ UINT iIndex, _In_ RECT 
         // Number Font Color And BK
         SetTextColor(dcHandle, CANDWND_NUM_COLOR);
         SetBkColor(dcHandle, GetSysColor(COLOR_3DHIGHLIGHT));
-
+    //https://learn.microsoft.com/zh-cn/windows/win32/api/strsafe/nf-strsafe-stringcchprintfw
         StringCchPrintf(pageCountString, ARRAYSIZE(pageCountString), L"%d", (LONG)*_pIndexRange->GetAt(pageCount));
         ExtTextOut(dcHandle, PageCountPosition * cxLine, pageCount * cyLine + cyOffset, ETO_OPAQUE, &rc, pageCountString, lenOfPageCount, NULL);
 
@@ -646,15 +646,15 @@ void CCandidateWindow::_DrawList(_In_ HDC dcHandle, _In_ UINT iIndex, _In_ RECT 
             SetBkColor(dcHandle, GetSysColor(COLOR_3DHIGHLIGHT));
         }
         else
-        {
+        {//当前选择
             SetTextColor(dcHandle, CANDWND_SELECTED_ITEM_COLOR);
             SetBkColor(dcHandle, CANDWND_SELECTED_BK_COLOR);
         }
-
+    //https://learn.microsoft.com/zh-cn/windows/win32/api/wingdi/nf-wingdi-exttextoutw
         pItemList = _candidateList.GetAt(iIndex);
         ExtTextOut(dcHandle, StringPosition * cxLine, pageCount * cyLine + cyOffset, ETO_OPAQUE, &rc, pItemList->_ItemString.Get(), (DWORD)pItemList->_ItemString.GetLength(), NULL);
     }
-    for (; (pageCount < candidateListPageCnt); pageCount++)
+    for (; (pageCount < candidateListPageCnt); pageCount++)//绘制空行
     {
         rc.top    = prc->top + pageCount * cyLine;
         rc.bottom = rc.top + cyLine;
@@ -1308,9 +1308,9 @@ HRESULT CCandidateWindow::_CurrentPageHasEmptyItems(_Inout_ BOOL *hasEmptyItems)
         return S_FALSE;
     }
 
-    if ((currentPage == 0 || currentPage == _PageIndex.Count()-1) &&
-        (_PageIndex.Count() > 0) &&
-        (*_PageIndex.GetAt(currentPage) > (UINT)(_candidateList.Count() - candidateListPageCnt)))
+    if ((currentPage == 0 || currentPage == _PageIndex.Count()-1) &&//第一页||最后一页
+        (_PageIndex.Count() > 0) &&//存在候选列表
+        (*_PageIndex.GetAt(currentPage) > (UINT)(_candidateList.Count() - candidateListPageCnt)))//当前候选项，比候选列表总数-10大
     {
         *hasEmptyItems = TRUE;
     }
