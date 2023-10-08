@@ -8,8 +8,10 @@ Files			|Description
 track.xml		|断点文件，跟踪主要函数的调用关系。
 install.bat		|安装文件，安装debug64位版。
 uninstall.bat	|卸载文件。
+<br>
 
 # 上篇
+<br>
 
 ## COM组件框架
 
@@ -80,7 +82,11 @@ Source Files									|Document
 [ScrollBarWindow.cpp](doc/ScrollBarWindow.md)	|滚动条窗口。
 [ButtonWindow.cpp](doc/ButtonWindow.md)			|按钮窗口。
 
+[从按下按键到显示候选字词之间都发生了什么](doc/appendix/从按下按键到显示候选字词之间都发生了什么.md)
+<br>
+
 # 下篇
+<br>
 
 ## 合成
 

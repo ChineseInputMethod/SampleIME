@@ -74,7 +74,7 @@ CSampleIME::CSampleIME()
 
     _pCompositionProcessorEngine = nullptr;
 
-    _candidateMode = CANDIDATE_NONE;
+    _candidateMode = CANDIDATE_NONE;//д╛хож╣
     _pCandidateListUIPresenter = nullptr;
     _isCandidateWithWildcard = FALSE;
 
