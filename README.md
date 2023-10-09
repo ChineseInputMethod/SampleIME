@@ -81,8 +81,9 @@ Source Files									|Document
 [ShadowWindow.cpp](doc/ShadowWindow.md)			|阴影窗口，为窗口添加阴影。
 [ScrollBarWindow.cpp](doc/ScrollBarWindow.md)	|滚动条窗口。
 [ButtonWindow.cpp](doc/ButtonWindow.md)			|按钮窗口。
+<br>
 
-[从按下按键到显示候选字词之间都发生了什么](doc/appendix/从按下按键到显示候选字词之间都发生了什么.md)
+##[从按下按键到显示候选字词之间都发生了什么](doc/appendix/从按下按键到显示候选字词之间都发生了什么.md)
 <br>
 
 # 下篇
@@ -90,11 +91,11 @@ Source Files									|Document
 
 ## 合成
 
-Source Files									|Document
+Source Files												|Document
 -|-
-[Composition.cpp](doc/Composition.md)			|输入组合终止消息接收器。
-[EndComposition.cpp](doc/EndComposition.md)		|结束输入。
-[StartComposition.cpp](doc/StartComposition.md)	|开始输入。
+[StartComposition.cpp](doc/composition/StartComposition.md)	|开始合成，在上下文中创建一个合成。
+[Composition.cpp](doc/composition/Composition.md)			|输入组合终止消息接收器。
+[EndComposition.cpp](doc/composition/EndComposition.md)		|结束输入。
 
 ## 显示属性
 
@@ -104,8 +105,10 @@ Source Files													|Document
 [DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)			|显示属性信息。
 [DisplayAttributeProvider.cpp](doc/DisplayAttributeProvider.md)	|显示属性提供者。
 [EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)	|显示属性信息对象枚举器。
+<br>
 
 # 番外
+<br>
 
 ## 无界面模式
 
