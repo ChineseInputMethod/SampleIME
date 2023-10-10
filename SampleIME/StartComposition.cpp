@@ -44,19 +44,19 @@ STDAPI CStartCompositionEditSession::DoEditSession(TfEditCookie ec)
     {
         goto Exit;
     }
-     if (FAILED(pInsertAtSelection->InsertTextAtSelection(ec, 0, L"输出汉字的第一种方式\n", wcslen(L"输出汉字的第一种方式\n"), &pRangeInsert)))
- //  if (FAILED(pInsertAtSelection->InsertTextAtSelection(ec, TF_IAS_QUERYONLY, NULL, 0, &pRangeInsert)))
+//     if (FAILED(pInsertAtSelection->InsertTextAtSelection(ec, 0, L"输出汉字的第一种方式\n", wcslen(L"输出汉字的第一种方式\n"), &pRangeInsert)))
+   if (FAILED(pInsertAtSelection->InsertTextAtSelection(ec, TF_IAS_QUERYONLY, NULL, 0, &pRangeInsert)))
     {
         goto Exit;
     }
-     pRangeInsert->Collapse(ec, TF_ANCHOR_END);
-     /*{
+//     pRangeInsert->Collapse(ec, TF_ANCHOR_END);
+     {
          TF_SELECTION tfSelection;
          tfSelection.range = pRangeInsert;
          tfSelection.range->SetText(ec, 0, L"输出汉字的第二种方式\n", wcslen(L"输出汉字的第二种方式\n"));
          tfSelection.range->Collapse(ec, TF_ANCHOR_END);
          _pContext->SetSelection(ec, 1, &tfSelection);
-     }*/
+     }
     if (FAILED(_pContext->QueryInterface(IID_ITfContextComposition, (void **)&pContextComposition)))
     {
         goto Exit;

@@ -83,7 +83,7 @@ Source Files									|Document
 [ButtonWindow.cpp](doc/ButtonWindow.md)			|按钮窗口。
 <br>
 
-##[从按下按键到显示候选字词之间都发生了什么](doc/appendix/从按下按键到显示候选字词之间都发生了什么.md)
+### [从按下按键到显示候选字词之间都发生了什么](doc/appendix/从按下按键到显示候选字词之间都发生了什么.md)
 <br>
 
 # 下篇
