@@ -98,7 +98,7 @@ Source Files									|Document
 Source Files												|Document
 -|-
 [StartComposition.cpp](doc/composition/StartComposition.md)	|开始合成，在上下文中创建一个合成。
-[Composition.cpp](doc/composition/Composition.md)			|输入组合终止消息接收器。
+[Composition.cpp](doc/composition/Composition.md)			|合成，将编码和已转换的文字标记为GUID_PROP_COMPOSING属性。
 [EndComposition.cpp](doc/composition/EndComposition.md)		|结束输入。
 
 ## 显示属性

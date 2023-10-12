@@ -71,7 +71,19 @@ STDAPI CStartCompositionEditSession::DoEditSession(TfEditCookie ec)
         tfSelection.range = pRangeInsert;
         tfSelection.style.ase = TF_AE_NONE;
         tfSelection.style.fInterimChar = FALSE;
-        
+        /*{
+            const ULONG cchMax = 256;
+            ULONG pcch = 0;
+            WCHAR pchText[cchMax];
+            tfSelection.range->GetText(
+                ec,
+                TF_TF_MOVESTART,//TF_TF_IGNOREEND
+                pchText,
+                cchMax,
+                &pcch
+            );
+            pchText[pcch] = '\0';
+        }*/
         _pContext->SetSelection(ec, 1, &tfSelection);
         _pTextService->_SaveCompositionContext(_pContext);
     }

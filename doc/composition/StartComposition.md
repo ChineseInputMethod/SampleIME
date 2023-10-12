@@ -61,3 +61,58 @@ TSF输入法调用ITfContextComposition::StartComposition()方法，在上下文
 
 ## 3.35.4 开始合成
 
+Interface				|Description
+-|-
+[ITfInsertAtSelection][1]	|在选定位置插入内容，用于在上下文中插入文本或嵌入对象。
+[ITfContextComposition][2]	|上下文合成，用于创建ITfComposition合成。
+
+[1]: https://github.com/ChineseInputMethod/Interface/blob/master/TSFmanager/ITfInsertAtSelection.md
+[2]: https://github.com/ChineseInputMethod/Interface/blob/master/TSFmanager/ITfContextComposition.md
+
+当用户按下编码键，如果输入状态不是处于合成状态，那么创建一个编辑会话。在编辑会话中创建一个合成。
+
+首先，获取在选定位置插入内容接口；
+然后，调用ITfInsertAtSelection::InsertTextAtSelection()方法，通过插入一个空字符，获得ITfRange文本范围；
+接着，获取上下文合成接口；
+然后，调用ITfContextComposition::StartComposition()方法，将所选文本范围标记为GUID_PROP_COMPOSING属性；
+最后，调用ITfContext::SetSelection()方法，将标记后的文本范围设置为上下文中的选定内容。
+
+```C++
+STDAPI CStartCompositionEditSession::DoEditSession(TfEditCookie ec)
+{
+    ITfInsertAtSelection* pInsertAtSelection = nullptr;
+    ITfRange* pRangeInsert = nullptr;
+    ITfContextComposition* pContextComposition = nullptr;
+    ITfComposition* pComposition = nullptr;
+
+    if (FAILED(_pContext->QueryInterface(IID_ITfInsertAtSelection, (void **)&pInsertAtSelection)))
+    {
+        goto Exit;
+    }
+
+   if (FAILED(pInsertAtSelection->InsertTextAtSelection(ec, TF_IAS_QUERYONLY, NULL, 0, &pRangeInsert)))
+    {
+        goto Exit;
+    }
+
+    if (FAILED(_pContext->QueryInterface(IID_ITfContextComposition, (void **)&pContextComposition)))
+    {
+        goto Exit;
+    }
+
+    if (SUCCEEDED(pContextComposition->StartComposition(ec, pRangeInsert, _pTextService, &pComposition)) && (nullptr != pComposition))
+    {
+        _pTextService->_SetComposition(pComposition);
+
+        // set selection to the adjusted range
+        TF_SELECTION tfSelection;
+        tfSelection.range = pRangeInsert;
+        tfSelection.style.ase = TF_AE_NONE;
+        tfSelection.style.fInterimChar = FALSE;
+
+        _pContext->SetSelection(ec, 1, &tfSelection);
+        _pTextService->_SaveCompositionContext(_pContext);
+    }
+
+...
+```
