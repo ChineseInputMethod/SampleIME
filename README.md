@@ -8,10 +8,6 @@ Files			|Description
 track.xml		|断点文件，跟踪主要函数的调用关系。
 install.bat		|安装文件，安装debug64位版。
 uninstall.bat	|卸载文件。
-<br>
-
-# 上篇
-<br>
 
 ## COM组件框架
 
@@ -81,17 +77,6 @@ Source Files									|Document
 [ShadowWindow.cpp](doc/ShadowWindow.md)			|阴影窗口，为窗口添加阴影。
 [ScrollBarWindow.cpp](doc/ScrollBarWindow.md)	|滚动条窗口。
 [ButtonWindow.cpp](doc/ButtonWindow.md)			|按钮窗口。
-<br>
-
-## 上篇小结
-
-1. [启动过程](doc/appendix/启动过程.md)
-2. [按键处理](doc/appendix/按键处理.md)
-3. [候选列表](doc/appendix/候选列表.md)
-<br>
-
-# 下篇
-<br>
 
 ## 合成
 
@@ -109,10 +94,6 @@ Source Files													|Document
 [DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)			|显示属性信息。
 [DisplayAttributeProvider.cpp](doc/DisplayAttributeProvider.md)	|显示属性提供者。
 [EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)	|显示属性信息对象枚举器。
-<br>
-
-# 番外
-<br>
 
 ## 无界面模式
 
@@ -123,3 +104,9 @@ Source Files													|Document
 [SearchCandidateProvider.cpp](doc/SearchCandidateProvider.md)	|搜索候选提供者。
 [TipCandidateList.cpp](doc/TipCandidateList.md)					|候选列表对象。
 [TipCandidateString.cpp](doc/TipCandidateString.md)				|候选文字串对象。
+
+## 附录A
+
+1. [启动过程](doc/appendix/启动过程.md)
+2. [按键处理](doc/appendix/按键处理.md)
+3. [候选列表](doc/appendix/候选列表.md)

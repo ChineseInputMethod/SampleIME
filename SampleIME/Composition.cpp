@@ -92,7 +92,7 @@ HRESULT CSampleIME::_AddComposingAndChar(TfEditCookie ec, _In_ ITfContext *pCont
         if (SUCCEEDED(hr))
         {
             ITfRange* pRange = nullptr;
-            BOOL exist_composing = _FindComposingRange(ec, pContext, pAheadSelection, &pRange);//²éÕÒºÏ³É·¶Î§
+            BOOL exist_composing = _FindComposingRange(ec, pContext, pAheadSelection, &pRange);
 
             _SetInputString(ec, pContext, pRange, pstrAddString, exist_composing);
 
@@ -236,9 +236,9 @@ HRESULT CSampleIME::_SetInputString(TfEditCookie ec, _In_ ITfContext *pContext, 
 
     if ((pRange != nullptr) && (pRange->Clone(&pSelection) == S_OK))
     {
-        pSelection->Collapse(ec, TF_ANCHOR_END);
-
-        sel.range = pSelection;
+//        pSelection->Collapse(ec, TF_ANCHOR_END);
+        pRange->Collapse(ec, TF_ANCHOR_END); sel.range = pRange;
+//        sel.range = pSelection;
         sel.style.ase = TF_AE_NONE;
         sel.style.fInterimChar = FALSE;
         pContext->SetSelection(ec, 1, &sel);

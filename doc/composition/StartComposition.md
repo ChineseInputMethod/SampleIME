@@ -61,7 +61,7 @@ TSF输入法调用ITfContextComposition::StartComposition()方法，在上下文
 
 ## 3.35.4 开始合成
 
-Interface				|Description
+Interface					|Description
 -|-
 [ITfInsertAtSelection][1]	|在选定位置插入内容，用于在上下文中插入文本或嵌入对象。
 [ITfContextComposition][2]	|上下文合成，用于创建ITfComposition合成。
