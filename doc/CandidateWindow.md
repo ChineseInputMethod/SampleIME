@@ -163,3 +163,28 @@ cleanup:
     SelectObject(dcHandle, hFontOld);
 }
 ```
+
+## 3.30.5 输出汉字
+
+当用户按下数字键或者鼠标键选择候选字词时，输入法将用户选择的候选字词输出到合成中。
+本文只演示了其中最简单的场景，既按下空格键选择候选字词。因此，跳过了所选候选字词索引的计算，只将默认的当前候选字词输出到合成中。
+
+```C++
+DWORD CCandidateWindow::_GetSelectedCandidateString(_Outptr_result_maybenull_ const WCHAR **ppwchCandidateString)
+{
+    CCandidateListItem* pItemList = nullptr;
+
+    if (_currentSelection >= _candidateList.Count())
+    {
+        *ppwchCandidateString = nullptr;
+        return 0;
+    }
+
+    pItemList = _candidateList.GetAt(_currentSelection);
+    if (ppwchCandidateString)
+    {
+        *ppwchCandidateString = pItemList->_ItemString.Get();
+    }
+    return (DWORD)pItemList->_ItemString.GetLength();
+}
+```

@@ -152,3 +152,44 @@ void CCandidateListUIPresenter::_SetText(_In_ CSampleImeArray<CCandidateListItem
     }
 }
 ```
+
+## 3.27.5 选择候选字词
+
+当用户输入完编码，按下空格键选择候选字词，CSampleIME::_HandleCandidateWorker()函数将被调用。<br>
+_HandleCandidateWorker()函数，实现了联想功能，本文不讲解此部分。<br>
+在_HandleCandidateWorker()函数的最后，调用了_HandleCandidateFinalize函数，完成汉字的输出。
+
+```C++
+HRESULT CSampleIME::_HandleCandidateFinalize(TfEditCookie ec, _In_ ITfContext *pContext)
+{
+    HRESULT hr = S_OK;
+    DWORD_PTR candidateLen = 0;
+    const WCHAR* pCandidateString = nullptr;
+    CStringRange candidateString;
+
+    if (nullptr == _pCandidateListUIPresenter)
+    {
+        goto NoPresenter;
+    }
+
+    candidateLen = _pCandidateListUIPresenter->_GetSelectedCandidateString(&pCandidateString);
+
+    candidateString.Set(pCandidateString, candidateLen);
+
+    if (candidateLen)
+    {
+        hr = _AddComposingAndChar(ec, pContext, &candidateString);
+
+        if (FAILED(hr))
+        {
+            return hr;
+        }
+    }
+
+NoPresenter:
+
+    _HandleComplete(ec, pContext);
+
+    return hr;
+}
+```

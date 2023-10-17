@@ -83,7 +83,7 @@ Source Files									|Document
 Source Files												|Document
 -|-
 [StartComposition.cpp](doc/composition/StartComposition.md)	|开始合成，在上下文中创建一个合成。
-[Composition.cpp](doc/composition/Composition.md)			|合成，将编码和已转换的文字标记为GUID_PROP_COMPOSING属性。
+[Composition.cpp](doc/composition/Composition.md)			|合成，标记为GUID_PROP_COMPOSING属性的文本范围。
 [EndComposition.cpp](doc/composition/EndComposition.md)		|结束输入。
 
 ## 显示属性

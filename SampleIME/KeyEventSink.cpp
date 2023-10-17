@@ -308,7 +308,7 @@ STDAPI CSampleIME::OnTestKeyDown(ITfContext *pContext, WPARAM wParam, LPARAM lPa
 
 STDAPI CSampleIME::OnKeyDown(ITfContext *pContext, WPARAM wParam, LPARAM lParam, BOOL *pIsEaten)
 {//https://learn.microsoft.com/zh-cn/windows/win32/inputdev/about-keyboard-input
-    Global::UpdateModifiers(wParam, lParam);//更新全局变量::ModifiersValue
+    Global::UpdateModifiers(wParam, lParam);
 
     _KEYSTROKE_STATE KeystrokeState;
     WCHAR wch = '\0';//字符

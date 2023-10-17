@@ -87,8 +87,8 @@ HRESULT CSampleIME::_AddComposingAndChar(TfEditCookie ec, _In_ ITfContext *pCont
     ITfRange* pAheadSelection = nullptr;
     hr = pContext->GetStart(ec, &pAheadSelection);//上下文开始
     if (SUCCEEDED(hr))
-    {
-        hr = pAheadSelection->ShiftEndToRange(ec, tfSelection.range, TF_ANCHOR_START);//将文本范围设置为从上下文开始到当前插入点
+    {//将文本范围设置为从上下文开始到当前插入点的起始定位点
+        hr = pAheadSelection->ShiftEndToRange(ec, tfSelection.range, TF_ANCHOR_START);
         if (SUCCEEDED(hr))
         {
             ITfRange* pRange = nullptr;
@@ -236,9 +236,9 @@ HRESULT CSampleIME::_SetInputString(TfEditCookie ec, _In_ ITfContext *pContext, 
 
     if ((pRange != nullptr) && (pRange->Clone(&pSelection) == S_OK))
     {
-//        pSelection->Collapse(ec, TF_ANCHOR_END);
-        pRange->Collapse(ec, TF_ANCHOR_END); sel.range = pRange;
-//        sel.range = pSelection;
+        pSelection->Collapse(ec, TF_ANCHOR_END);
+//        pSelection->Collapse(ec, TF_ANCHOR_START);
+        sel.range = pSelection;
         sel.style.ase = TF_AE_NONE;
         sel.style.fInterimChar = FALSE;
         pContext->SetSelection(ec, 1, &sel);

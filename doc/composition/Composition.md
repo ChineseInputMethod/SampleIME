@@ -1,8 +1,10 @@
 ## 3.36 合成
 
-合成，将编码和已转换的文字标记为GUID_PROP_COMPOSING属性。
+合成，标记为GUID_PROP_COMPOSING属性的文本范围。
 
-## 3.36.1 处理输入编码
+处理输入编码的函数调用过程，请参考：[按键处理](../appendix/按键处理.md)
+
+## 3.36.1 写入合成字符
 
 Interface		|Description
 -|-
@@ -11,8 +13,6 @@ Interface		|Description
 
 [1]: https://github.com/ChineseInputMethod/Interface/blob/master/TSFmanager/ITfContext.md
 [2]: https://github.com/ChineseInputMethod/Interface/blob/master/TSFmanager/ITfRange.md
-
-处理输入编码的函数调用过程，请参考：[按键处理](../appendix/按键处理.md)
 
 当用户按下编码键，输入法调用CSampleIME::_AddComposingAndChar()函数，将输入编码写入到上下文中。
 
@@ -36,8 +36,8 @@ HRESULT CSampleIME::_AddComposingAndChar(TfEditCookie ec, _In_ ITfContext *pCont
     ITfRange* pAheadSelection = nullptr;
     hr = pContext->GetStart(ec, &pAheadSelection);//上下文开始
     if (SUCCEEDED(hr))
-    {
-        hr = pAheadSelection->ShiftEndToRange(ec, tfSelection.range, TF_ANCHOR_START);//将文本范围设置为从上下文开始到当前插入点
+    {//将文本范围设置为从上下文开始到当前插入点的起始定位点
+        hr = pAheadSelection->ShiftEndToRange(ec, tfSelection.range, TF_ANCHOR_START);
         if (SUCCEEDED(hr))
         {
             ITfRange* pRange = nullptr;
@@ -65,12 +65,12 @@ HRESULT CSampleIME::_AddComposingAndChar(TfEditCookie ec, _In_ ITfContext *pCont
 
 ## 3.36.2 查找已有合成
 
-Interface			|Description
+Interface					|Description
 -|-
-[ITfProperty][3]	|属性设置，由客户端(应用程序或文本服务)用来操作显示属性。
-[IEnumTfRanges][4]	|文本范围枚举器，枚举文本范围对象。
+[ITfReadOnlyProperty][3]	|只读属性，ITfProperty继承此接口。
+[IEnumTfRanges][4]			|文本范围枚举器，枚举文本范围对象。
 
-[3]: https://github.com/ChineseInputMethod/Interface/blob/master/TSFmanager/ITfProperty.md
+[3]: https://github.com/ChineseInputMethod/Interface/blob/master/TSFmanager/ITfReadOnlyProperty.md
 [4]: https://github.com/ChineseInputMethod/Interface/blob/master/TSFmanager/IEnumTfRanges.md
 
 第一次按下编码键会创建合成，并将第一个编码写入到上下文中，当按下第二个编码键时，输入法需要去上下文中查询是否存在合成。
@@ -83,9 +83,9 @@ Interface			|Description
 当第一次按下编码键时，因为插入点之前没有GUID_PROP_COMPOSING属性，所以_InsertAtSelection()函数会被调用。
 当按下第二个编码键时，因为插入点之前，也就是第一个编码被设置为了GUID_PROP_COMPOSING属性，所以_InsertAtSelection()函数不会被调用。
 
-因为TSF框架的特性，第二个编码并不是追加到第一个编码的后面。例如，第一个编码输入的a，第二个编码输入的b。
+因为TSF框架的特性，第二个编码并不是追加到第一个编码的后面。例如，第一个编码输入"a"，第二个编码输入"b"。
 ITfRange::SetText()方法，是用字符串"ab"，替换覆盖掉原文本范围内容"a"。
-（从形式上看两者完全相同，但逻辑上不同）
+（从形式上看两者相同，但逻辑上不同）
 
 ```C++
 HRESULT CSampleIME::_SetInputString(TfEditCookie ec, _In_ ITfContext *pContext, _Out_opt_ ITfRange *pRange, _In_ CStringRange *pstrAddString, BOOL exist_composing)
@@ -134,3 +134,11 @@ HRESULT CSampleIME::_SetInputString(TfEditCookie ec, _In_ ITfContext *pContext, 
     return S_OK;
 }
 ```
+
+然后，调用_SetCompositionLanguage()函数，为合成设置语言属性，本章未讲解此性质。<br>
+接着，调用_SetCompositionDisplayAttributes()函数，为合成设置显示属性，该性质在显示属性主题讲解。<br>
+最后，调用ITfRange::Collapse()方法，将文本范围的起始点设置为终止点。（移动插入点位置）
+然后，调用ITfContext::SetSelection()方法，更新调整后的插入点。
+
+>注释掉239行，取消240行注释，可观察到向前插入输入编码。
+注释掉239行，可观察到选中的输入编码。
