@@ -142,3 +142,16 @@ HRESULT CSampleIME::_SetInputString(TfEditCookie ec, _In_ ITfContext *pContext, 
 
 >注释掉239行，取消240行注释，可观察到向前插入输入编码。
 注释掉239行，可观察到选中的输入编码。
+
+## 3.36.4 输出汉字
+
+当用户按下空格键选择候选字词后，CSampleIME::_AddComposingAndChar()函数再次被调用。<br>
+可以发现将编码和汉字写入到合成，是没有任何区别的，实际上TSF管理器也并不知道，输入法写入的是编码还是汉字。<br>
+不同之处是，在输出汉字后，输入法会调用ITfComposition::EndComposition()方法结束合成。
+
+>输入法的核心就是上面短短的几句话。我想这几句话可能难倒了很多初学者。至少作者是这样。作者从IME时代就搞不懂，怎么输出一个汉字。还特意请教于人，高手告诉我要使用钩子拦截键盘消息。
+我还特意去学了中断，当然是没学会。我估计那些外挂输入法就是这么走上“斜”路的。问题是所谓正路太隐晦了。
+1. 首先，从ITfContext中获取ITfInsertAtSelection，然后从ITfInsertAtSelection中获取ITfRange，备用。
+2. 接着，从ITfContext中获取ITfContextComposition，将ITfRange放入ITfContextComposition，获取ITfComposition，备用。（开始合成）
+3. 然后，从ITfContext中获取ITfRange，将汉字写入ITfRange，再将修改后的当前选择放到ITfContext中。（合成中）
+4. 最后，结束ITfComposition，完成输入。（结束合成）

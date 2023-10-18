@@ -159,6 +159,10 @@ void CCandidateListUIPresenter::_SetText(_In_ CSampleImeArray<CCandidateListItem
 _HandleCandidateWorker()函数，实现了联想功能，本文不讲解此部分。<br>
 在_HandleCandidateWorker()函数的最后，调用了_HandleCandidateFinalize函数，完成汉字的输出。
 
+首先，调用_pCandidateListUIPresenter->_GetSelectedCandidateString()函数，获取当前选择的候选字词。
+然后，调用_AddComposingAndChar()函数，将候选字词添加到上下文中。
+最后，调用_HandleComplete()函数，在_HandleComplete()函数中调用_TerminateComposition()函数，结束合成。
+
 ```C++
 HRESULT CSampleIME::_HandleCandidateFinalize(TfEditCookie ec, _In_ ITfContext *pContext)
 {
