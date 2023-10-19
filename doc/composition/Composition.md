@@ -146,12 +146,54 @@ HRESULT CSampleIME::_SetInputString(TfEditCookie ec, _In_ ITfContext *pContext, 
 ## 3.36.4 输出汉字
 
 当用户按下空格键选择候选字词后，CSampleIME::_AddComposingAndChar()函数再次被调用。<br>
-可以发现将编码和汉字写入到合成，是没有任何区别的，实际上TSF管理器也并不知道，输入法写入的是编码还是汉字。<br>
+可以发现将编码或汉字写入到合成，是没有任何区别的，实际上TSF管理器也并不知道，输入法写入的是编码还是汉字。<br>
 不同之处是，在输出汉字后，输入法会调用ITfComposition::EndComposition()方法结束合成。
 
->输入法的核心就是上面短短的几句话。我想这几句话可能难倒了很多初学者。至少作者是这样。作者从IME时代就搞不懂，怎么输出一个汉字。还特意请教于人，高手告诉我要使用钩子拦截键盘消息。
-我还特意去学了中断，当然是没学会。我估计那些外挂输入法就是这么走上“斜”路的。问题是所谓正路太隐晦了。
+>TSF输入法的核心就是上面短短的几句话。只不过被套上了一层又一层外壳。作者从IME时代就搞不懂，怎么输出一个汉字。找到了一个源码，然后打印出来看，因为作者没有电脑。
+看了很长时间也看不懂。其实，输出汉字就是下面几个步骤。
+
 1. 首先，从ITfContext中获取ITfInsertAtSelection，然后从ITfInsertAtSelection中获取ITfRange，备用。
 2. 接着，从ITfContext中获取ITfContextComposition，将ITfRange放入ITfContextComposition，获取ITfComposition，备用。（开始合成）
-3. 然后，从ITfContext中获取ITfRange，将汉字写入ITfRange，再将修改后的当前选择放到ITfContext中。（合成中）
-4. 最后，结束ITfComposition，完成输入。（结束合成）
+3. 然后，从ITfContext中获取ITfRange，将输入编码写入ITfRange，再将修改后的当前选择放到ITfContext中。（合成中）
+4. 接着，重复步骤3，完成汉字输入或继续重复步骤3，完成自造词、语句输入等功能。
+5. 最后，结束ITfComposition，完成输入。（结束合成）
+
+我现在一直在想，为什么这么简单的东西，我做了这么久。答案竟然是，我足够幸运，才最终找出了答案。
+非常想记录下每一个节点，我的心理感受，然而我没有时间。
+
+## 3.36.4 合成终止消息接收器
+
+Interface				|Description
+-|-
+[ITfCompositionSink][5]	|合成终止消息接收器，用于在终止ITfComposition合成时接收通知。
+
+[5]: https://github.com/ChineseInputMethod/Interface/blob/master/TextService/ITfCompositionSink.md
+
+当合成被意外终止时，ITfCompositionSink::OnCompositionTerminated()方法将被调用。
+
+```C++
+STDAPI CSampleIME::OnCompositionTerminated(TfEditCookie ecWrite, _In_ ITfComposition *pComposition)
+{
+    // Clear dummy composition
+    _RemoveDummyCompositionForComposing(ecWrite, pComposition);
+
+    // Clear display attribute and end composition, _EndComposition will release composition for us
+    ITfContext* pContext = _pContext;
+    if (pContext)
+    {
+        pContext->AddRef();
+    }
+
+    _EndComposition(_pContext);
+
+    _DeleteCandidateList(FALSE, pContext);
+
+    if (pContext)
+    {
+        pContext->Release();
+        pContext = nullptr;
+    }
+
+    return S_OK;
+}
+```
