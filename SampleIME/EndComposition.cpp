@@ -61,7 +61,7 @@ void CSampleIME::_TerminateComposition(TfEditCookie ec, _In_ ITfContext *pContex
         // remove the display attribute from the composition range.
         _ClearCompositionDisplayAttributes(ec, pContext);
 
-        if (FAILED(_pComposition->EndComposition(ec)))
+        if (FAILED(_pComposition->EndComposition(ec)))//将该行注释掉，汉字不会输出到文档中
         {
             // if we fail to EndComposition, then we need to close the reverse reading window.
             _DeleteCandidateList(TRUE, pContext);

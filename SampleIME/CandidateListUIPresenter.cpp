@@ -1298,8 +1298,8 @@ void CCandidateListUIPresenter::DisposeCandidateWindow()
         return;
     }
 
-    _pCandidateWnd->_Destroy();
+    _pCandidateWnd->_Destroy();//回调窗口过程_DeleteShadowWnd();
 
-    delete _pCandidateWnd;
+    delete _pCandidateWnd;//调用析构函数CCandidateWindow::~CCandidateWindow()
     _pCandidateWnd = nullptr;
 }
