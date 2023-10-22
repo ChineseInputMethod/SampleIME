@@ -110,3 +110,9 @@ Source Files													|Document
 1. [启动过程](doc/appendix/启动过程.md)
 2. [按键处理](doc/appendix/按键处理.md)
 3. [候选列表](doc/appendix/候选列表.md)
+
+## 附录B
+
+1. [选择候选字词](doc/appendix/选择候选字词.md)
+2. [销毁候选窗口](doc/appendix/销毁候选窗口.md)
+3. [完成汉字输入](doc/appendix/完成汉字输入.md)
