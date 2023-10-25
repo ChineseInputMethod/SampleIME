@@ -27,7 +27,7 @@ const WCHAR CDisplayAttributeInfoConverted::_s_szDescription[] = L"Sample IME Te
 //+---------------------------------------------------------------------------
 //
 // DisplayAttribute
-//
+//https://learn.microsoft.com/zh-cn/windows/win32/api/msctf/ns-msctf-tf_displayattribute
 //----------------------------------------------------------------------------
 
 const TF_DISPLAYATTRIBUTE CDisplayAttributeInfoInput::_s_DisplayAttribute =

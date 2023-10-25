@@ -90,9 +90,9 @@ Source Files												|Document
 
 Source Files													|Document
 -|-
-[DisplayAttribute.cpp](doc/DisplayAttribute.md)					|显示属性。
+[DisplayAttribute.cpp](doc/DisplayAttribute.md)					|显示属性，合成中编码或汉字的显示样式。
+[DisplayAttributeProvider.cpp](doc/DisplayAttributeProvider.md)	|显示属性提供者，由TSF管理器用来枚举和获取单个显示属性信息对象。
 [DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)			|显示属性信息。
-[DisplayAttributeProvider.cpp](doc/DisplayAttributeProvider.md)	|显示属性提供者。
 [EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)	|显示属性信息对象枚举器。
 
 ## 无界面模式
