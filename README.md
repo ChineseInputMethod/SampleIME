@@ -92,18 +92,24 @@ Source Files													|Document
 -|-
 [DisplayAttribute.cpp](doc/DisplayAttribute.md)					|显示属性，合成中编码或汉字的显示样式。
 [DisplayAttributeProvider.cpp](doc/DisplayAttributeProvider.md)	|显示属性提供者，由TSF管理器用来枚举和获取单个显示属性信息对象。
-[DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)			|显示属性信息。
-[EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)	|显示属性信息对象枚举器。
+[DisplayAttributeInfo.cpp](doc/DisplayAttributeInfo.md)			|显示属性信息对象，为应用程序提供显示属性信息。
+[EnumDisplayAttributeInfo.cpp](doc/EnumDisplayAttributeInfo.md)	|显示属性信息对象枚举器，未演示此接口。
 
 ## 无界面模式
 
+Source Files						|Document
+-|-
+[UIless.md](doc/uiless/UIless.md)	|无界面模式。
+
+## 其他主题
+
 Source Files													|Document
 -|-
-[RegKey.cpp](doc/RegKey.md)										|注册表类。
-[EnumTfCandidates.cpp](doc/EnumTfCandidates.md)					|候选文字串对象枚举器。
-[SearchCandidateProvider.cpp](doc/SearchCandidateProvider.md)	|搜索候选提供者。
-[TipCandidateList.cpp](doc/TipCandidateList.md)					|候选列表对象。
-[TipCandidateString.cpp](doc/TipCandidateString.md)				|候选文字串对象。
+[RegKey.cpp](doc/RegKey.md)										|注册表类，未讲解。
+[EnumTfCandidates.cpp](doc/EnumTfCandidates.md)					|候选文字串对象枚举器，未讲解。
+[SearchCandidateProvider.cpp](doc/SearchCandidateProvider.md)	|搜索候选提供者，未讲解。
+[TipCandidateList.cpp](doc/TipCandidateList.md)					|候选列表对象，未讲解。
+[TipCandidateString.cpp](doc/TipCandidateString.md)				|候选文字串对象，未讲解。
 
 ## 附录A
 
@@ -116,3 +122,9 @@ Source Files													|Document
 1. [选择候选字词](doc/appendix/选择候选字词.md)
 2. [销毁候选窗口](doc/appendix/销毁候选窗口.md)
 3. [完成汉字输入](doc/appendix/完成汉字输入.md)
+
+## 附录C
+
+1. [启动过程](doc/uiless/启动过程.md)
+2. [按键处理](doc/uiless/按键处理.md)
+3. [候选列表](doc/uiless/候选列表.md)
