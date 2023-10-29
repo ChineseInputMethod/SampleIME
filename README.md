@@ -106,10 +106,10 @@ Source Files						|Document
 Source Files													|Document
 -|-
 [RegKey.cpp](doc/RegKey.md)										|注册表类，未讲解。
-[EnumTfCandidates.cpp](doc/EnumTfCandidates.md)					|候选文字串对象枚举器，未讲解。
 [SearchCandidateProvider.cpp](doc/SearchCandidateProvider.md)	|搜索候选提供者，未讲解。
 [TipCandidateList.cpp](doc/TipCandidateList.md)					|候选列表对象，未讲解。
 [TipCandidateString.cpp](doc/TipCandidateString.md)				|候选文字串对象，未讲解。
+[EnumTfCandidates.cpp](doc/EnumTfCandidates.md)					|候选文字串对象枚举器，未讲解。
 
 ## 附录A
 
@@ -127,4 +127,4 @@ Source Files													|Document
 
 1. [启动过程](doc/uiless/启动过程.md)
 2. [按键处理](doc/uiless/按键处理.md)
-3. [候选列表](doc/uiless/候选列表.md)
+3. [完成输入](doc/uiless/完成输入.md)
