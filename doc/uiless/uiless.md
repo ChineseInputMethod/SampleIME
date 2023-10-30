@@ -16,3 +16,9 @@
 
 ![DEBUG](debug.png)
 
+## 3.41.2 启动和按键处理
+
+无界面模式的启动过程和按键处理函数调用，请参考：[附录C](启动过程.md)
+
+启动过程和按键处理与普通模式几乎完全相同，唯一不同的地方是，在ITfTextInputProcessorEx::ActivateEx()方法中，dwFlags的状态值不同。
+
