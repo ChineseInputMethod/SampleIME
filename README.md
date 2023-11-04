@@ -99,7 +99,7 @@ Source Files													|Document
 
 Source Files						|Document
 -|-
-[UIless.md](doc/uiless/UIless.md)	|无界面模式。
+[UIless.md](doc/uiless/UIless.md)	|无界面模式，由应用程序显示UI元素。
 
 ## 其他主题
 
@@ -127,4 +127,4 @@ Source Files													|Document
 
 1. [启动过程](doc/uiless/启动过程.md)
 2. [按键处理](doc/uiless/按键处理.md)
-3. [完成输入](doc/uiless/完成输入.md)
+3. [候选列表](doc/uiless/候选列表.md)
